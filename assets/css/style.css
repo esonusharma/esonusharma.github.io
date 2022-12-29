@@ -1,0 +1,227 @@
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: justify;
+    background-color: #ccc;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 #aaa;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+code {
+    font-family: 'Noto Serif';
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: justify;
+}
+
+h2 {
+    box-shadow: 0 8px 16px 0 #aaa;
+    color: #000000;
+    font-weight: bold;
+    margin: 0px 0px 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 0px solid #aaa;
+    background-color: #aaa;
+    color: #fff;
+    border-radius: 10px
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 #aaa;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #ccc;
+    font-family: 'Noto Serif';
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 #aaa;
+}
+
+/* Add some padding inside the card container */
+.card-content {
+    padding: 2px 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    border: none;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Noto Serif';
+    box-shadow: 0 8px 16px 0 #aaa;
+}
+
+.button1 {
+    background-color: #aaa;
+    color: #ffffff;
+}
+
+.button1:hover {
+    background-color: #ddd;
+    color: #000000;
+}
+
+/* box 1 main*/
+.box1 {
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 8px 16px 0 #aaa;
+    border-radius: 10px;
+}
+
+/* box 2 small*/
+.box2 {
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 #aaa;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* Centering */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Style the body */
+body {
+    font-family: 'Noto Serif';
+    font-size: 21px;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #aaa;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #ccc;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: #fff;
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+
+img {
+    box-shadow: 0 8px 16px 0 #aaa;
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 4px;
+}
+
+/* Footer main */
+.footer {
+    padding: 4px;
+    margin-top: 20px;
+    text-align: center;
+    background: #eee;
+    border-radius: 10px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

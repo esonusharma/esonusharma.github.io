@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/assets/img/brand/es-logo.png" type="image/png"/>
+        <meta name="author" content="[object Object]">
+            <meta name="description" content="sonu sharma is a phd in mechanical engineering">
+                <link rel="canonical" href="https://esonusharma.github.io/"/>
+                <link rel="stylesheet" href="/assets/css/style.css"/>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+                    <script id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+                    <title>How to 301 Permanent Redirect Blogger-Blogspot Blog to Domain?</title>
+    </head>
+    <body>
+        <div class="box1">
+            <header>
+    <div class="header">
+        <img src="/assets/img/brand/es-logo.png" alt="sonu sharma" class="center" style="width:150px;height:150px;">
+    </div>
+    <div class="navbar">
+  <a href="/">
+    <i class="fa fa-home" style="font-size:24px"></i>
+    Home</a>
+  <a href="/profile.html">
+    <i class="fa fa-user" style="font-size:24px"></i>
+    Profile</a>
+  <a href="https://youtube.com/@esonusharma" target="_blank">
+    <i class="fa fa-youtube" style="font-size:24px"></i>
+    Youtube</a>
+  <a href="/legal.html" target="_blank">
+    <i class="fa fa-gavel" style="font-size:24px"></i>
+    Legal</a>
+  <a href="/contact.html" target="_blank">
+    <i class="fa fa-envelope" style="font-size:24px"></i>
+    Contact</a>
+</div>
+</header>
+            <div class="row">
+    <div class="main">
+        <div class="box2">
+            <h2 class="title">How to 301 Permanent Redirect Blogger-Blogspot Blog to Domain?</h2>
+            <div class="card">
+                Published on: Tue May 28 2019 05:30:00 GMT+0530 (India Standard Time)
+            </div>
+            <p>I know its difficult to migrate blogger/blogspot blog hosted at bare blogspot domain “<a href="https://your-blog-name.blogspot.com">https://your-blog-name.blogspot.com</a>” to newly bought branded domain name something like “<a href="https://yoursite.com">https://yoursite.com</a>”.</p>
+<h2>So what exactly is SEO Redirection or 301 Redirection?</h2>
+<p>When you want that a blog post or blog page of your blog should transfer its traffic and google search ranking authority to a new URL where this content is shifted, then you need SEO Redirection.</p>
+<p>As you are <strong>permanently</strong> moving your blog content under a <strong>new domain name</strong>, you need to tell Google about it, so that Google acknowledges the change and transfers the authority of your content to a new address and does not treat the same content at a new URL as plagiarised content and deny <strong>rankings</strong>.</p>
+<p>You can inform this to Google by providing a <strong>301 Redirect</strong> at the old address of the content.</p>
+<p>301 Redirect tells Google that the content present at that location is <strong>permanently shifted</strong> to a new address.</p>
+<p>The traffic is shifted permanently by Google instantly when it finds this redirect.</p>
+<p>But the rankings transfer takes some time.</p>
+<p>Normally you can easily create a 301 Redirect for a personal domain name you own.</p>
+<h2>301 Redirect can be created by</h2>
+<ul>
+<li>Defining it in the <strong>.htaccess</strong> file available in the hosting if you have hosting.</li>
+<li><strong>Forwarding</strong> the domain name in your domain control panel provided by the domain name provider choosing the <strong>permanent redirect</strong>/forward option if you don’t have hosting.</li>
+</ul>
+<p>But it seems next to impossible to do the same in the case when you don’t own the domain name as the case in <strong>blogger/blogspot</strong> naked domain.</p>
+<p>Now I am going to share a method in which you can achieve this.</p>
+<p>I have tried this method when I was shifting from blogger to my own domain name and I was successful in <strong>transferring</strong> the ranking of my popular blog posts to a <strong>new web address</strong> but I cannot guarantee you the same as this is dependent on google and varies on case basis.</p>
+<p>Insert the code shown below just after the “<Head>” tag in the <strong>blogger template</strong> after replacing the generalized content to your own in the code below.</p>
+<pre><code> &lt;b:if cond=&quot;’data:blog.url&quot; ==&quot;“&lt;http://your-blog-name.blogspot.com/YEAR/MONTH/BLOG-POST-SLUG.html&gt;”‘&quot;&gt;&lt;meta content=&quot;’0;url=http://yoursite.com/NEW-BLOG-POST-SLUG.html’&quot; http-equiv=&quot;’refresh’/&quot;&gt;&lt;/b:if&gt;
+
+ &lt;b:if cond=&quot;’data:blog.url&quot; ==&quot;“&lt;http://your-blog-name.blogspot.com/p/BLOG-PAGE-SLUG.html&gt;”‘&quot;&gt;&lt;meta content=&quot;’0;url=http://yoursite.com/NEW-BLOG-PAGE-SLUG.html’&quot; http-equiv=&quot;’refresh’/&quot;&gt;&lt;/b:if&gt;
+
+ &lt;b:if cond=&quot;’data:blog.url&quot; ==&quot;“&lt;http://your-blog-name.blogspot.com/&gt;”‘&quot;&gt;&lt;meta content=&quot;’0;url=http://yoursite.com/’&quot; http-equiv=&quot;’refresh’/&quot;&gt;&lt;/b:if&gt;
+</code></pre>
+<p>If you are fortunate enough, after a few days of doing this you can see your new URL in place of the old URL in google search.</p>
+
+        </div>
+    </div>
+    <div class="column">
+    <div class="card">
+        <h4 style="text-align: center;">Subscribe to our Newsletter and Email Communication to get the latest updates
+        </h4>
+        <h4 style="text-align: center;">
+            <a href="https://mailchi.mp/96fa4c1fe40b/subscribe" target="_blank" rel="nofollow noopener">
+                <button class="button button1">Subscribe</button>
+            </a>
+        </h4>
+    </div>
+</div>
+</div>
+            <br>
+    <div class="card">
+        <h2>Important Note</h2>
+        <p>We hope this article helped you. If you have any suggestions/queries regarding this article, or if you need to
+            contact us, then do it
+            <a href="https://esonusharma.github.io/contact.html" target="_blank">here</a>.
+            <br>
+                <br>Also, please like, share, and follow our social media pages, "<a href="https://youtube.com/@esonusharma" target="_blank">Youtube</a>".
+                    <br>
+                        <br>
+                            OpenFOAM® and OpenCFD® are registered trademarks of OpenCFD Limited, the producer of OpenFOAM software. All registered
+                            trademarks are property of their respective owners.<br>
+                                <br>
+                                    This offering is not approved or endorsed by OpenCFD Limited, the producer of the OpenFOAM software and owner of the
+                                    OPENFOAM® and OpenCFD® trade marks.<br>
+                                        <br>
+                                            <a href="https://esonusharma.github.io/ad.html" target="_blank" ref="nofollow">Affiliate Disclosure</a>
+                                            <br>
+                                                This site contains affiliate links to products. We may receive a commission for purchases made through these links. Keep
+                                                in mind that we may receive commissions when you click our links and make purchases. However, this does not impact our
+                                                reviews and comparisons. We try our best to keep things fair and balanced, in order to help you make the best choice for
+                                                you.<br>
+                                                    <br>
+                                                        <a href="https://esonusharma.github.io/legal.html" target="_blank" ref="nofollow">
+                                                            Our Policies</a>
+                                                        <br>By continuing to browse the site you are agreeing to our
+                                                            <a href="https://www.aboutcookies.org/" target="_blank" rel="nofollow">use of cookies</a>
+                                                            and
+                                                            <a href="https://esonusharma.github.io/legal.html" target="_blank">policies</a>.</p>
+                                                    </div>
+            <div class="card">
+    <p>© 2022 esonusharma - all rights reserved</p>
+    <a
+        href="//www.dmca.com/Protection/Status.aspx?ID=385ea6f9-5b52-4d69-99b3-a42282a9076d"
+        title="DMCA.com Protection Status"
+        class="dmca-badge"><img
+            src="https://images.dmca.com/Badges/dmca-badge-w150-5x1-10.png?ID=385ea6f9-5b52-4d69-99b3-a42282a9076d"
+            alt="DMCA.com Protection Status"/>
+    </a>
+    <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" type="ee6f533d77f080eba54e1043-text/javascript"></script>
+</div>
+        </div>
+    </body>
+</html>
