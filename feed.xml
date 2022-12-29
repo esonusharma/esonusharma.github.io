@@ -3,7 +3,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>esonusharma.github.io</title>
     <subtitle>research guide</subtitle>
-     <link href="https://esonusharma.github.io/feed/feed.xml" rel="self"/>
+     <link href="https://esonusharma.github.io/feed.xml" rel="self"/>
     <link href="https://esonusharma.github.io/"/>
     <updated>2020-10-19T00:00:00Z</updated>
     <id>https://esonusharma.github.io/</id>
