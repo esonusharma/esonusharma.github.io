@@ -20,11 +20,14 @@ code {
 
 blockquote {
     display: block;
-    box-shadow: 0 8px 16px 0 #aaa;
-    background-color: #ccc;
+    box-shadow: 0 8px 16px 0 #a52a2a;
+    background-color: #a52a2a;
+    text-decoration-color: #ffffff;
     transition: 0.3s;
     font-family: 'Noto Serif';
-    font: italic margin-top: 1em;
+    font: italic bold;
+    padding: 20px;
+    margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 40px;
     margin-right: 40px;
