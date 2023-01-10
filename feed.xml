@@ -1064,10 +1064,10 @@ root@xpc:/home/x/Downloads#
 &lt;/blockquote&gt;
 &lt;h2&gt;&lt;strong&gt;What is a dofollow backlink?&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;A &lt;strong&gt;Dofollow Backlink&lt;/strong&gt; looks like this in HTML:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; &amp;lt;a href=&amp;quot;https://esonusharma.github.io/dofollow-backlinks&amp;quot;&amp;gt;Dofollow Backlink&amp;lt;/a&amp;gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;a href=&amp;quot;https://esonusharma.github.io/dofollow-backlinks.html&amp;quot;&amp;gt;Dofollow Backlink&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A Nofollow Backlink looks like this in HTML:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://esonusharma.github.io/dofollow-backlinks&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;Nofollow Backlink&amp;lt;/a&amp;gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&amp;quot;https://esonusharma.github.io/dofollow-backlinks.html&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;Nofollow Backlink&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;A couple of more types like &lt;strong&gt;rel=”sponsored”&lt;/strong&gt; and &lt;strong&gt;rel=”ugc”&lt;/strong&gt; are explained in detail &lt;a href=&quot;https://moz.com/blog/nofollow-sponsored-ugc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Link Building&lt;/strong&gt; is a tedious process, but the hard work pays off in the long-term.&lt;/p&gt;
