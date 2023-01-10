@@ -20,9 +20,10 @@ code {
 
 blockquote {
     display: block;
+    border-radius: 10;
     box-shadow: 0 8px 16px 0 #a52a2a;
     background-color: #a52a2a;
-    text: #ffffff;
+    color: #ffffff;
     transition: 0.3s;
     font-family: 'Noto Serif';
     font: italic bold;
