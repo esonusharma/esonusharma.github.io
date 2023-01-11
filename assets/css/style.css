@@ -99,6 +99,14 @@ body {
     text-align: center;
 }
 
+a {
+    color: #993300;
+    text-decoration: none;
+    font-family: 'Noto Serif';
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .navbar {
     padding: 10px;
     margin: 5px;
