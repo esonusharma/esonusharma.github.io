@@ -102,12 +102,12 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/seo/</loc>
+            <loc>https://esonusharma.github.io/tags/howto/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/content/</loc>
+            <loc>https://esonusharma.github.io/tags/error/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
@@ -122,7 +122,17 @@
         </url>
         
         <url>
+            <loc>https://esonusharma.github.io/tags/seo/</loc>
+            <lastmod>2022-12-28</lastmod>
+        </url>
+        
+        <url>
             <loc>https://esonusharma.github.io/tags/backlink/</loc>
+            <lastmod>2022-12-28</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/redirect/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
@@ -137,27 +147,7 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/howto/</loc>
-            <lastmod>2022-12-28</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/error/</loc>
-            <lastmod>2022-12-28</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/glossary/</loc>
-            <lastmod>2022-12-28</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/cfd/</loc>
-            <lastmod>2022-12-28</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/redirect/</loc>
+            <loc>https://esonusharma.github.io/tags/code/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
@@ -167,17 +157,27 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/code/</loc>
+            <loc>https://esonusharma.github.io/tags/content/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/theme/</loc>
+            <loc>https://esonusharma.github.io/tags/glossary/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
         <url>
             <loc>https://esonusharma.github.io/tags/social/</loc>
+            <lastmod>2022-12-28</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/cfd/</loc>
+            <lastmod>2022-12-28</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/theme/</loc>
             <lastmod>2022-12-28</lastmod>
         </url>
         
