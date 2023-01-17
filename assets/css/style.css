@@ -24,6 +24,7 @@ blockquote {
     margin: 5px;
     border: 2px solid #993300;
     border-radius: 5px;
+    background-image: linear-gradient(to right, #ff9900, #ff6600);
     text-align: justify;
 }
 
@@ -47,7 +48,15 @@ h2 {
     margin-top: 5px;
     border-radius: 5px;
     color: #ffffff;
-    background-color: #993300;
+    background-image: linear-gradient(to right, #dd3300, #993300);
+}
+
+.hero-header {
+    padding: 101px;
+    margin-top: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-image: radial-gradient(circle, #dd3300, #bb3300, #993300);
 }
 
 .hero-1 {
@@ -66,8 +75,8 @@ h2 {
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid #993300;
-    color: #000000;
-    background-color: #ff9900;
+    color: #ffffff;
+    background-color: #993300;
     font-family: 'Noto Serif';
     text-align: center;
     display: inline-block;
@@ -75,8 +84,8 @@ h2 {
 }
 
 .button:hover {
-    color: #ff9900;
-    background-color: #000000;
+    color: #993300;
+    background-color: #ffffff;
 }
 
 .box-1 {
