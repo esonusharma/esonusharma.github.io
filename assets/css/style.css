@@ -50,6 +50,14 @@ h2 {
     background-color: #993300;
 }
 
+.hero-1 {
+    padding: 150px;
+    margin-top: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-image: radial-gradient(circle, #dd3300, #bb3300, #993300);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -71,7 +79,7 @@ h2 {
     background-color: #000000;
 }
 
-.box1 {
+.box-1 {
     padding: 10px;
     margin: 5px;
     border: 2px solid #993300;
