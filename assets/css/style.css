@@ -124,7 +124,7 @@ main article div.article_text code {
     margin: 2px;
     padding: 0;
     color: #000000;
-    font-size: 2rem;
+    font-size: 18;
     font-family: 'Noto Mono', monospace;
     background: #eeeeee;
 }
@@ -134,7 +134,7 @@ main article div.article_text pre {
     padding: 2px;
     color: #000000;
     border-left: 3px solid #0e94ec;
-    font-size: 2rem;
+    font-size: 18;
     font-family: 'Noto Mono', monospace;
     background: #eeeeee;
     line-height: 1.125em;
