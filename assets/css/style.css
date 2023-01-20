@@ -19,6 +19,8 @@ h2 {
 a {
     color: #000000;
     text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 hr {
@@ -32,10 +34,10 @@ img {
     max-width: 100%;
 }
 
-.round-img {
-    border-radius: 50%;
-    padding: 2px;
-    border: 10px solid;
+.paginate {
+    padding: 20px;
+    margin: 5px;
+    font-weight: bold;
 }
 
 table {
@@ -103,7 +105,7 @@ main header {
 
 main header p {
     font-weight: bold;
-    font-size: .6rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
 }
 
