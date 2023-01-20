@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-EBEWV39ERR"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-EBEWV39ERR');
+</script>
+<script
+    async="async"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9751983250418934"
+    crossorigin="anonymous"></script>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/assets/img/brand/es-logo.png" type="image/png"/>
+        <meta name="author" content="[object Object]">
+            <meta name="description" content="sonu sharma is a phd in mechanical engineering">
+                <link rel="stylesheet" href="/assets/css/style.css"/>
+                <script src="https://kit.fontawesome.com/d86587f6b0.js" crossorigin="anonymous"></script>
+                <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+                <script id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+                <script
+                    async="async"
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9751983250418934"
+                    crossorigin="anonymous"></script>
+                <meta name="google-site-verification" content="D_xhtDMVJ2sJX7J5juAYErwdxwjo1RSzl2kqpa5RQkI"/>
+                <meta name='dmca-site-verification' content='UmZpZExmc3JDdDdUMzFoY3RBbnArK3Q1ZW1CYWJJV3VsWW8ybmlDMUVXYz01'/>
+                <title>OpenFOAM Installation</title>
+    </head>
+    <body>
+        <aside>
+  <div id="user_meta">
+    <a href=".">
+      <img src="/assets/img/brand/es-logo.png" alt="es-logo" style="width:101px; height:auto;"/>
+    </a>
+    <ul>
+      <li><a href="/profile.html"><i class="fa-solid fa-user-tie"></i> Profile</a></li>
+      <li><a href="/courses.html" target="_blank"><i class="fa-solid fa-user-graduate"></i> Courses</a></li>
+      <li><a href="https://www.youtube.com/@esonusharma" target="_blank" rel="nofollow noopener"><i class="fa-solid fa-circle-play"></i> Youtube</a></li>
+    </ul>
+  </div>
+</aside>
+
+        <main>
+            <header>
+    <p>
+        <a href="/">
+            <i class="fa-solid fa-house"></i>
+            Home</a>
+        |
+        <a href="/tags/" target="_blank">
+            <i class="fa-solid fa-tags"></i>
+            Tags</a>
+        |
+        <a href="/posts/" target="_blank">
+            <i class="fa-solid fa-file-zipper"></i>
+            Archives</a>
+        |
+        <a href="/weblog.html" target="_blank">
+            <i class="fa-solid fa-blog"></i>
+            Weblog</a>
+        |
+        <a href="/legal.html" target="_blank">
+            <i class="fa-solid fa-gavel"></i>
+            Legal</a>
+        |
+        <a href="/contact.html" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            Contact</a>
+        |
+        <a href="/sitemap.xml" target="_blank">
+            <i class="fa-solid fa-sitemap"></i>
+            Sitemap</a>
+        |
+        <a href="/feed.xml" target="_blank" rel="nofollow noopener">
+            <i class="fa-solid fa-rss"></i>
+            Feed</a>
+    </header>
+            <article>
+    <div class="article_text">
+        <h1 class="hero">OpenFOAM Installation</h1>
+        <div class="article_meta">
+            <p>Posted on: Thu Jun 25 2020 05:30:00 GMT+0530 (India Standard Time)</p>
+        </div>
+        <p>If you are unable to install OpenFOAM in Ubuntu, then you are at the right place.</p>
+<p>The installation of OpenFOAM is pretty straight forward in Ubuntu, you just need to follow the instructions <a href="https://openfoam.org/download/">here</a>.</p>
+<p>At the time of writing this article, OpenFOAM Version 7 is the latest, so the instructions are specific to that, but you can use the same instructions for other versions with minor changes in names.</p>
+<p>I will suggest you to follow the latest instructions on the official site <a href="http://openfoam.org/">OpenFOAM</a>.</p>
+<p>Besides that, you can always take a cue from this post too.</p>
+<p>Also, you should be connected to internet for installing OpenFOAM.</p>
+<h2>Steps to install OpenFOAM on Ubuntu</h2>
+<ul>
+<li>Open the terminal using the icon or Shortcut “Ctrl+Alt+T”.</li>
+<li>Type following commands one by one pressing enter at the end of each command.</li>
+</ul>
+<p>Commands that need to be executed only once for a given system:</p>
+<pre><code> sudo sh -c &quot;wget -O - &lt;https://dl.openfoam.org/gpg.key&gt; | apt-key add -&quot;
+ sudo add-apt-repository &lt;http://dl.openfoam.org/ubuntu&gt;
+</code></pre>
+<p>Then Update the system:</p>
+<pre><code>sudo apt-get update
+</code></pre>
+<p>Finally install the OpenFOAM using command below:</p>
+<pre><code>sudo apt-get -y install openfoam7
+</code></pre>
+<p>It will take some time to install it. This will install OpenFOAM as well as paraviewopenfoam as a dependency.</p>
+<p>You can find the installed programs in the /opt directory of the Computer system in separate directories.</p>
+<p>Don’t worry about the updates, as when you update the Ubuntu, these programs get updated automatically.</p>
+<p>At last, you need to do the following after installing before you use OpenFOAM.</p>
+<p>Open the bashrc file in your system using following command on the terminal:</p>
+<pre><code>gedit ~/.bashrc
+</code></pre>
+<p>Add the following line at the end of the file:</p>
+<pre><code>source /opt/openfoam7/etc/bashrc
+</code></pre>
+<p>Open a new terminal (&lt;-this is important), and test that OpenFOAM is working by typing on the terminal:</p>
+<pre><code>simpleFoam -help
+</code></pre>
+<p>If successful, output will be something like below:</p>
+<pre><code> Usage: simpleFoam [OPTIONS]
+ options:
+     -case &lt;dir&gt;       specify alternate case directory, default is the cwd
+     -fileHandler &lt;handler&gt;
+                     override the fileHandler
+     -hostRoots &lt;(((host1 dir1) .. (hostN dirN))&gt;
+                     slave root directories (per host) for distributed running
+     -libs &lt;(lib1 .. libN)&gt;
+                     pre-load libraries
+     -listFunctionObjects
+                     List functionObjects
+     -listFvOptions    List fvOptions
+     -listRegisteredSwitches
+                     List switches registered for run-time modification
+     -listScalarBCs    List scalar field boundary conditions (fvPatchField&lt;scalar&gt;)
+     -listSwitches     List switches declared in libraries but not set in
+                     etc/controlDict
+     -listTurbulenceModels
+                     List turbulenceModels
+     -listUnsetSwitches
+                     List switches declared in libraries but not set in
+                     etc/controlDict
+     -listVectorBCs    List vector field boundary conditions (fvPatchField&lt;vector&gt;)
+     -noFunctionObjects
+                     do not execute functionObjects
+     -parallel         run in parallel
+     -postProcess      Execute functionObjects only
+     -roots &lt;(dir1 .. dirN)&gt;
+                     slave root directories for distributed running
+     -srcDoc           display source code in browser
+     -doc              display application documentation in browser
+     -help             print the usage
+
+ Using: OpenFOAM-7 (see &lt;https://openfoam.org&gt;)
+ Build: 7-3bcbaf946ae9
+</code></pre>
+<p>After that you need to add a project directory in your home folder for your simulation projects using following command on the terminal:</p>
+<pre><code>mkdir -p $FOAM_RUN
+</code></pre>
+<p>The above command will create a directory named OpenFOAM with a subdirectory named “<USERNAME>-<OpenFOAM Version Number>” like “x-7” for the username x and version 7 of OpenFOAM.</p>
+<p>Errors and solutions encountered in installation of OpenFOAM on Ubuntu:</p>
+<p>Check that internet is connected.
+Avoid using a proxy.
+If you get an error related to ca-certificates then just run the following command on the terminal:</p>
+<pre><code>sudo dpkg-reconfigure ca-certificates
+</code></pre>
+<p>If the problem still persists, then follow the best answer on this <a href="https://superuser.com/questions/437330/how-do-you-add-a-certificate-authority-ca-to-ubuntu">page</a>.</p>
+
+    </div>
+</article>
+            <footer>
+    <h2>Important Note</h2>
+    <p>We hope this article helped you. If you have any suggestions/queries regarding this article, or if you need to
+        contact us, then do it
+        <a href="https://esonusharma.github.io/contact.html" target="_blank">here</a>. <br> <br> OpenFOAM® and OpenCFD® are
+            registered trademarks of OpenCFD Limited, the producer of OpenFOAM software. All registered trademarks are property of
+            their respective owners.<br> <br>
+        This offering is not approved or endorsed by OpenCFD Limited, the producer of the OpenFOAM software and owner of the
+        OPENFOAM® and OpenCFD® trade marks.<br> <br>
+        <a href="https://esonusharma.github.io/ad.html" target="_blank" ref="nofollow">Affiliate Disclosure</a>
+        <br> This site contains affiliate links to products. We may receive a commission for purchases made through these links.
+        Keep in mind that we may receive commissions when you click our links and make purchases. However, this does not impact
+        our reviews and comparisons. We try our best to keep things fair and balanced, in order to help you make the best choice
+        for you.<br> <br>
+        <a href="https://esonusharma.github.io/legal.html" target="_blank" ref="nofollow">
+            Our Policies</a>
+        <br>By continuing to browse the site you are agreeing to our
+        <a href="https://www.aboutcookies.org/" target="_blank" rel="nofollow">use of cookies</a>
+        and
+        <a href="https://esonusharma.github.io/legal.html" target="_blank">policies</a>.</p>
+</div>
+<hr> © 2022 esonusharma.github.io - all rights reserved
+<a
+    href="//www.dmca.com/Protection/Status.aspx?ID=385ea6f9-5b52-4d69-99b3-a42282a9076d"
+    title="DMCA.com Protection Status"
+    class="dmca-badge">
+    <img
+        src="https://images.dmca.com/Badges/dmca_protected_27_120.png?ID=385ea6f9-5b52-4d69-99b3-a42282a9076d"
+        alt="DMCA.com Protection Status"
+        style="width: 50px !important; height: 28px !important;"
+        align="right"/>
+</a>
+<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script></footer>
+        </main>
+    </body>
+</html>
