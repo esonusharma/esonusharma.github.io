@@ -121,8 +121,8 @@ main article div.article_text a {
 }
 
 main article div.article_text code {
-    margin: 2px;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     color: #000000;
     font-size: 18;
     font-family: 'Noto Mono', monospace;
@@ -131,13 +131,13 @@ main article div.article_text code {
 
 main article div.article_text pre {
     margin: 22px 2px 22px 2px;
-    padding: 2px;
+    padding: 20px;
     color: #000000;
     border-left: 3px solid #0e94ec;
     font-size: 18;
     font-family: 'Noto Mono', monospace;
     background: #eeeeee;
-    line-height: 1.125em;
+    line-height: 2em;
     overflow-x: auto;
 }
 
