@@ -104,7 +104,7 @@
 <p>But it seems next to impossible to do the same in the case when you don’t own the domain name as the case in <strong>blogger/blogspot</strong> naked domain.</p>
 <p>Now I am going to share a method in which you can achieve this.</p>
 <p>I have tried this method when I was shifting from blogger to my own domain name and I was successful in <strong>transferring</strong> the ranking of my popular blog posts to a <strong>new web address</strong> but I cannot guarantee you the same as this is dependent on google and varies on case basis.</p>
-<p>Insert the code shown below just after the <code>&lt;Head&gt;</code> tag in the <strong>blogger template</strong> after replacing the generalized content to your own in the code below.</p>
+<p>Insert the code shown below just after the <code>&lt;head&gt;</code> tag in the <strong>blogger template</strong> after replacing the generalized content to your own in the code below.</p>
 <pre><code> &lt;b:if cond=&quot;’data:blog.url&quot; ==&quot;“&lt;http://your-blog-name.blogspot.com/YEAR/MONTH/BLOG-POST-SLUG.html&gt;”‘&quot;&gt;&lt;meta content=&quot;’0;url=http://yoursite.com/NEW-BLOG-POST-SLUG.html’&quot; http-equiv=&quot;’refresh’/&quot;&gt;&lt;/b:if&gt;
 
  &lt;b:if cond=&quot;’data:blog.url&quot; ==&quot;“&lt;http://your-blog-name.blogspot.com/p/BLOG-PAGE-SLUG.html&gt;”‘&quot;&gt;&lt;meta content=&quot;’0;url=http://yoursite.com/NEW-BLOG-PAGE-SLUG.html’&quot; http-equiv=&quot;’refresh’/&quot;&gt;&lt;/b:if&gt;
