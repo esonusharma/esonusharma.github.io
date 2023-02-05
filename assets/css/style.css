@@ -42,7 +42,7 @@ img {
 
 table {
     padding: 10px;
-    border: 2px solid #eeeeee;
+    border: 2px solid #dddddd;
     border-collapse: collapse;
     text-align: center;
 }
@@ -50,7 +50,7 @@ table {
 th,
 td {
     padding: 10px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #dddddd;
     border-collapse: collapse;
     text-align: center;
 }
@@ -90,7 +90,7 @@ aside div#user_meta ul li {
 
 aside div#user_meta ul li a {
     padding: 5px 15px 5px 15px;
-    border: 3px solid #eeeeee;
+    border: 3px solid #dddddd;
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -99,8 +99,8 @@ aside div#user_meta ul li a {
 
 main header {
     padding: 40px;
-    border-top: #eeeeee 1px solid;
-    border-bottom: #eeeeee 1px solid;
+    border-top: #dddddd 1px solid;
+    border-bottom: #dddddd 1px solid;
 }
 
 main header p {
@@ -135,7 +135,7 @@ main article div.article_text pre {
     margin: 22px 2px 22px 2px;
     padding: 20px;
     color: #000000;
-    border-left: 3px solid #0e94ec;
+    border-left: 3px solid #aaaaaa;
     font-size: 18;
     font-family: 'Noto Mono', monospace;
     background: #eeeeee;
@@ -151,7 +151,7 @@ main article div.article_text blockquote {
 }
 
 main article div.article_text div.quoteblock {
-    border-left: 5px solid #eeeeee;
+    border-left: 5px solid #dddddd;
     color: #999999;
     margin-bottom: 1.5em;
     margin-left: 1em;
@@ -167,13 +167,13 @@ main article div.article_text div.quoteblock>div.attribution {
 
 main article div.article_text div.imageblock {
     margin: 5px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #dddddd;
     padding: 5px;
 }
 
 main article div.article_text figure {
     margin: 5px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #dddddd;
     padding: 5px;
 }
 
@@ -206,13 +206,13 @@ div.article_readtime {
 }
 
 main footer {
-    border-top: #eeeeee 1px solid;
+    border-top: #dddddd 1px solid;
     padding: 40px;
 }
 
 main footer a.button_accent {
     padding: 10px;
-    border: 2px solid #0e94ec;
+    border: 2px solid #aaaaaa;
     border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -232,7 +232,7 @@ main footer a.button_accent:active {
 }
 
 main div#ending_message {
-    border-top: #eeeeee 1px solid;
+    border-top: #dddddd 1px solid;
     padding: 0 40px 0 40px;
     color: #999999;
     font-size: .6rem;
@@ -245,7 +245,7 @@ main div#ending_message {
         position: fixed;
         top: 0;
         left: 0;
-        border-right: #eeeeee 1px solid;
+        border-right: #dddddd 1px solid;
     }
 
     aside h2 {
