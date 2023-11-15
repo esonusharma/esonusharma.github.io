@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>esonusharma.github.io</title>
-    <subtitle>research guide</subtitle>
+    <title>{ esonusharma } </title>
+    <subtitle>academy</subtitle>
      <link href="https://esonusharma.github.io/feed.xml" rel="self"/>
     <link href="https://esonusharma.github.io/"/>
     <updated>2023-09-08T00:00:00Z</updated>
