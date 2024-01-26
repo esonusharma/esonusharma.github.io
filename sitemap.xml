@@ -272,11 +272,6 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/backlink/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
             <loc>https://esonusharma.github.io/tags/content/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
@@ -288,6 +283,11 @@
         
         <url>
             <loc>https://esonusharma.github.io/tags/plugin/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/backlink/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -322,12 +322,12 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/keyword/</loc>
+            <loc>https://esonusharma.github.io/tags/redirect/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/redirect/</loc>
+            <loc>https://esonusharma.github.io/tags/keyword/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -342,12 +342,12 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/email/</loc>
+            <loc>https://esonusharma.github.io/tags/hosting/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/hosting/</loc>
+            <loc>https://esonusharma.github.io/tags/email/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
