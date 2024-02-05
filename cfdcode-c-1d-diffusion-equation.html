@@ -158,12 +158,59 @@
 <ol>
 <li>source file</li>
 </ol>
-<pre><code>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &quot;gnuplot-iostream.h&quot;
+
+using namespace std;
+
+int main() {
+    Gnuplot gp;
+    int nx = 41;
+    double dx = 2.0 / (nx - 1);
+    int nt = 20;
+    double nu = 0.3;
+    double k = 0.2;
+    double dt = k * pow(dx, 2) / nu;
+
+    vector&lt;double&gt; u(nx, 1.0);
+    for (int i = int(0.5 / dx); i &lt;= int(1 / dx); i++) {
+        u[i] = 2.0;
+    }
+
+    vector&lt;double&gt; un(nx, 1.0);
+    for (int n = 1; n &lt;= nt; n++) {
+        un = u;
+        for (int i = 1; i &lt; nx - 1; i++) {
+            u[i] = un[i] + nu * dt / pow(dx, 2) * (un[i+1] - 2 * un[i] + un[i-1]);
+        }
+    }
+
+    ofstream outfile(&quot;output.dat&quot;);
+
+    for (int i = 0; i &lt; nx; i++) {
+        outfile &lt;&lt; i * dx &lt;&lt; &quot; &quot; &lt;&lt; u[i] &lt;&lt; &quot;\n&quot;;
+    }
+    outfile.close();
+    gp &lt;&lt; &quot;set title 'x vs u graph'\n&quot;;
+	gp &lt;&lt; &quot;set xlabel 'x'\n&quot;;
+	gp &lt;&lt; &quot;set ylabel 'u'\n&quot;;	
+	gp &lt;&lt; &quot;set grid\n&quot;;
+    gp &lt;&lt; &quot;set xtics rotate by 90 right\n&quot;;
+//	gp &lt;&lt; &quot;set term png\n&quot;;
+//	gp &lt;&lt; &quot;set output 'sample-csv.png'\n&quot;;
+	gp &lt;&lt; &quot;plot('output.dat') using 2:xticlabel(1) with linespoints\n&quot;;
+
+    return 0;
+}
 
 </code></pre>
 <ol start="2">
-<li><a href="">gnuplot header file</a></li>
+<li><a href="https://github.com/dstahlke/gnuplot-iostream/blob/master/gnuplot-iostream.h">gnuplot header file</a></li>
 </ol>
+<p>copy the text from above link, paste it in a text file, save this file with extension &quot;.h&quot; as &quot;gnuplot-iostream.h&quot; in the same folder of the source code.</p>
 
                 <br>
                 <div class="w3-card-4 w3-round-large w3-dark-grey">

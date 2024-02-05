@@ -20,12 +20,59 @@
 &lt;ol&gt;
 &lt;li&gt;source file&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;fstream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+#include &amp;lt;cmath&amp;gt;
+#include &amp;quot;gnuplot-iostream.h&amp;quot;
+
+using namespace std;
+
+int main() {
+    Gnuplot gp;
+    int nx = 41;
+    double dx = 2.0 / (nx - 1);
+    int nt = 20;
+    double nu = 0.3;
+    double k = 0.2;
+    double dt = k * pow(dx, 2) / nu;
+
+    vector&amp;lt;double&amp;gt; u(nx, 1.0);
+    for (int i = int(0.5 / dx); i &amp;lt;= int(1 / dx); i++) {
+        u[i] = 2.0;
+    }
+
+    vector&amp;lt;double&amp;gt; un(nx, 1.0);
+    for (int n = 1; n &amp;lt;= nt; n++) {
+        un = u;
+        for (int i = 1; i &amp;lt; nx - 1; i++) {
+            u[i] = un[i] + nu * dt / pow(dx, 2) * (un[i+1] - 2 * un[i] + un[i-1]);
+        }
+    }
+
+    ofstream outfile(&amp;quot;output.dat&amp;quot;);
+
+    for (int i = 0; i &amp;lt; nx; i++) {
+        outfile &amp;lt;&amp;lt; i * dx &amp;lt;&amp;lt; &amp;quot; &amp;quot; &amp;lt;&amp;lt; u[i] &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
+    }
+    outfile.close();
+    gp &amp;lt;&amp;lt; &amp;quot;set title &#39;x vs u graph&#39;\n&amp;quot;;
+	gp &amp;lt;&amp;lt; &amp;quot;set xlabel &#39;x&#39;\n&amp;quot;;
+	gp &amp;lt;&amp;lt; &amp;quot;set ylabel &#39;u&#39;\n&amp;quot;;	
+	gp &amp;lt;&amp;lt; &amp;quot;set grid\n&amp;quot;;
+    gp &amp;lt;&amp;lt; &amp;quot;set xtics rotate by 90 right\n&amp;quot;;
+//	gp &amp;lt;&amp;lt; &amp;quot;set term png\n&amp;quot;;
+//	gp &amp;lt;&amp;lt; &amp;quot;set output &#39;sample-csv.png&#39;\n&amp;quot;;
+	gp &amp;lt;&amp;lt; &amp;quot;plot(&#39;output.dat&#39;) using 2:xticlabel(1) with linespoints\n&amp;quot;;
+
+    return 0;
+}
 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/cfdcode-c-1d-diffusion-equation.html&quot;&gt;gnuplot header file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dstahlke/gnuplot-iostream/blob/master/gnuplot-iostream.h&quot;&gt;gnuplot header file&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;copy the text from above link, paste it in a text file, save this file with extension &amp;quot;.h&amp;quot; as &amp;quot;gnuplot-iostream.h&amp;quot; in the same folder of the source code.&lt;/p&gt;
 </content>
         </entry>
         
