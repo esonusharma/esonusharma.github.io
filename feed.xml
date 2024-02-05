@@ -12,21 +12,20 @@
     </author>
         
         <entry>
-            <title>Write the first C Program and understand the structure of the program.</title>
-            <link href="https://esonusharma.github.io/write-the-first-c-program-and-understand-the-structure-of-the-program.html"/>
+            <title>cfdCode c++ 1D Diffusion Equation</title>
+            <link href="https://esonusharma.github.io/cfdcode-c-1d-diffusion-equation.html"/>
             <updated>2023-09-08T00:00:00Z</updated>
-            <id>https://esonusharma.github.io/write-the-first-c-program-and-understand-the-structure-of-the-program.html</id>
-            <content type="html">&lt;h2&gt;Practice Exercise 1&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&quot;language-c&quot;&gt;// Write the first C Program and understanding the structure of the program.
+            <id>https://esonusharma.github.io/cfdcode-c-1d-diffusion-equation.html</id>
+            <content type="html">&lt;h2&gt;cfdCode c++ 1D Diffusion Equation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;source file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;
 
-#include &amp;lt;stdio.h&amp;gt;
-
-int main()
-{
-    printf(&amp;quot;Welcome to the Computer Programming Lab&amp;quot;);
-    return 0;
-}
 &lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/cfdcode-c-1d-diffusion-equation.html&quot;&gt;gnuplot header file&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         </entry>
         
