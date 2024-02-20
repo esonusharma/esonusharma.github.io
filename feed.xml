@@ -4,12 +4,33 @@
     <subtitle>academy</subtitle>
      <link href="https://esonusharma.github.io/feed.xml" rel="self"/>
     <link href="https://esonusharma.github.io/"/>
-    <updated>2024-02-06T00:00:00Z</updated>
+    <updated>2024-02-21T00:00:00Z</updated>
     <id>https://esonusharma.github.io/</id>
     <author>
         <name>sonu sharma</name>
         <email></email>
     </author>
+        
+        <entry>
+            <title>Reynolds transport theorem</title>
+            <link href="https://esonusharma.github.io/reynolds-transport-theorem.html"/>
+            <updated>2024-02-21T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/reynolds-transport-theorem.html</id>
+            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/reynolds-transport-theorem.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Leibniz integral rule 1D&lt;/h2&gt;
+&lt;h2&gt;Leibniz integral rule 3D&lt;/h2&gt;
+&lt;h2&gt;Reynolds transport theorem / Reynolds theorem&lt;/h2&gt;
+&lt;h2&gt;Reynolds transport theorem equation&lt;/h2&gt;
+&lt;h2&gt;Green&#39;s theorem&lt;/h2&gt;
+&lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
+&lt;h2&gt;Material derivative&lt;/h2&gt;
+&lt;h2&gt;Lagrangian (System)&lt;/h2&gt;
+&lt;h2&gt;Eulerian (Control Volume)&lt;/h2&gt;
+</content>
+        </entry>
         
         <entry>
             <title>cfdCode cpp 1D Diffusion Equation</title>
