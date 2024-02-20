@@ -68,10 +68,9 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
-            CommonHTML: { linebreaks: { automatic: true } },
-            "HTML-CSS": { linebreaks: { automatic: true } },
-            SVG: { linebreaks: { automatic: true } }
-        });
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        jax: ["input/TeX", "output/SVG"],
+        })
         </script>
         <script id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <meta name="google-site-verification" content="D_xhtDMVJ2sJX7J5juAYErwdxwjo1RSzl2kqpa5RQkI"/>
