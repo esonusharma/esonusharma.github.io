@@ -78,9 +78,12 @@
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
-        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
-        jax: ["input/TeX", "output/SVG"],
-        })
+        jax: ["input/TeX","output/SVG", "output/PreviewHTML"],
+        extensions: ["tex2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "a11y/accessibility-menu.js"],
+        TeX: {
+        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+        }
+        });
         </script>
         <script id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <meta name="google-site-verification" content="D_xhtDMVJ2sJX7J5juAYErwdxwjo1RSzl2kqpa5RQkI"/>
