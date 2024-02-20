@@ -76,7 +76,19 @@
         <script src="https://www.w3schools.com/lib/w3.js"></script>
         <script src="https://kit.fontawesome.com/d86587f6b0.js" crossorigin="anonymous"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+        <script>
+            MathJax = {
+            tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+            fontCache: 'global'
+            }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
         <meta name="google-site-verification" content="D_xhtDMVJ2sJX7J5juAYErwdxwjo1RSzl2kqpa5RQkI"/>
         <meta name='dmca-site-verification' content='UmZpZExmc3JDdDdUMzFoY3RBbnArK3Q1ZW1CYWJJV3VsWW8ybmlDMUVXYz01'/>
         <title>Pages</title>
