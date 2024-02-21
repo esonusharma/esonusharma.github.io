@@ -38,6 +38,13 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_Fluid_Mechanics_(Bar-Meir)/05%3A_The_Control_Volume_and_Mass_Conservation/5.4%3A_Reynolds_Transport_Theorem&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Green&#39;s theorem&lt;/h2&gt;
+&lt;p&gt;Green’s Theorem relates the line integral around a closed curve with a double integral over the region inside the curve:&lt;/p&gt;
+&lt;p&gt;$$
+\int_{C} F \cdot ds = \int \int_{D} (curl F)\cdot k dA
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\oint_C \textbf{f}\cdot d\textbf{r} = \iint\limits_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right)dA
+$$&lt;/p&gt;
 &lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
 &lt;p&gt;The Divergence Theorem relates an integral over a volume to an integral over the surface bounding that volume. The Divergence Theorem states that the integral of the divergence of a vector field over a volume is equal to the flux of that field through the surface bounding that volume.&lt;/p&gt;
 &lt;p&gt;$$
