@@ -21,11 +21,11 @@
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/cfd-equations.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;Leibniz integral rule&lt;/h2&gt;
-&lt;p&gt;Leibniz integral rule gives a formula for differentiation of a definite integral whose limits are functions of the differential variable.
-$$
+&lt;p&gt;Leibniz integral rule gives a formula for differentiation of a definite integral whose limits are functions of the differential variable.&lt;/p&gt;
+&lt;p&gt;$$
 \frac{d}{d t} \int_{V(t)} f(\vec{x}, t) d V=\int_{V(t)} \frac{\partial f}{\partial t} d V+\int_{A(t)} f \vec{u}_{A} \cdot \hat{n} dA
-$$
-&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Leibniz’ rule for a material volume&lt;/h2&gt;
 &lt;p&gt;$$
 \frac{D}{D t} \int_{V_{m}(t)} f(\vec{x}, t) d V=\int_{V_{m}(t)}\left(\frac{\partial f}{\partial t}+\vec{\nabla} \cdot f \vec{u}\right) dV
@@ -49,9 +49,9 @@ $$&lt;/p&gt;
 &lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
 &lt;p&gt;The Divergence Theorem relates an integral over a volume to an integral over the surface bounding that volume. The Divergence Theorem states that the integral of the divergence of a vector field over a volume is equal to the flux of that field through the surface bounding that volume.&lt;/p&gt;
 &lt;p&gt;$$
-\boxed{ \int_{\mathcal V} \left( \nabla \cdot {\bf A} \right) dv = \oint_{\mathcal S} {\bf A}\cdot d{\bf s} }
-$$
-&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Continuum_Electromechanics_(Melcher)/02%3A_Electrodynamic_Laws_Approximations_and_Relations/2.06%3A_Integral_Theorems&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+\int_{\mathcal V} \left( \nabla \cdot {\bf A} \right) dv = \oint_{\mathcal S} {\bf A}\cdot d{\bf s}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Continuum_Electromechanics_(Melcher)/02%3A_Electrodynamic_Laws_Approximations_and_Relations/2.06%3A_Integral_Theorems&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Stoke&#39;s theorem&lt;/h2&gt;
 &lt;p&gt;Stokes’ Theorem relates an integral over an open surface to an integral over the curve bounding that surface.&lt;/p&gt;
 &lt;p&gt;$$
