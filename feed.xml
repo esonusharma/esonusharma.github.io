@@ -24,7 +24,7 @@
 &lt;h2&gt;Leibniz integral rule 3D&lt;/h2&gt;
 &lt;h2&gt;Reynolds transport theorem / Reynolds theorem&lt;/h2&gt;
 &lt;h2&gt;Reynolds transport theorem equation&lt;/h2&gt;
-&lt;p&gt;$$ \frac{dB}{dt}]&lt;em&gt;{system}=\frac{d}{dt}\int \int \int&lt;/em&gt;{CV} b\rho .d​forall+\int \int_{CS} b\rho (\vec{V}.\hat{n}).dA $$&lt;/p&gt;
+&lt;p&gt;$ [\frac{dB}{dt}]&lt;em&gt;{system}=\frac{d}{dt}\int \int \int&lt;/em&gt;{CV} b\rho .d​forall+\int \int_{CS} b\rho (\vec{V}.\hat{n}).dA $&lt;/p&gt;
 &lt;h2&gt;Green&#39;s theorem&lt;/h2&gt;
 &lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
 &lt;h2&gt;Material derivative&lt;/h2&gt;
