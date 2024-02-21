@@ -12,6 +12,44 @@
     </author>
         
         <entry>
+            <title>Turbulence</title>
+            <link href="https://esonusharma.github.io/turbulence.html"/>
+            <updated>2024-02-21T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/turbulence.html</id>
+            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Turbulence&lt;/h2&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Solvers</title>
+            <link href="https://esonusharma.github.io/solvers.html"/>
+            <updated>2024-02-21T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/solvers.html</id>
+            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Gauss-Seidel method&lt;/h2&gt;
+&lt;h2&gt;Symmetric Gauss-Seidel&lt;/h2&gt;
+&lt;h2&gt;Conjugate gradient method&lt;/h2&gt;
+&lt;h2&gt;diagonal-based incomplete Cholesky (DIC)&lt;/h2&gt;
+&lt;h2&gt;diagonal-based incomplete LU (DILU)&lt;/h2&gt;
+&lt;h2&gt;Biconjugate gradient stabilised method&lt;/h2&gt;
+&lt;h2&gt;preconditioned CG (PCG) method&lt;/h2&gt;
+&lt;h2&gt;preconditioned biconjugate gradient (PBiCG)&lt;/h2&gt;
+&lt;h2&gt;preconditioned biconjugate gradient stabilised method (PBiCGStab)&lt;/h2&gt;
+&lt;h2&gt;PCG with DIC preconditioning&lt;/h2&gt;
+&lt;h2&gt;PBiCGStab with DILU preconditioning&lt;/h2&gt;
+&lt;h2&gt;Multi-grid method&lt;/h2&gt;
+&lt;h2&gt;GAMG method&lt;/h2&gt;
+</content>
+        </entry>
+        
+        <entry>
             <title>CFD Equations</title>
             <link href="https://esonusharma.github.io/cfd-equations.html"/>
             <updated>2024-02-21T00:00:00Z</updated>

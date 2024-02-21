@@ -262,22 +262,22 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/wordpress/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/plugin/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
             <loc>https://esonusharma.github.io/tags/seo/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
         <url>
             <loc>https://esonusharma.github.io/tags/content/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/wordpress/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/plugin/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -423,6 +423,16 @@
         
         <url>
             <loc>https://esonusharma.github.io/cfd-equations.html</loc>
+            <lastmod>2024-02-21</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/solvers.html</loc>
+            <lastmod>2024-02-21</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/turbulence.html</loc>
             <lastmod>2024-02-21</lastmod>
         </url>
 </urlset>
