@@ -25,7 +25,11 @@
 &lt;h2&gt;Reynolds transport theorem / Reynolds theorem&lt;/h2&gt;
 &lt;h2&gt;Reynolds transport theorem equation&lt;/h2&gt;
 &lt;p&gt;Equation is:&lt;/p&gt;
-&lt;p&gt;$$ [\frac{dB}{dt}]&lt;em&gt;{system}=\frac{d}{dt}\int \int \int&lt;/em&gt;{CV} b\rho .d​forall+\int \int_{CS} b\rho (\vec{V}.\hat{n}).dA $$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{\partial}{\partial x}b_x ~ ~ ~ ~ ~ \frac{\partial}{\partial x} b_y ~ ~ ~ ~ ~ \frac{\partial}{\partial x} b_z \
+\frac{\partial}{\partial y}b_x ~ ~ ~ ~ ~ \frac{\partial}{\partial y} b_y ~ ~ ~ ~ ~ \frac{\partial}{\partial y} b_z \
+\frac{\partial}{\partial z}b_x ~ ~ ~ ~ ~ \frac{\partial}{\partial z} b_y ~ ~ ~ ~ ~ \frac{\partial}{\partial z} b_z
+$$&lt;/p&gt;
 &lt;h2&gt;Green&#39;s theorem&lt;/h2&gt;
 &lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
 &lt;h2&gt;Material derivative&lt;/h2&gt;
