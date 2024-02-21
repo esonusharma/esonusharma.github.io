@@ -13,18 +13,21 @@
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-orange.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-grey.css">
         <style>
             html * {
             font-family: "CMU Serif", "NewComputerModern08", serif;
             font-size: 14pt;
             }
             table, td, th {
-            border: 2px solid  #ff9800;
+            border-radius: 10px;
+            overflow-x: auto;
             padding: 10px;
+            tab-size: 4;
+            -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
+            box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
             }
-            tr:hover {background-color: #ff9800;}
-            tr:nth-child(even) {background-color: #f2f2f2;}
             table {
             width: 100%;
             border-collapse: collapse;
@@ -40,7 +43,6 @@
             border-radius: 10px;
             }
             pre {
-            border-left: 20px solid #000000;
             border-radius: 10px;
             overflow-x: auto;
             padding: 10px;
@@ -50,7 +52,6 @@
             box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
             }
             h2 {
-            border-left: 20px solid #ff9800;
             border-radius: 10px;
             padding: 10px;
             -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
@@ -58,7 +59,6 @@
             box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
             }
             h3 {
-            border-left: 20px solid #ff9800;
             border-radius: 10px;
             padding: 5px;
             -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
@@ -140,13 +140,13 @@
             </div>
 
             <div id="nav02">
-                <a class="w3-button w3-hover-orange w3-hide-large w3-large w3-right" href="javascript:void(0)" onclick="w3_close()">×</a>
+                <a class="w3-button w3-hide-large w3-large w3-right" href="javascript:void(0)" onclick="w3_close()">×</a>
                 <a class="w3-bar-item w3-button w3-border-bottom w3-xxlarge w3-center">Calculators</a><br>
                 <a class="w3-bar-item w3-button" href="/cfdcalculator.html"><i class="fa-solid fa-calculator"></i> cfdCalculator</a>
             </div>
 
             <div id="nav03">
-                <a class="w3-button w3-hover-orange w3-hide-large w3-large w3-right" href="javascript:void(0)" onclick="w3_close()">×</a>
+                <a class="w3-button w3-hide-large w3-large w3-right" href="javascript:void(0)" onclick="w3_close()">×</a>
                 <a class="w3-bar-item w3-button w3-border-bottom w3-xxlarge w3-center">Courses</a><br>
                 <a class="w3-bar-item w3-button" href="/cfd.html"><i class="fa-solid fa-fan"></i> CFD</a>
             </div>
@@ -154,7 +154,7 @@
 
         <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
-        <div class="w3-main w3-white" style="margin-left:300px;">
+        <div class="w3-main" style="margin-left:300px;">
 
             <div class="w3-top w3-theme w3-large w3-hide-large">
                 <i class="fa fa-bars w3-button w3-teal w3-xlarge" onclick="w3_open()"></i>
@@ -281,11 +281,43 @@
                 </tr>
                 <tr>
                     <td>
+                        <a href="/tags/wordpress/">
+                            <code>/tags/wordpress/</code>
+                        </a>
+                    </td>
+                    <td>Tagged “wordpress”</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/tags/plugin/">
+                            <code>/tags/plugin/</code>
+                        </a>
+                    </td>
+                    <td>Tagged “plugin”</td>
+                </tr>
+                <tr>
+                    <td>
                         <a href="/tags/backlink/">
                             <code>/tags/backlink/</code>
                         </a>
                     </td>
                     <td>Tagged “backlink”</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/tags/cfd/">
+                            <code>/tags/cfd/</code>
+                        </a>
+                    </td>
+                    <td>Tagged “cfd”</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/tags/code/">
+                            <code>/tags/code/</code>
+                        </a>
+                    </td>
+                    <td>Tagged “code”</td>
                 </tr>
                 <tr>
                     <td>
@@ -302,38 +334,6 @@
                         </a>
                     </td>
                     <td>Tagged “publication”</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="/tags/howto/">
-                            <code>/tags/howto/</code>
-                        </a>
-                    </td>
-                    <td>Tagged “howto”</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="/tags/error/">
-                            <code>/tags/error/</code>
-                        </a>
-                    </td>
-                    <td>Tagged “error”</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="/tags/wordpress/">
-                            <code>/tags/wordpress/</code>
-                        </a>
-                    </td>
-                    <td>Tagged “wordpress”</td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="/tags/plugin/">
-                            <code>/tags/plugin/</code>
-                        </a>
-                    </td>
-                    <td>Tagged “plugin”</td>
                 </tr>
         </tbody>
     </table>
