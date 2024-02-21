@@ -34,7 +34,8 @@ $$&lt;/p&gt;
 &lt;h2&gt;Reynolds transport theorem / Reynolds theorem&lt;/h2&gt;
 &lt;p&gt;Reynolds Transport theorem is a generalization of the Leibniz rule and thus the same arguments are used. The only difference is that the velocity has three components and only the perpendicular component enters into the calculations.&lt;/p&gt;
 &lt;p&gt;$$
-\dfrac{D}{DT} \int &lt;em&gt;{sys} f, \rho dV = \dfrac{d}{dt} \int&lt;/em&gt;{c.v} f,\rho , dV  + \int_{S_{c.v.}}  f,\rho , U_{rn}, dA
+\dfrac{D}{DT} \int &lt;em&gt;{sys} f, \rho dV =&lt;br /&gt;
+\dfrac{d}{dt} \int&lt;/em&gt;{c.v} f,\rho , dV  + \int_{S_{c.v.}}  f,\rho , U_{rn}, dA
 $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_Fluid_Mechanics_(Bar-Meir)/05%3A_The_Control_Volume_and_Mass_Conservation/5.4%3A_Reynolds_Transport_Theorem&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Green&#39;s theorem&lt;/h2&gt;
@@ -53,6 +54,15 @@ $$&lt;/p&gt;
 &lt;h2&gt;Material derivative&lt;/h2&gt;
 &lt;h2&gt;Lagrangian (System)&lt;/h2&gt;
 &lt;h2&gt;Eulerian (Control Volume)&lt;/h2&gt;
+&lt;h2&gt;Traction vector&lt;/h2&gt;
+&lt;h2&gt;Cauchy stress tensor&lt;/h2&gt;
+&lt;h2&gt;Cauchy&#39;s equation&lt;/h2&gt;
+&lt;h2&gt;Concept of pressure from cauchy stress tensor&lt;/h2&gt;
+&lt;h2&gt;Total pressure&lt;/h2&gt;
+&lt;p&gt;Total pressure (stagnation pressure) = static pressure + dynamic pressure + hydrostatic pressure&lt;/p&gt;
+&lt;p&gt;$$
+p_stag~=~p_static~+~\frac{1}{2}~(\rho~u^2)~+~\rho~g~h
+$$&lt;/p&gt;
 </content>
         </entry>
         
