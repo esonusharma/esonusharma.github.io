@@ -61,7 +61,7 @@
 &lt;h2&gt;Leibniz integral rule&lt;/h2&gt;
 &lt;p&gt;Leibniz integral rule gives a formula for differentiation of a definite integral whose limits are functions of the differential variable.&lt;/p&gt;
 &lt;p&gt;$$
-\frac{d}{d t} \int_{V(t)} f(\vec{x}, t) d V=\int_{V(t)} \frac{\partial f}{\partial t} d V+\int_{A(t)} f \vec{u}_{A} \cdot \hat{n} dA
+\frac{d}{d t} \int_{V(t)} f(\vec{x}, t) d V=\int_{V(t)} \frac{\partial f}{\partial t} d V+\int_{A(t)} f \vec{u}_{A} \cdot \hat{n} dA \tag{1}
 $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Leibniz’ rule for a material volume&lt;/h2&gt;
