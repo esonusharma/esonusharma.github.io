@@ -20,20 +20,17 @@
             font-size: 14pt;
             }
             table, td, th {
-            border: 1px solid;
-            border-radius: 10px;
+            border-radius: 4px;
             overflow-x: auto;
-            padding: 10px;
+            padding: 11px;
             tab-size: 4;
             }
             table {
             width: 100%;
             border-collapse: collapse;
-            border-radius: 10px;
+            border-radius: 4px;
             overflow-x: auto;
-            -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
+            box-shadow: inset 0px 0px 11px #000000;
             }
             td {
             text-align: center;
@@ -41,30 +38,24 @@
             pre::-webkit-scrollbar {
             }
             pre::-webkit-scrollbar-thumb {
-            border-radius: 10px;
+            border-radius: 4px;
             }
             pre {
-            border-radius: 10px;
+            border-radius: 4px;
             overflow-x: auto;
-            padding: 10px;
+            padding: 11px;
             tab-size: 4;
-            -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
+            box-shadow: inset 0px 0px 11px #000000;
             }
             h2 {
-            border-radius: 10px;
-            padding: 10px;
-            -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
+            border-radius: 4px;
+            padding: 11px;
+            box-shadow: inset 0px 0px 11px #000000;
             }
             h3 {
-            border-radius: 10px;
-            padding: 5px;
-            -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
-            box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);
+            border-radius: 4px;
+            padding: 11px;
+            box-shadow: inset 0px 0px 11px #000000;
             }
         </style>
         <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -93,7 +84,7 @@
         <base target="_blank">
     </head>
     <body>
-        <div style="border-radius: 10px; padding: 5px; width:280px; margin:1px; -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75); z-index:3; width:300px;" class="w3-sidebar w3-collapse w3-animate-left w3-large" id="mySidebar">
+        <div style="border-radius: 4px; padding: 11px; width:280px; box-shadow: inset 0px 0px 11px #000000;" id="mySidebar">
             <div class="w3-bar w3-center">
                 <a class="w3-bar-item w3-button" style="width:33.33%" href="javascript:void(0)" onclick="openNav('nav01')"><i class="fa fa-bars w3-xlarge"></i></a>
                 <a class="w3-bar-item w3-button" style="width:33.33%" href="javascript:void(0)" onclick="openNav('nav02')"><i class="fa fa-calculator w3-xlarge"></i></a>
@@ -162,11 +153,11 @@
                 <i class="fa fa-bars w3-button w3-teal w3-xlarge" onclick="w3_open()"></i>
             </div>
 
-            <header style="border-radius: 10px; padding: 5px; margin:10px; -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);" class="w3-container w3-theme w3-padding-64 w3-center">
+            <header style="border-radius: 4px; padding: 11px; margin: 11px; box-shadow: inset 0px 0px 11px #000000;">
                 <h1 class="w3-xxxlarge w3-padding-16">OpenFOAM Installation</h1>
             </header>
 
-            <div style="border-radius: 10px; padding: 10px; margin:10px; -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);" class="w3-container w3-padding-large w3-section w3-panel w3-round-large">
+            <div style="border-radius: 4px; padding: 11px; margin:11px; box-shadow: inset 0px 0px 11px #000000;">
                 <p class="w3-small">Posted on: Thu Jun 25 2020 05:30:00 GMT+0530 (India Standard Time)</p>
                 <p>If you are unable to install OpenFOAM in Ubuntu, then you are at the right place.</p>
 <p>The installation of OpenFOAM is pretty straight forward in Ubuntu, you just need to follow the instructions <a href="https://openfoam.org/download/">here</a>.</p>
@@ -252,7 +243,7 @@ If you get an error related to ca-certificates then just run the following comma
 <p>If the problem still persists, then follow the best answer on this <a href="https://superuser.com/questions/437330/how-do-you-add-a-certificate-authority-ca-to-ubuntu">page</a>.</p>
 
                 <br>
-                <div style="border-radius: 10px; padding: 10px; margin:10px; -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75); box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, .75);" class="w3-card-4 w3-round-large w3-light-grey">
+                <div style="border-radius: 4px; padding: 11px; margin:11px; box-shadow: inset 0px 0px 11px #000000;">
                     <footer class="w3-container w3-padding-large w3-justify">
                         <h2>Important Note</h2>
                         <p>We hope this article helped you. If you have any suggestions/queries regarding this article, or if you need to contact us, then do it
