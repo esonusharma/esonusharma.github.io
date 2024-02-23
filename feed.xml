@@ -49,6 +49,7 @@ y= 0x8kkkkkkkwn6c
             <updated>2024-02-23T00:00:00Z</updated>
             <id>https://esonusharma.github.io/mathematical-symbols.html</id>
             <content type="html">&lt;h2&gt;Mathematical Symbols&lt;/h2&gt;
+&lt;p&gt;$$&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -78,11 +79,11 @@ y= 0x8kkkkkkkwn6c
 &lt;td style=&quot;text-align:center&quot;&gt;equivalence&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;( )&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;()&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;parentheses&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&quot;text-align:center&quot;&gt;[ ]&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;[]&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;brackets&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -149,6 +150,10 @@ y= 0x8kkkkkkkwn6c
 &lt;td style=&quot;text-align:center&quot;&gt;\notin&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;not in&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content>
@@ -160,6 +165,7 @@ y= 0x8kkkkkkkwn6c
             <updated>2024-02-23T00:00:00Z</updated>
             <id>https://esonusharma.github.io/greek-letters.html</id>
             <content type="html">&lt;h2&gt;Greek Letters&lt;/h2&gt;
+&lt;p&gt;$$&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -313,6 +319,12 @@ y= 0x8kkkkkkkwn6c
 &lt;td style=&quot;text-align:center&quot;&gt;Omega&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;\Omega&lt;/td&gt;
 &lt;td style=&quot;text-align:center&quot;&gt;\omega&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
