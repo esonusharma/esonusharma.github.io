@@ -4,12 +4,44 @@
     <subtitle>academy</subtitle>
      <link href="https://esonusharma.github.io/feed.xml" rel="self"/>
     <link href="https://esonusharma.github.io/"/>
-    <updated>2024-02-21T00:00:00Z</updated>
+    <updated>2024-02-23T00:00:00Z</updated>
     <id>https://esonusharma.github.io/</id>
     <author>
         <name>sonu sharma</name>
         <email></email>
     </author>
+        
+        <entry>
+            <title>Pointer</title>
+            <link href="https://esonusharma.github.io/pointer.html"/>
+            <updated>2024-02-23T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/pointer.html</id>
+            <content type="html">&lt;h2&gt;Pointer&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main()
+{
+    int x, *y;
+    x=7;
+    y=&amp;amp;x;
+    cout&amp;lt;&amp;lt;&amp;quot;x= &amp;quot;&amp;lt;&amp;lt;x&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;*y= &amp;quot;&amp;lt;&amp;lt;*y&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;&amp;amp;x= &amp;quot;&amp;lt;&amp;lt;&amp;amp;x&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;y= &amp;quot;&amp;lt;&amp;lt;y&amp;lt;&amp;lt;endl;
+    return 0;
+}
+
+Output:
+
+x= 7
+*y= 7
+&amp;amp;x= 0x8kkkkkkkwn6c
+y= 0x8kkkkkkkwn6c
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        </entry>
         
         <entry>
             <title>Turbulence</title>
