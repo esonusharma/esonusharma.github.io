@@ -351,8 +351,8 @@ y= 0x8kkkkkkkwn6c
 $$
 A=
 \begin{bmatrix}
-4 &amp;amp; 2 &amp;amp; 3\
-2 &amp;amp; 5 &amp;amp; 1\
+4 &amp;amp; 2 &amp;amp; 3 \
+2 &amp;amp; 5 &amp;amp; 1 \
 3 &amp;amp; 1 &amp;amp; 8
 \end{bmatrix}
 $$&lt;/p&gt;
