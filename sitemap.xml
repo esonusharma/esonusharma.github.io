@@ -132,7 +132,32 @@
         </url>
         
         <url>
+            <loc>https://esonusharma.github.io/tags/physics/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
             <loc>https://esonusharma.github.io/tags/seo/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/redirect/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/glossary/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/keyword/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/social/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -142,7 +167,12 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/backlink/</loc>
+            <loc>https://esonusharma.github.io/tags/howto/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/code/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -152,7 +182,12 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/plugin/</loc>
+            <loc>https://esonusharma.github.io/tags/theme/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/hosting/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -162,12 +197,22 @@
         </url>
         
         <url>
+            <loc>https://esonusharma.github.io/tags/backlink/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
             <loc>https://esonusharma.github.io/tags/theory/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/code/</loc>
+            <loc>https://esonusharma.github.io/tags/email/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/plugin/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -182,27 +227,7 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/howto/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
             <loc>https://esonusharma.github.io/tags/error/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/glossary/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/redirect/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/keyword/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -212,22 +237,7 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/social/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/email/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/hosting/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/theme/</loc>
+            <loc>https://esonusharma.github.io/tags/mathematics/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -312,12 +322,32 @@
         </url>
         
         <url>
+            <loc>https://esonusharma.github.io/greek-letters.html</loc>
+            <lastmod>2024-02-23</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/mathematical-symbols.html</loc>
+            <lastmod>2024-02-23</lastmod>
+        </url>
+        
+        <url>
             <loc>https://esonusharma.github.io/pointer.html</loc>
             <lastmod>2024-02-23</lastmod>
         </url>
         
         <url>
             <loc>https://esonusharma.github.io/cpp.html</loc>
+            <lastmod>2024-02-23</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/physics.html</loc>
+            <lastmod>2024-02-23</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/mathematics.html</loc>
             <lastmod>2024-02-23</lastmod>
         </url>
 </urlset>
