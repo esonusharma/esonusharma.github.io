@@ -34,7 +34,7 @@
                 "id": "https://esonusharma.github.io/turbulence.html",
                 "url": "https://esonusharma.github.io/turbulence.html",
                 "title": "Turbulence",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/turbulence.html\">Video Lecture</a></li>\n</ol>\n<h2>Turbulence</h2>\n"
+                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/turbulence.html\">Video Lecture</a></li>\n</ol>\n<h2>Turbulence</h2>\n<p>In CFD, turbulence intensity $(I)$ is an important parameter as its numerical value can be further used to calculate the turbulence parameters.</p>\n<p>Mathematically,</p>\n<p>$$\nI~=~\\frac{u\\prime}{\\bar{u}}\nu\\prime~=~root mean square (rms)~/~standard deviation (\\sigma), of the turbulent velocity fluctuations at a particular location over a specified time period\n\\bar{u}~=~velocity average at the same location over same time period\n$$</p>\n"
                 ,
                 "date_published": "2024-02-21T00:00:00Z"
             },{
