@@ -329,9 +329,13 @@ y= 0x8kkkkkkkwn6c
 &lt;p&gt;Mathematically,&lt;/p&gt;
 &lt;p&gt;$$
 I~=~\frac{u\prime}{\bar{u}}
+$$
+$$
+u\prime~=~root~mean~square~(rms)~/~standard~deviation~(\sigma),~of~the~turbulent~velocity~fluctuations~at~a~particular~location~over~a~specified~time~period
+$$
+$$
+\bar{u} = velocity~average~at~same~location~over~same~time~period
 $$&lt;/p&gt;
-&lt;p&gt;u\prime~=~root~mean~square~(rms)~/~standard~deviation~(\sigma),~of~the~turbulent~velocity~fluctuations~at~a~particular~location~over~a~specified~time~period
-\bar{u} = velocity~average~at~same~location~over~same~time~period&lt;/p&gt;
 </content>
         </entry>
         
