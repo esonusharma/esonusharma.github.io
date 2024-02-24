@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title> esonusharma.github.io </title>
+    <subtitle>academy</subtitle>
+     <link href="https://esonusharma.github.io/feed.xml" rel="self"/>
+    <link href="https://esonusharma.github.io/"/>
+    <updated>2024-02-23T00:00:00Z</updated>
+    <id>https://esonusharma.github.io/</id>
+    <author>
+        <name>sonu sharma</name>
+        <email></email>
+    </author>
+        
+        <entry>
+            <title>Pointer</title>
+            <link href="https://esonusharma.github.io/pointer.html"/>
+            <updated>2024-02-23T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/pointer.html</id>
+            <content type="html">&lt;h2&gt;Pointer&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main()
+{
+    int x, *y;
+    x=7;
+    y=&amp;amp;x;
+    cout&amp;lt;&amp;lt;&amp;quot;x= &amp;quot;&amp;lt;&amp;lt;x&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;*y= &amp;quot;&amp;lt;&amp;lt;*y&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;&amp;amp;x= &amp;quot;&amp;lt;&amp;lt;&amp;amp;x&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;y= &amp;quot;&amp;lt;&amp;lt;y&amp;lt;&amp;lt;endl;
+    return 0;
+}
+
+Output:
+
+x= 7
+*y= 7
+&amp;amp;x= 0x8kkkkkkkwn6c
+y= 0x8kkkkkkkwn6c
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Mathematical Symbols</title>
+            <link href="https://esonusharma.github.io/mathematical-symbols.html"/>
+            <updated>2024-02-23T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/mathematical-symbols.html</id>
+            <content type="html">&lt;h2&gt;Mathematical Symbols&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;strong&gt;Symbol&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;strong&gt;Symbol Name&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\approx$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;approximately equal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\neq$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;not equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\leq$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;inequality, less than or equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\geq$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;inequality, greater than or equal to&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\equiv$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;equivalence&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;( )&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;parentheses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;[ ]&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;brackets&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;{ }&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;braces&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$mod$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;modulo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$a^b$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;power&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\infty$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;lemniscate, infinity&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\nabla$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;nabla, del&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\partial$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;partial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\cdot$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;period, scalar product, dot product&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\times$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;multiply, vector product, cross product&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\otimes$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;tensor product&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\forall$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;For all&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\cup$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;union&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\cap$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;intersection&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\subset$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;subset&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\in$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;in&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\notin$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;not in&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Greek Letters</title>
+            <link href="https://esonusharma.github.io/greek-letters.html"/>
+            <updated>2024-02-23T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/greek-letters.html</id>
+            <content type="html">&lt;h2&gt;Greek Letters&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;strong&gt;English&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;strong&gt;Greek&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;strong&gt;Upper Case&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;&lt;strong&gt;Lower Case&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;a&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Alpha&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;A&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\alpha$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;b&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Beta&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;B&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\beta$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;g&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Gamma&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Gamma$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\gamma$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;d&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Delta&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Delta$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\delta$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;e&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Epsilon&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;E&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\epsilon, \varepsilon$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;z&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Zeta&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Z&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\zeta$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;h&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Eta&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;H&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\eta$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;th&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Theta&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Theta$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\theta, \vartheta$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;i&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Iota&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;I&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\iota$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;k&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Kappa&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;K&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\kappa$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;l&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Lambda&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Lambda$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\lambda$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;m&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Mu&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;M&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\mu$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;n&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Nu&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;N&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\nu$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;x&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Xi&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Xi$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\xi$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;o&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Omicron&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;O&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;o&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;p&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Pi&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Pi$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\pi$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;r&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Rho&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;P&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\rho, \varrho$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;s&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Sigma&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Sigma$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\sigma$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;t&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Tau&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;T&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\tau$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;u&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Upsilon&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Upsilon$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\upsilon$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;ph&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Phi&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Phi$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\phi, \varphi$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;ch&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Chi&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;X&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\chi$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;ps&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Psi&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Psi$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\psi$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;o&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;Omega&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\Omega$&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;$\omega$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Turbulence</title>
+            <link href="https://esonusharma.github.io/turbulence.html"/>
+            <updated>2024-02-21T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/turbulence.html</id>
+            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Turbulence&lt;/h2&gt;
+&lt;p&gt;In CFD, turbulence intensity $(I)$ is an important parameter as its numerical value can be further used to calculate the turbulence parameters.&lt;/p&gt;
+&lt;p&gt;Mathematically,&lt;/p&gt;
+&lt;p&gt;$$
+I~=~\frac{u^{\prime}}{\bar{u}}
+$$&lt;/p&gt;
+&lt;p&gt;$u^{\prime}~=~root~mean~square~(rms)~/~standard~deviation~(\sigma)~of~the~turbulent~velocity~fluctuations$
+$at~a~particular~location~over~a~specified~time~period$&lt;/p&gt;
+&lt;p&gt;$\bar{u} = velocity~average~at~same~location~over~same~time~period$&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Solvers</title>
+            <link href="https://esonusharma.github.io/solvers.html"/>
+            <updated>2024-02-21T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/solvers.html</id>
+            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Gauss-Seidel method&lt;/h2&gt;
+&lt;h2&gt;Symmetric Gauss-Seidel&lt;/h2&gt;
+&lt;h2&gt;Conjugate gradient method&lt;/h2&gt;
+&lt;h2&gt;diagonal-based incomplete Cholesky (DIC)&lt;/h2&gt;
+&lt;h2&gt;diagonal-based incomplete LU (DILU)&lt;/h2&gt;
+&lt;h2&gt;Biconjugate gradient stabilised method&lt;/h2&gt;
+&lt;h2&gt;preconditioned CG (PCG) method&lt;/h2&gt;
+&lt;h2&gt;preconditioned biconjugate gradient (PBiCG)&lt;/h2&gt;
+&lt;h2&gt;preconditioned biconjugate gradient stabilised method (PBiCGStab)&lt;/h2&gt;
+&lt;h2&gt;PCG with DIC Preconditioning&lt;/h2&gt;
+&lt;h2&gt;PBiCGStab with DILU preconditioning&lt;/h2&gt;
+&lt;h2&gt;Multi-grid method&lt;/h2&gt;
+&lt;h2&gt;GAMG method&lt;/h2&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>CFD Equations</title>
+            <link href="https://esonusharma.github.io/cfd-equations.html"/>
+            <updated>2024-02-21T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/cfd-equations.html</id>
+            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/cfd-equations.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Leibniz integral rule&lt;/h2&gt;
+&lt;p&gt;Leibniz integral rule gives a formula for differentiation of a definite integral whose limits are functions of the differential variable.&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d}{d t} \int_{V(t)} f(\vec{x}, t) d V=\int_{V(t)} \frac{\partial f}{\partial t} d V+\int_{A(t)} f \vec{u}_{A} \cdot \hat{n} dA
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Leibniz’ rule for a material volume&lt;/h2&gt;
+&lt;p&gt;$$
+\frac{D}{D t} \int_{V_{m}(t)} f(\vec{x}, t) d V=\int_{V_{m}(t)}\left(\frac{\partial f}{\partial t}+\vec{\nabla} \cdot f \vec{u}\right) dV
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods#EQN+6.1.4&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Reynolds transport theorem / Reynolds theorem&lt;/h2&gt;
+&lt;p&gt;Reynolds Transport theorem is a generalization of the Leibniz rule and thus the same arguments are used. The only difference is that the velocity has three components and only the perpendicular component enters into the calculations.&lt;/p&gt;
+&lt;p&gt;$$
+\frac{D}{DT} \int_{sys} f \rho dV = \frac{d}{dt} \int_{c.v.} f \rho dV + \int_{S_{c.v.}}  f \rho U_{rn} dA
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_Fluid_Mechanics_(Bar-Meir)/05%3A_The_Control_Volume_and_Mass_Conservation/5.4%3A_Reynolds_Transport_Theorem&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Green&#39;s theorem&lt;/h2&gt;
+&lt;p&gt;Green’s theorem relates the line integral around a closed curve with a double integral over the region inside the curve:&lt;/p&gt;
+&lt;p&gt;$$
+\int_{C} F \cdot ds = \int \int_{D} (curl F)\cdot k dA
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\oint_C \textbf{f}\cdot d\textbf{r} = \iint\limits_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right)dA
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://math.libretexts.org/Bookshelves/Calculus/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.03%3A_Greens_Theorem&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
+&lt;p&gt;The Divergence Theorem relates an integral over a volume to an integral over the surface bounding that volume. The Divergence Theorem states that the integral of the divergence of a vector field over a volume is equal to the flux of that field through the surface bounding that volume.&lt;/p&gt;
+&lt;p&gt;$$
+\int_{\mathcal V} \left( \nabla \cdot {\bf A} \right) dv = \oint_{\mathcal S} {\bf A}\cdot d{\bf s}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Continuum_Electromechanics_(Melcher)/02%3A_Electrodynamic_Laws_Approximations_and_Relations/2.06%3A_Integral_Theorems&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Stoke&#39;s theorem&lt;/h2&gt;
+&lt;p&gt;Stokes’ Theorem relates an integral over an open surface to an integral over the curve bounding that surface.&lt;/p&gt;
+&lt;p&gt;$$
+\int_{S} \nabla \times \overrightarrow{A} \cdot \overrightarrow{n} da=\oint_{C} \overrightarrow{A} \cdot \overrightarrow{d}l
+$$&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Electromagnetics_I_(Ellingson)/04%3A_Vector_Analysis/4.09%3A_Stokes&#39;_Theorem&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Material derivative&lt;/h2&gt;
+&lt;h2&gt;Lagrangian (System)&lt;/h2&gt;
+&lt;h2&gt;Eulerian (Control Volume)&lt;/h2&gt;
+&lt;h2&gt;Traction vector&lt;/h2&gt;
+&lt;h2&gt;Cauchy stress tensor&lt;/h2&gt;
+&lt;h2&gt;Cauchy&#39;s equation&lt;/h2&gt;
+&lt;h2&gt;Concept of pressure from cauchy stress tensor&lt;/h2&gt;
+&lt;h2&gt;Navier Stoke&#39;s equation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Einstein summation convention&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$ \frac{\partial \rho}{\partial t} + \frac{\partial(\rho u_{i})}{\partial x_{i}} = 0 $$&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial (\rho u_{i})}{\partial t} + \frac{\partial[\rho u_{i}u_{j}]}{\partial x_{j}} = -\frac{\partial p}{\partial x_{i}} + \frac{\partial \tau_{ij}}{\partial x_{j}} + \rho f_{i} $$&lt;/p&gt;
+&lt;p&gt;$$ \frac{\partial (\rho e)}{\partial t} + (\rho e+p)\frac{\partial u_{i}}{\partial x_{i}} = \frac{\partial(\tau_{ij}u_{j})}{\partial x_{i}} + \rho f_{i}u_{i} + \frac{\partial(\dot{ q_{i}})}{\partial x_{i}} + r $$&lt;/p&gt;
+&lt;h2&gt;Total pressure&lt;/h2&gt;
+&lt;p&gt;Total pressure is the pressure a fluid would have if brought to rest isentropically.&lt;/p&gt;
+&lt;p&gt;Total pressure (stagnation pressure) = static pressure + dynamic pressure + hydrostatic pressure&lt;/p&gt;
+&lt;p&gt;$$
+p_{stag}=p_{static}+\frac{1}{2}(\rho u^{2})+\rho gh (along~a~streamline)
+$$&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>cfdCode cpp 1D Diffusion Equation</title>
+            <link href="https://esonusharma.github.io/cfdcode-cpp-1d-diffusion-equation.html"/>
+            <updated>2024-02-06T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/cfdcode-cpp-1d-diffusion-equation.html</id>
+            <content type="html">&lt;h2&gt;cfdCode c++ 1D Diffusion Equation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;source file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;fstream&amp;gt;
+#include &amp;lt;vector&amp;gt;
+#include &amp;lt;cmath&amp;gt;
+#include &amp;quot;gnuplot-iostream.h&amp;quot;
+
+using namespace std;
+
+int main() {
+    Gnuplot gp;
+    int nx = 41;
+    double dx = 2.0 / (nx - 1);
+    int nt = 20;
+    double nu = 0.3;
+    double k = 0.2;
+    double dt = k * pow(dx, 2) / nu;
+
+    vector&amp;lt;double&amp;gt; u(nx, 1.0);
+    for (int i = int(0.5 / dx); i &amp;lt;= int(1 / dx); i++) {
+        u[i] = 2.0;
+    }
+
+    vector&amp;lt;double&amp;gt; un(nx, 1.0);
+    for (int n = 1; n &amp;lt;= nt; n++) {
+        un = u;
+        for (int i = 1; i &amp;lt; nx - 1; i++) {
+            u[i] = un[i] + nu * dt / pow(dx, 2) * (un[i+1] - 2 * un[i] + un[i-1]);
+        }
+    }
+
+    ofstream outfile(&amp;quot;output.dat&amp;quot;);
+
+    for (int i = 0; i &amp;lt; nx; i++) {
+        outfile &amp;lt;&amp;lt; i * dx &amp;lt;&amp;lt; &amp;quot; &amp;quot; &amp;lt;&amp;lt; u[i] &amp;lt;&amp;lt; &amp;quot;\n&amp;quot;;
+    }
+    outfile.close();
+    gp &amp;lt;&amp;lt; &amp;quot;set title &#39;x vs u graph&#39;\n&amp;quot;;
+	gp &amp;lt;&amp;lt; &amp;quot;set xlabel &#39;x&#39;\n&amp;quot;;
+	gp &amp;lt;&amp;lt; &amp;quot;set ylabel &#39;u&#39;\n&amp;quot;;	
+	gp &amp;lt;&amp;lt; &amp;quot;set grid\n&amp;quot;;
+    gp &amp;lt;&amp;lt; &amp;quot;set xtics rotate by 90 right\n&amp;quot;;
+//	gp &amp;lt;&amp;lt; &amp;quot;set term png\n&amp;quot;;
+//	gp &amp;lt;&amp;lt; &amp;quot;set output &#39;sample-csv.png&#39;\n&amp;quot;;
+	gp &amp;lt;&amp;lt; &amp;quot;plot(&#39;output.dat&#39;) using 2:xticlabel(1) with linespoints\n&amp;quot;;
+
+    return 0;
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dstahlke/gnuplot-iostream/blob/master/gnuplot-iostream.h&quot;&gt;gnuplot header file&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;copy the text from above link, paste it in a text file, save this file with extension &amp;quot;.h&amp;quot; as &amp;quot;gnuplot-iostream.h&amp;quot; in the same folder of the source code.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Solved Nomenclature Not Generated in PDF Created by Visual Studio Code LaTeX Workshop Extension</title>
+            <link href="https://esonusharma.github.io/solved-nomenclature-not-generated-in-pdf-created-by-visual-studio-code-latex-workshop-extension.html"/>
+            <updated>2023-07-14T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/solved-nomenclature-not-generated-in-pdf-created-by-visual-studio-code-latex-workshop-extension.html</id>
+            <content type="html">&lt;p&gt;The problem regarding not generation of nomenclature in pdf documents created by Visual Studio Code is finally solved.&lt;/p&gt;
+&lt;p&gt;You may have gone through search engines following the advice to display nomenclature but nothing worked like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/James-Yu/LaTeX-Workshop/issues/384&quot;&gt;Solution 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://latex.org/forum/viewtopic.php?t=34350&quot;&gt;Solution 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://latex.org/forum/viewtopic.php?t=27292&quot;&gt;Solution 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tex.stackexchange.com/questions/62061/problem-with-the-nomenclature&quot;&gt;Solution 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/58895384/how-to-modify-makeindex-script-in-vs-code-for-latex&quot;&gt;Solution 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tex.stackexchange.com/questions/577405/printnomenclature-doesnt-work&quot;&gt;Solution 6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Popular searches regarding the same:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Problem with the nomenclature
+- nomencl latex won&#39;t show output
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1. In Visual Studio Code, Open File -&amp;gt; Preferences -&amp;gt; Settings and search for &amp;quot;latex-workshop.latex.tools&amp;quot; in that.&lt;/li&gt;
+&lt;li&gt;Step 2. Add the following code inside the &amp;quot;latex-workshop.latex.tools&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;{
+   &amp;quot;name&amp;quot;: &amp;quot;makeindex&amp;quot;,
+   &amp;quot;command&amp;quot;: &amp;quot;makeindex&amp;quot;,
+   &amp;quot;args&amp;quot;: [
+    &amp;quot;%DOCFILE%.nlo&amp;quot;,
+    &amp;quot;-s&amp;quot;,
+    &amp;quot;nomencl.ist&amp;quot;,
+    &amp;quot;-o&amp;quot;,
+    &amp;quot;%DOCFILE%.nls&amp;quot;
+   ],
+   &amp;quot;env&amp;quot;: {}
+},
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 3. Again Open File -&amp;gt; Preferences -&amp;gt; Settings and search for &amp;quot;latex-workshop.latex.recipes&amp;quot; in that. Modify the following command:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;{
+   &amp;quot;name&amp;quot;: &amp;quot;pdflatex -&amp;gt; bibtex -&amp;gt; pdflatex * 2&amp;quot;,
+   &amp;quot;tools&amp;quot;: [
+    &amp;quot;pdflatex&amp;quot;,
+    &amp;quot;bibtex&amp;quot;,
+    &amp;quot;pdflatex&amp;quot;,
+    &amp;quot;pdflatex&amp;quot;
+   ]
+},
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;like the below command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+   &amp;quot;name&amp;quot;: &amp;quot;pdflatex -&amp;gt; bibtex -&amp;gt; makeindex -&amp;gt; pdflatex * 2&amp;quot;,
+   &amp;quot;tools&amp;quot;: [
+    &amp;quot;pdflatex&amp;quot;,
+    &amp;quot;bibtex&amp;quot;,
+    &amp;quot;makeindex&amp;quot;,
+    &amp;quot;pdflatex&amp;quot;,
+    &amp;quot;pdflatex&amp;quot;
+   ]
+},
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 4. Save the file.&lt;/li&gt;
+&lt;li&gt;Step 5. Open the &amp;quot;LaTeX Workshop&amp;quot; Extension Menu in Visual Studio Code and run the command with &amp;quot;pdflatex -&amp;gt; bibtex -&amp;gt; makeindex -&amp;gt; pdflatex * 2&amp;quot; name.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>How to Create a Dofollow Backlink on Blogger</title>
+            <link href="https://esonusharma.github.io/how-to-create-a-dofollow-backlink-on-blogger.html"/>
+            <updated>2020-10-19T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/how-to-create-a-dofollow-backlink-on-blogger.html</id>
+            <content type="html">&lt;p&gt;A &lt;strong&gt;dofollow backlink on Blogger&lt;/strong&gt;, a top-quality website owned by Google can immensely improve search rankings for a URL.&lt;/p&gt;
+&lt;p&gt;I am not talking about backlink from a &lt;strong&gt;Blogspot blog&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Follow the instructions below to add dofollow backlink to blogger&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Firstly, follow this &lt;a href=&quot;https://www.blogger.com/edit-profile.g&quot;&gt;link&lt;/a&gt; to edit your &lt;strong&gt;blogger profile&lt;/strong&gt; (if you don’t have one, then create it using your Google account).&lt;/li&gt;
+&lt;li&gt;Secondly, under the &lt;strong&gt;General heading&lt;/strong&gt; as shown in the image below, add the URL of the page you want a &lt;strong&gt;dofollow backlink&lt;/strong&gt; for, inside the box for &lt;strong&gt;Wishlist URL&lt;/strong&gt; (all other links are nofollow).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-blogger-profile-edit.png&quot; alt=&quot;inline-blogger-profile-edit&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Save the profile after adding the URL.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the link &lt;strong&gt;“View Updated Profile”&lt;/strong&gt; at the top of the edit profile page to visit your public blogger profile page as shown in the image below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-blogger-profile-view.png&quot; alt=&quot;inline-blogger-profile-view&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can find the &lt;strong&gt;dofollow backlink&lt;/strong&gt; as the &lt;strong&gt;Wishlist link&lt;/strong&gt; as shown in the image below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-blogger-profile-public.png&quot; alt=&quot;inline-blogger-profile-public&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Click the &lt;strong&gt;Wishlist&lt;/strong&gt; link to check the link is working.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only &lt;strong&gt;Wishlist link&lt;/strong&gt; is the &lt;strong&gt;dofollow&lt;/strong&gt; one, all other links are &lt;strong&gt;nofollow&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Once this &lt;strong&gt;public profile&lt;/strong&gt; is indexed by &lt;strong&gt;Google&lt;/strong&gt;, you start getting &lt;strong&gt;link juice&lt;/strong&gt; to your &lt;strong&gt;Webpage&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>13 Things to do Before Writing an Article-My Personal Checklist</title>
+            <link href="https://esonusharma.github.io/13-things-to-do-before-writing-an-article-my-personal-checklist.html"/>
+            <updated>2020-08-23T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/13-things-to-do-before-writing-an-article-my-personal-checklist.html</id>
+            <content type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Todo&lt;/th&gt;
+&lt;th&gt;Details&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;keyword research&lt;/td&gt;
+&lt;td&gt;Follow our keyword research tools article&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Research&lt;/td&gt;
+&lt;td&gt;find top results for targeted keyword and analyze their content&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Meta&lt;/td&gt;
+&lt;td&gt;Choose Title, URL, Description&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Length&lt;/td&gt;
+&lt;td&gt;minimum 2000 words&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Keyword Density&lt;/td&gt;
+&lt;td&gt;synonyms in alternate paragraphs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Paragraph length&lt;/td&gt;
+&lt;td&gt;3 lines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Outgoing links&lt;/td&gt;
+&lt;td&gt;use reference outgoing links to top results for targeted keyword&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Embed Media&lt;/td&gt;
+&lt;td&gt;embed media&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Writing&lt;/td&gt;
+&lt;td&gt;active voice, answer questions, talk to reader, use headings subheadings, targeted keywords in the first line of the article, use links to internal articles, update old articles regularly. Follow our article about writing seo friendly articles&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Syndication&lt;/td&gt;
+&lt;td&gt;Syndicate to medium, tumblr, feedburner, wordpress, diigo, dig, instapaper, pocket, growthhackers, twitter with hashtags, facebook page and groups&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Backlinks&lt;/td&gt;
+&lt;td&gt;Get backlinks from authority sites that were linking to top articles, product sites which you have listed, get quantity, get quality&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bounce Rate&lt;/td&gt;
+&lt;td&gt;create intersting content so bounce rate is low. stop opening site yourself&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Anchor Text&lt;/td&gt;
+&lt;td&gt;exact match, partial match long tail, site name, naked url, here or website, image&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Blog2Social Review</title>
+            <link href="https://esonusharma.github.io/blog2social-review.html"/>
+            <updated>2020-08-12T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/blog2social-review.html</id>
+            <content type="html">&lt;p&gt;&lt;strong&gt;Blog2Social Social Media Auto Post Scheduler&lt;/strong&gt; is a unique and interesting &lt;strong&gt;social media plugin&lt;/strong&gt; with a lot of options.&lt;/p&gt;
+&lt;p&gt;So what is &lt;strong&gt;unique&lt;/strong&gt; about it? “You can do a lot of &lt;strong&gt;social media marketing&lt;/strong&gt; tasks with a single plugin, without bloat on your blog.”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adenion&lt;/strong&gt; is the company behind it.&lt;/p&gt;
+&lt;p&gt;I started my &lt;strong&gt;blogging&lt;/strong&gt; journey in 2016 with WordPress and found Blog2Social in its early days.&lt;/p&gt;
+&lt;p&gt;Blog2Social was a &lt;strong&gt;glorius&lt;/strong&gt; plugin then and now even better.&lt;/p&gt;
+&lt;h2&gt;What is Blog2social?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog2social is a &lt;strong&gt;WordPress plugin and web app&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Free WordPress Social Auto Poster Plugin&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Can &lt;strong&gt;auto-share&lt;/strong&gt; WordPress posts on social media.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What can you accomplish with Blog2Social?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;cross-sharing&lt;/strong&gt; on social media websites.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;automatic sharing of blog posts&lt;/strong&gt; on your connected and chosen social media accounts as soon as they are published on your blog.&lt;/li&gt;
+&lt;li&gt;you can edit your posts before &lt;strong&gt;re-publishing&lt;/strong&gt;, add hashtags for increasing the visibility to the targeted audience, add handles to share your masterpiece with the experts.&lt;/li&gt;
+&lt;li&gt;setup &lt;strong&gt;best times for sharing&lt;/strong&gt; your blog posts on social networks, it is necessary to share at the optimum timings because you need an active social media user to pay attention to your post otherwise the post will be lost in thousands of messages and posts the users get in their social accounts. With Blog2Social, you get pre-defined times to choose from.&lt;/li&gt;
+&lt;li&gt;You can choose to schedule your post for sharing on multiple profiles, pages, and groups once, or repeatedly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose an image&lt;/strong&gt; for your posts.&lt;/li&gt;
+&lt;li&gt;It is important to keep records of your &lt;strong&gt;scheduling and sharing&lt;/strong&gt; activities. Blog2Social can do it out of the box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inherently, Blog2Social is a social media automation tool, helping you in social media marketing of your content without bothering you, as it serves as a &lt;strong&gt;set and forget&lt;/strong&gt; plugin.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog2Social has both &lt;strong&gt;free and premium&lt;/strong&gt; options. Details can be found &lt;a href=&quot;https://www.blog2social.com/en/pricing&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can also try the &lt;strong&gt;premium&lt;/strong&gt; version of &lt;strong&gt;Blog2Social&lt;/strong&gt; free for 30-days &lt;a href=&quot;https://www.blog2social.com/en/plugin/wordpress/premium-trial&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You can also try their &lt;a href=&quot;https://www.blog2social.com/en/webapp&quot;&gt;webapp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Easily share content directly from your browser using &lt;a href=&quot;https://www.blog2social.com/en/webapp/extension&quot;&gt;Blog2Social Browser Extension&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Know more about &lt;a href=&quot;https://www.blog2social.com/en&quot;&gt;Blog2Social&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Last but not the least, don’t use Blog2Social &lt;strong&gt;nulled or pirated&lt;/strong&gt; version, that’s not cool, also it helps strangers to inject malicious code on your website and destroy your hard work. Instead, you can use the &lt;strong&gt;free version&lt;/strong&gt; of the Blog2Social &lt;strong&gt;social media automation&lt;/strong&gt; plugin or trial version to test it out before buying.&lt;/p&gt;
+&lt;p&gt;You can expect quality support from the &lt;strong&gt;Blog2Social Support&lt;/strong&gt; team as the parent firm Adenion is a well-established name.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Difference between SCI and SCIE</title>
+            <link href="https://esonusharma.github.io/difference-between-sci-and-scie.html"/>
+            <updated>2020-07-18T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/difference-between-sci-and-scie.html</id>
+            <content type="html">&lt;h2&gt;Master Journal List : Removal of SCI&lt;/h2&gt;
+&lt;p&gt;SCI has been removed from the Clarivate Analytics Master Journal List, the details can be found on an official link &lt;a href=&quot;https://support.clarivate.com/ScientificandAcademicResearch/s/article/Master-Journal-List-Removal-of-SCI?language=en_US&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Present Master Journal List can be found &lt;a href=&quot;https://mjl.clarivate.com/collection-list-downloads&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>OpenFOAM Installation</title>
+            <link href="https://esonusharma.github.io/openfoam-installation.html"/>
+            <updated>2020-06-25T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/openfoam-installation.html</id>
+            <content type="html">&lt;p&gt;If you are unable to install OpenFOAM in Ubuntu, then you are at the right place.&lt;/p&gt;
+&lt;p&gt;The installation of OpenFOAM is pretty straight forward in Ubuntu, you just need to follow the instructions &lt;a href=&quot;https://openfoam.org/download/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the time of writing this article, OpenFOAM Version 7 is the latest, so the instructions are specific to that, but you can use the same instructions for other versions with minor changes in names.&lt;/p&gt;
+&lt;p&gt;I will suggest you to follow the latest instructions on the official site &lt;a href=&quot;http://openfoam.org/&quot;&gt;OpenFOAM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Besides that, you can always take a cue from this post too.&lt;/p&gt;
+&lt;p&gt;Also, you should be connected to internet for installing OpenFOAM.&lt;/p&gt;
+&lt;h2&gt;Steps to install OpenFOAM on Ubuntu&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the terminal using the icon or Shortcut “Ctrl+Alt+T”.&lt;/li&gt;
+&lt;li&gt;Type following commands one by one pressing enter at the end of each command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Commands that need to be executed only once for a given system:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo sh -c &amp;quot;wget -O - &amp;lt;https://dl.openfoam.org/gpg.key&amp;gt; | apt-key add -&amp;quot;
+ sudo add-apt-repository &amp;lt;http://dl.openfoam.org/ubuntu&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then Update the system:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally install the OpenFOAM using command below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo apt-get -y install openfoam7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It will take some time to install it. This will install OpenFOAM as well as paraviewopenfoam as a dependency.&lt;/p&gt;
+&lt;p&gt;You can find the installed programs in the /opt directory of the Computer system in separate directories.&lt;/p&gt;
+&lt;p&gt;Don’t worry about the updates, as when you update the Ubuntu, these programs get updated automatically.&lt;/p&gt;
+&lt;p&gt;At last, you need to do the following after installing before you use OpenFOAM.&lt;/p&gt;
+&lt;p&gt;Open the bashrc file in your system using following command on the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; gedit ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add the following line at the end of the file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; source /opt/openfoam7/etc/bashrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Open a new terminal (&amp;lt;-this is important), and test that OpenFOAM is working by typing on the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; simpleFoam -help
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If successful, output will be something like below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; Usage: simpleFoam [OPTIONS]
+ options:
+     -case &amp;lt;dir&amp;gt;       specify alternate case directory, default is the cwd
+     -fileHandler &amp;lt;handler&amp;gt;
+                     override the fileHandler
+     -hostRoots &amp;lt;(((host1 dir1) .. (hostN dirN))&amp;gt;
+                     slave root directories (per host) for distributed running
+     -libs &amp;lt;(lib1 .. libN)&amp;gt;
+                     pre-load libraries
+     -listFunctionObjects
+                     List functionObjects
+     -listFvOptions    List fvOptions
+     -listRegisteredSwitches
+                     List switches registered for run-time modification
+     -listScalarBCs    List scalar field boundary conditions (fvPatchField&amp;lt;scalar&amp;gt;)
+     -listSwitches     List switches declared in libraries but not set in
+                     etc/controlDict
+     -listTurbulenceModels
+                     List turbulenceModels
+     -listUnsetSwitches
+                     List switches declared in libraries but not set in
+                     etc/controlDict
+     -listVectorBCs    List vector field boundary conditions (fvPatchField&amp;lt;vector&amp;gt;)
+     -noFunctionObjects
+                     do not execute functionObjects
+     -parallel         run in parallel
+     -postProcess      Execute functionObjects only
+     -roots &amp;lt;(dir1 .. dirN)&amp;gt;
+                     slave root directories for distributed running
+     -srcDoc           display source code in browser
+     -doc              display application documentation in browser
+     -help             print the usage
+
+ Using: OpenFOAM-7 (see &amp;lt;https://openfoam.org&amp;gt;)
+ Build: 7-3bcbaf946ae9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After that you need to add a project directory in your home folder for your simulation projects using following command on the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; mkdir -p $FOAM_RUN
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above command will create a directory named OpenFOAM with a subdirectory named “&lt;code&gt;&amp;lt;USERNAME&amp;gt;&lt;/code&gt;-&lt;code&gt;&amp;lt;OpenFOAM Version Number&amp;gt;&lt;/code&gt;” like “x-7” for the username x and version 7 of OpenFOAM.&lt;/p&gt;
+&lt;p&gt;Errors and solutions encountered in installation of OpenFOAM on Ubuntu:&lt;/p&gt;
+&lt;p&gt;Check that internet is connected.
+Avoid using a proxy.
+If you get an error related to ca-certificates then just run the following command on the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sudo dpkg-reconfigure ca-certificates
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If the problem still persists, then follow the best answer on this &lt;a href=&quot;https://superuser.com/questions/437330/how-do-you-add-a-certificate-authority-ca-to-ubuntu&quot;&gt;page&lt;/a&gt;.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Solved errors were encountered while processing grub efi amd64 signed</title>
+            <link href="https://esonusharma.github.io/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed.html"/>
+            <updated>2020-06-24T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed.html</id>
+            <content type="html">&lt;h2&gt;Execute commands below to solve this problem&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;sudo apt-get purge grub\*
+sudo apt-get install grub-efi
+sudo apt-get autoremove
+sudo update-grub
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>Fix the Error &quot;debconf DbDriver &quot;config&quot; /var/cache/debconf/config.dat is locked by another process Resource temporarily unavailable</title>
+            <link href="https://esonusharma.github.io/fix-the-error-debconf-dbdriver-config-var-cache-debconf-config-dat-is-locked-by-another-process-resource-temporarily-unavailable.html"/>
+            <updated>2020-06-02T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/fix-the-error-debconf-dbdriver-config-var-cache-debconf-config-dat-is-locked-by-another-process-resource-temporarily-unavailable.html</id>
+            <content type="html">&lt;p&gt;You have encountered the above error in Debian or Debian based GNU/Linux Distribution.&lt;/p&gt;
+&lt;p&gt;This may cause problems like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- errors in sudo apt-get update, sudo apt-get upgrade, sudo apt-get install, and other processes.
+- dpkg: error processing package
+- post-installation script subprocess returned error exit status 1
+- Errors were encountered while processing
+- E: Sub-process /usr/bin/dpkg returned an error code (1)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1. Execute command in terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;sudo fuser -v /var/cache/debconf/config.dat
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 2. You will get result in following format. Copy the PID from it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;  USER        PID ACCESS COMMAND
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 3. Execute command. Replace PID with your actual PID. If the first command works, then second command will give output “No such process”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;  sudo kill PID
+  or
+  sudo kill -9 PID
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 4. Now you will not get the error.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>5 Best Affordable WordPress Hosting for Your Startup</title>
+            <link href="https://esonusharma.github.io/5-best-affordable-wordpress-hosting-for-your-startup.html"/>
+            <updated>2019-12-19T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/5-best-affordable-wordpress-hosting-for-your-startup.html</id>
+            <content type="html">&lt;p&gt;Want to know which &lt;strong&gt;WordPress hosting&lt;/strong&gt; to choose? Check out our &lt;strong&gt;ultimate guide&lt;/strong&gt; on WordPress hosting and make an informed decision!&lt;/p&gt;
+&lt;p&gt;Time is running faster than you think. With time, WordPress has stood the evolution of the web. As a WordPress user, one of the challenges is to choose the &lt;strong&gt;Best WordPress hosting&lt;/strong&gt; for yourself.&lt;/p&gt;
+&lt;p&gt;In this article, we will explore a complete guide on &lt;strong&gt;WordPress hosting&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This guide will help you to choose the right hosting according to your needs. The reason behind the complication is the different types of hosting currently available.&lt;/p&gt;
+&lt;p&gt;There are currently multiple types of hosting types, including &lt;strong&gt;shared, VPS, managed&lt;/strong&gt;, and &lt;strong&gt;free WordPress hosting&lt;/strong&gt;. By the end of the guide, you will be able to distinguish between them. We will also go through top WordPress hosting and the things you should look into when choosing a hosting.&lt;/p&gt;
+&lt;p&gt;Let’s get started.&lt;/p&gt;
+&lt;h2&gt;WordPress Hosting: The Ultimate Guide&lt;/h2&gt;
+&lt;p&gt;Before we move forward, let’s look at the things that you need to look into the hosting provider. These factors are essential, and you should always keep these in mind before making a proper WordPress hosting selection.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Requirements:&lt;/strong&gt; The first thing that you need to check if the server has the proper requirements to run WordPress. This means that it needs to have PHP 7.3+, Apache with mod_rewrite, Nginx, and HTTPS support. If you are not sure, then it is always better to ask support to clear your confusion.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pricing:&lt;/strong&gt; The next thing that you need to check is pricing. Generally, there are tons of options when it comes to plans. Your choice should depend on your requirements and budget. Always try to find a balance between features, pricing, and performance. Also, make sure that the plans are transparent in what they are offering.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speed:&lt;/strong&gt; Speed is a critical part of any hosting. The better speeds you get, the faster your website will load. This means that you will provide a better user experience and also have a better chance to rank higher on Google.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Uptime:&lt;/strong&gt; The hosting should provide at least 99.95% uptime. Anything below this is not acceptable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customer support:&lt;/strong&gt; Maintaining a WordPress site is not easy, and that’s why having good customer support is important&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Apart from the above, it would help if you also looked out for 1-click installation. Almost every good WordPress hosting company has this option available. This will make it easy for you to create and manage a WordPress website.&lt;/p&gt;
+&lt;h2&gt;Understanding WordPress Hosting Deeply&lt;/h2&gt;
+&lt;p&gt;As we already mentioned, there are plenty of WordPress hosting types. Any WordPress hosting you choose needs to have essential three elements, i.e., security, speed, and reliability. Apart from this, you should always keep your requirements in mind. To let you make the right choice, let’s go through the different types of WordPress hosting below.&lt;/p&gt;
+&lt;h2&gt;Free WordPress Hosting&lt;/h2&gt;
+&lt;p&gt;WordPress is an open-source project. It is similar to free beer. If you decide to use WordPress, you need to get paid hosting. But, in reality, you can also get access to free web hosting. Many hosting providers give you hosting services &lt;strong&gt;free of cost&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;But, there is a catch with the service. Most of these services are given by small hosting providers to earn revenue. If you decide to host on their free service, they will use your site to host banners and ads. They might also put a link in the footer of your site.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Free WordPress hosting&lt;/strong&gt; is generally &lt;strong&gt;not reliable&lt;/strong&gt;. They do go down from time to time. The server speed is also not great, and your site would easily have high latency issues. You will also get no support whatsoever. In short, do not go for free WordPress hosting at any cost.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best for:&lt;/strong&gt; Only choose free WordPress hosting if you really have no budget, and need a place for your site before you get a paid hosting service.&lt;/p&gt;
+&lt;h2&gt;Shared WordPress Hosting&lt;/h2&gt;
+&lt;p&gt;One of the most popular WordPress hostings is &lt;strong&gt;shared WordPress hosting&lt;/strong&gt;. In this type, you will get a hosting space on a shared server where resources will be shared among multiple users and sites. This is possibly the best way to get started with WordPress hosting.&lt;/p&gt;
+&lt;p&gt;Shared hosting is &lt;strong&gt;cheap&lt;/strong&gt; and provides you good enough speed and reliability. Some of the shared hostings do provide &lt;strong&gt;unlimited resources&lt;/strong&gt;. In reality, it is more of a marketing tactic, as you truly do never get unlimited resources. Some restrictions are kept on each account. Until and unless you cross those limitations, you will do just fine. Once you cross those limitations, you will get notifications. The handling of those scenarios entirely depends on the hosting provider.&lt;/p&gt;
+&lt;p&gt;As a user, you should always confirm the limitations before getting a shared WordPress hosting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best for:&lt;/strong&gt; Shared hosting is best suited for businesses that are in the stage of growth and require cost-effective hosting without compromising too much speed and stability.&lt;/p&gt;
+&lt;h2&gt;VPS WordPress Hosting&lt;/h2&gt;
+&lt;p&gt;In this type of hosting, you will get a dedicated virtual space on the server. This means that the server you are getting is capable of handling more traffic and load. VPS stands for &lt;strong&gt;Virtual Private Server&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;VPS is kind of similar to Shared hosting where you still share server resources, but the technique here is good enough to improve over it. You can think of it as getting a dedicated server by paying an affordable amount of money. VPS hosting is refined to perform nicely. They load fast and can be configured according to your needs. This means if you need to run specific software or tool, you can do it with VPS and not shared hosting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VPS WordPress hosting&lt;/strong&gt; generally requires some technical knowledge to manage. However, you can also take a look at the managed VPS hosting that offers a good amount of tools for better self-management. In managed VPS hosting, the hosting provider also manages different aspects of the hosting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best for:&lt;/strong&gt; VPS hosting is best suited for a mid-sized business that is going through a growth phase or is receiving heavy traffic.&lt;/p&gt;
+&lt;h2&gt;Dedicated WordPress Hosting&lt;/h2&gt;
+&lt;p&gt;The next type of hosting that we will discuss is the &lt;strong&gt;dedicated WordPress Hosting&lt;/strong&gt;. If you plan to get the best possible hosting service, then you should go for dedicated WordPress hosting.&lt;/p&gt;
+&lt;p&gt;In dedicated WordPress hosting, you get access to a full server and its resources. This gives you an immense capacity for scaling and configuration.&lt;/p&gt;
+&lt;p&gt;Dedicated servers require good technical knowledge to manage. Most of the time, businesses require to hire a server administrator to manage their site running on dedicated servers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best for:&lt;/strong&gt; High-traffic sites that require dedicated customization and high scalability.&lt;/p&gt;
+&lt;h2&gt;Managed WordPress Hosting&lt;/h2&gt;
+&lt;p&gt;WordPress is very popular, and this means that hosting services need to refine their hosting services to include WordPress. One of the ways they refine their service is the &lt;strong&gt;managed WordPress Hosting&lt;/strong&gt;. In managed WordPress hosting, most of the heavy lifting is done by the hosting provider itself. The buyer need not worry about anything as hosting keeps everything in control from their side.&lt;/p&gt;
+&lt;p&gt;Apart from providing the basics of WordPress hosting, it also has improved security, caching, and takes backup regularly.&lt;/p&gt;
+&lt;p&gt;The support for managed WordPress hosting is also impressive as you get instant support. When it comes to pricing, managed WordPress hosting can cost a good amount. It can cost anywhere from $30/month to $100/month, depending on the hosting provider.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Best for&lt;/strong&gt;: The managed WordPress hosting is best suited for businesses or individuals that do not want the best WordPress hosting service possible. It is also ideal for a high-traffic site as it can be scaled according to the site’s needs.&lt;/p&gt;
+&lt;h2&gt;Best WordPress Hosting Providers&lt;/h2&gt;
+&lt;p&gt;Now that we have a proper understanding of WordPress hosting, it is now time to look at the best WordPress hosting providers out there. To keep things simple, we will only cover five hosting providers in detail.&lt;/p&gt;
+&lt;p&gt;Let’s get started.&lt;/p&gt;
+&lt;h2&gt;Bluehost WordPress Hosting&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Bluehost&lt;/strong&gt; is one of the most popular hosting providers out there. Its popularity mainly comes because of its &lt;strong&gt;cheap packages&lt;/strong&gt;. This makes Bluehost ideal for anyone who is starting their online website or blog. It is also &lt;strong&gt;beginner-friendly&lt;/strong&gt; and offers &lt;strong&gt;good performance&lt;/strong&gt; and features for the price that you pay.&lt;/p&gt;
+&lt;p&gt;The prices start at only $2.75/month. It also has a good track record when it comes to uptime. According to Hostingfacts.com, Bluehost offers an incredible &lt;strong&gt;99.991% uptime&lt;/strong&gt; in the year 2018. That’s good enough for any site out there.&lt;/p&gt;
+&lt;p&gt;If you are a mid-sized business, you can choose packages that cost more and provide more features. Apart from the hosting packages, you can also get access to a good WordPress knowledge database and access to 24/7 support.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Cheap plans to get started with&lt;/li&gt;
+&lt;li&gt;High uptime&lt;/li&gt;
+&lt;li&gt;Good performance&lt;/li&gt;
+&lt;li&gt;24/7 support&lt;/li&gt;
+&lt;li&gt;Large WordPress knowledge base&lt;/li&gt;
+&lt;li&gt;Offers managed WordPress hosting as well&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;DigitalOcean&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;DigitalOcean&lt;/strong&gt; offers a unique cloud service experience compared to other hosting providers. They provide high-performance servers at very affordable pricing. The only twist here is that you need to have the technical knowledge to host and manage the WordPress site on DigitalOcean. You can host a plethora of solutions and software on it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WordPress hosting&lt;/strong&gt; on &lt;strong&gt;DigitalOcean&lt;/strong&gt; is also easy, as asks you during the setup. Also, you can get tons of guide on how to get started.&lt;/p&gt;
+&lt;p&gt;But, what makes DigitalOcean so special? It is because of its customizability, pricing, and scalability that it has to offer. Their servers are also very fast, and you can choose service from 12 data centers spread across the world.&lt;/p&gt;
+&lt;p&gt;If you are a beginner or a mid-size business, you can choose their $5/month package where you get 1 GB of memory, one virtual CPU, 25GB SSD disk, and 1 TB transfer. If your site is growing, then you can choose more resources by paying the agreed-upon amount. This is what makes DigitalOcean a great choice. They also have a high average uptime of 99.989 % according to hostingfacts.com.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Plans start from only $5/month&lt;/li&gt;
+&lt;li&gt;Excellent servers and uptime&lt;/li&gt;
+&lt;li&gt;Customizable and scalable&lt;/li&gt;
+&lt;li&gt;High uptime of 99.989%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Siteground&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Siteground&lt;/strong&gt; is yet another popular &lt;strong&gt;WordPress hosting&lt;/strong&gt; provider. They offer their own managed hosting services when it comes to WordPress. In fact, they are also &lt;strong&gt;WordPress’s official recommended hosting provider&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;With an average uptime of more than 99.988%, it is reliable, fast, and secure. It can also handle high traffic. Apart from the uptime, it also offers tons of tools and features for easy website building, transfer, and management.&lt;/p&gt;
+&lt;p&gt;Their managed WordPress hosting service is &lt;strong&gt;extremely affordable&lt;/strong&gt;, as it starts from $3.95/mo. if you start with them for the first time. After that, the regular price is $11.95/mo., which is also affordable to a great extent. One key feature in their managed service is their updates and security. They offer better security and also ensure that WordPress installations are patched before any exploitation happens.&lt;/p&gt;
+&lt;p&gt;They also offer &lt;strong&gt;free SSL certificates, email services, daily backup, staging tools, and collaboration tools&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Impressive uptime&lt;/li&gt;
+&lt;li&gt;Offers managed WordPress hosting&lt;/li&gt;
+&lt;li&gt;Better security&lt;/li&gt;
+&lt;li&gt;Plans start from $3.95/mo.&lt;/li&gt;
+&lt;li&gt;Officially recommended by WordPress&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Hostinger&lt;/h2&gt;
+&lt;p&gt;If you are looking for a web hosting provider in India, then &lt;strong&gt;Hostinger.in&lt;/strong&gt; can be a great choice. It offers shared, VPS and cloud hosting services.&lt;/p&gt;
+&lt;p&gt;The plans are pretty cheap to get started. Their plans start from less than 1$/mo. The single web hosting plan gets you one website, WordPress optimization, email account, 100 GB bandwidth, and 1x memory and processing power. They have an uptime of 99.99% and above.&lt;/p&gt;
+&lt;p&gt;The performance of their servers is also good as they offer custom routing, server optimizations, and data centers spread across multiple continents. For users, they have provided the hPanel, which offers an intuitive and easy-to-use panel. Apart from that, it also offers a 30-day money-back guarantee.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Cheap plans to get started&lt;/li&gt;
+&lt;li&gt;WordPress optimized&lt;/li&gt;
+&lt;li&gt;99.99% guaranteed uptime&lt;/li&gt;
+&lt;li&gt;30-days money-back guarantee&lt;/li&gt;
+&lt;li&gt;Ready for developers&lt;/li&gt;
+&lt;li&gt;Enhanced security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;HostGator&lt;/h2&gt;
+&lt;p&gt;The last hosting provider that we are going to discuss is &lt;strong&gt;HostGator&lt;/strong&gt;. They offer powerful &lt;strong&gt;WordPress hosting&lt;/strong&gt; with plans starting from only $2.64/mo. They are also in the top 6 when it comes to average web hosting uptime, with an average uptime of 99.984%.&lt;/p&gt;
+&lt;p&gt;They offer quite a good amount of features on their WordPress packages. Each of their plans has good features, including 24/7 technical support. They also offer a &lt;strong&gt;45-days money-back guarantee&lt;/strong&gt;. Their package also includes cPanel, an easy-to-use WordPress hosting control panel.&lt;/p&gt;
+&lt;p&gt;Apart from that, their package also offers one &lt;strong&gt;free domain registration on few plans, 1-click installations, and free SSL certifications&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;HostGator is WordPress only hosting provider which means that they have their services refined for the WordPress ecosystem.&lt;/p&gt;
+&lt;h4&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Plans start from $2.64/mo.&lt;/li&gt;
+&lt;li&gt;Average uptime of 99.984%&lt;/li&gt;
+&lt;li&gt;24/7 technical support&lt;/li&gt;
+&lt;li&gt;45 days money-back guarantee&lt;/li&gt;
+&lt;li&gt;It comes with cPanel.&lt;/li&gt;
+&lt;li&gt;Free SSL certificates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This leads us to the end of our guide. Choosing the right hosting service is the first step to start your online journey. So, which hosting type and provider are you choosing?&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>16 Tried and Tested Ways to Write SEO Friendly Content</title>
+            <link href="https://esonusharma.github.io/16-tried-and-tested-ways-to-write-seo-friendly-content.html"/>
+            <updated>2019-11-10T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/16-tried-and-tested-ways-to-write-seo-friendly-content.html</id>
+            <content type="html">&lt;p&gt;&lt;strong&gt;Best ethical writing guidelines&lt;/strong&gt; for creating interesting &lt;strong&gt;magnet content&lt;/strong&gt; offering a one-stop solution that can rank higher with a handful of quality backlinks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SEO writing&lt;/strong&gt; is one of the most important factors in &lt;strong&gt;quick indexing&lt;/strong&gt; and &lt;strong&gt;high ranking&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use at least one &lt;strong&gt;image&lt;/strong&gt; per article.&lt;/li&gt;
+&lt;li&gt;Embed relevant &lt;strong&gt;YouTube videos&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Outgoing links&lt;/strong&gt; from an article increases its trust rating.&lt;/li&gt;
+&lt;li&gt;Write the article in an &lt;strong&gt;active voice&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provide solutions&lt;/strong&gt; to problems your future visitors need.&lt;/li&gt;
+&lt;li&gt;Write in a way that you are &lt;strong&gt;directly in chat&lt;/strong&gt; with your visitor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be honest&lt;/strong&gt; with your readers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use headings, subheadings, and quotes&lt;/strong&gt; distributed evenly throughout the article.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;targeted keywords&lt;/strong&gt; in the first line of the article.&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;long-tail keywords&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Don’t stuff keywords&lt;/strong&gt;, instead use &lt;strong&gt;synonyms&lt;/strong&gt; of targeted keyword.&lt;/li&gt;
+&lt;li&gt;Use bold font to &lt;strong&gt;highlight keywords&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keep paragraphs short&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Choose &lt;strong&gt;simple words&lt;/strong&gt; and write in &lt;strong&gt;easy to read&lt;/strong&gt; style.&lt;/li&gt;
+&lt;li&gt;Use appropriate &lt;strong&gt;links to your other articles&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Pillar articles should contain at least &lt;strong&gt;2000 words&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>SEO Glossary</title>
+            <link href="https://esonusharma.github.io/seo-glossary.html"/>
+            <updated>2019-05-31T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/seo-glossary.html</id>
+            <content type="html">&lt;p&gt;&lt;strong&gt;Online Marketing Glossary offers you a&lt;/strong&gt; head-start in learning &lt;strong&gt;online marketing&lt;/strong&gt; providing a learning hack by explaining the respective &lt;strong&gt;terminology&lt;/strong&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Terms&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Blog&lt;/td&gt;
+&lt;td&gt;Blog, short name for weblog (weblog), is a regularly updated content website organized in the form of articles or posts.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;archive.org&lt;/td&gt;
+&lt;td&gt;A digital library consisting of archives of websites, software, games, etc. available for free to all.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wordpress.com&lt;/td&gt;
+&lt;td&gt;A blogging network, where anybody can register and set up a blog.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;blogger.com&lt;/td&gt;
+&lt;td&gt;A blogging network, where anybody can register and set up a blog.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wix.com&lt;/td&gt;
+&lt;td&gt;A blogging network, where anybody can register and set up a blog.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;weebly.com&lt;/td&gt;
+&lt;td&gt;A blogging network, where anybody can register and set up a blog.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-links-infograph.png&quot; alt=&quot;inline-links-infograph&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-redirection-infograph.png&quot; alt=&quot;inline-redirection-infograph&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-seo-metrics-infograph.png&quot; alt=&quot;inline-seo-metrics-infograph&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-seo-tools-infograph.png&quot; alt=&quot;inline-seo-tools-infograph&quot; /&gt;&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>5 Best WordPress Themes</title>
+            <link href="https://esonusharma.github.io/5-best-wordpress-themes.html"/>
+            <updated>2019-05-29T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/5-best-wordpress-themes.html</id>
+            <content type="html">&lt;p&gt;A collection of &lt;strong&gt;best free&lt;/strong&gt; and &lt;strong&gt;premium WordPress themes&lt;/strong&gt; offering useful features and customization options, speed, SEO friendliness, and schema integration.&lt;/p&gt;
+&lt;h2&gt;Customizr&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Customizr&lt;/strong&gt; is a responsive and highly customizable WordPress theme having 100000+ active installs.&lt;/p&gt;
+&lt;p&gt;Almost all the theme customization features are available in the &lt;strong&gt;WordPress Customizer&lt;/strong&gt;, making it easy to view changes as soon as you make them.&lt;/p&gt;
+&lt;p&gt;The theme design offers visitor engagement features. With a subtle clean look, customizr easily grabs the attention of a serious visitor.&lt;/p&gt;
+&lt;p&gt;The theme is easy to use and customize, but if you need to dive into the customizr knowledge pool, then a very well written documentation is available for your help.&lt;/p&gt;
+&lt;p&gt;It is a &lt;strong&gt;premium free WordPress theme&lt;/strong&gt; most useful for the bloggers who aspire visitor engagement, also versatility of this theme with its customization features makes it desirable for any kind of website.&lt;/p&gt;
+&lt;p&gt;Major Features of Customizr:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Responsive Slider&lt;/li&gt;
+&lt;li&gt;Social Sharing Options&lt;/li&gt;
+&lt;li&gt;Vertical and Horizontal Menu Options&lt;/li&gt;
+&lt;li&gt;Featured Pages&lt;/li&gt;
+&lt;li&gt;Logo, Favicon Upload&lt;/li&gt;
+&lt;li&gt;Sticky Header&lt;/li&gt;
+&lt;li&gt;Skin Changing and Randomization&lt;/li&gt;
+&lt;li&gt;Google Fonts&lt;/li&gt;
+&lt;li&gt;Smooth Scroll&lt;/li&gt;
+&lt;li&gt;Lightbox Effect for Images&lt;/li&gt;
+&lt;li&gt;Smooth scroll&lt;/li&gt;
+&lt;li&gt;Retina Support&lt;/li&gt;
+&lt;li&gt;Author Box&lt;/li&gt;
+&lt;li&gt;Extensive Header Customizations&lt;/li&gt;
+&lt;li&gt;Grid and Alternate Thumbnails Layout for Posts&lt;/li&gt;
+&lt;li&gt;Breadcrumbs&lt;/li&gt;
+&lt;li&gt;Galleries&lt;/li&gt;
+&lt;li&gt;Sidebars and Footer Widgets Options&lt;/li&gt;
+&lt;li&gt;Custom CSS&lt;/li&gt;
+&lt;li&gt;Minification of Stylesheets&lt;/li&gt;
+&lt;li&gt;Font Awesome Icons&lt;/li&gt;
+&lt;li&gt;Help Notices in Frontend for Logged in Users&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A large set of customization options make customizr worthy of its name.&lt;/p&gt;
+&lt;p&gt;Most of the features anyone would need are already present in the theme itself without the need for separate plugins for each feature.&lt;/p&gt;
+&lt;p&gt;Moreover, all these awesome features are available for free.&lt;/p&gt;
+&lt;p&gt;Even if it is highly customizable, some features like social share buttons for the posts will make it irresistible.&lt;/p&gt;
+&lt;p&gt;But wait, this excellent theme is free, and you can add these missing social features with these social media plugins.&lt;/p&gt;
+&lt;p&gt;If you need some more goodies like more Featured Pages, Font Customizations, and Footer Link Removal, then go for the Customizr Pro which is affordable and worthy of every penny spent on it.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>How to Transfer Email from One Account to Another?</title>
+            <link href="https://esonusharma.github.io/how-to-transfer-email-from-one-account-to-another.html"/>
+            <updated>2019-05-29T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/how-to-transfer-email-from-one-account-to-another.html</id>
+            <content type="html">&lt;p&gt;A step by step procedure to transfer specific emails from one email account to another.&lt;/p&gt;
+&lt;p&gt;This method is free and easy to implement.&lt;/p&gt;
+&lt;p&gt;It is easier to move all old and new emails from one account to another.&lt;/p&gt;
+&lt;p&gt;But sometimes one needs to transfer only a specific set of emails from one account to another.&lt;/p&gt;
+&lt;p&gt;The best and easy way to do this is by using an email client over IMAP.&lt;/p&gt;
+&lt;p&gt;The one I have personally used is Mozilla’s &lt;a href=&quot;https://www.mozilla.org/en-US/thunderbird&quot;&gt;Thunderbird&lt;/a&gt; email client.&lt;/p&gt;
+&lt;p&gt;Yes, it is not very fancy looking, but it works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You can use this method:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If changing the name of a business.&lt;/li&gt;
+&lt;li&gt;To copy your emails from office email account to personal email account.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download Thunderbird and install it on your Laptop or PC.&lt;/p&gt;
+&lt;p&gt;Now you have to add the email accounts in Thunderbird between which you want to transfer emails.&lt;/p&gt;
+&lt;h2&gt;Stepwise Procedure to transfer emails&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch Thunderbird Client.&lt;/li&gt;
+&lt;li&gt;Click on Accounts&amp;gt;Create a new account&amp;gt;Email, a pop-up will emerge.&lt;/li&gt;
+&lt;li&gt;At the bottom of pop-up click the button with the text “Skip this and use my existing email”.&lt;/li&gt;
+&lt;li&gt;In the next pop-up, specify your name, email, and password and click on continue.&lt;/li&gt;
+&lt;li&gt;Choose IMAP option now and click on “Done”.&lt;/li&gt;
+&lt;li&gt;Now, in the next screen log in to your email account with username and password as asked.&lt;/li&gt;
+&lt;li&gt;Allow the permission to connect with Thunderbird client then.&lt;/li&gt;
+&lt;li&gt;Now, the email account will be visible in your Thunderbird client on the left side.&lt;/li&gt;
+&lt;li&gt;You will now notice no or few folders listed under the account name in the client.&lt;/li&gt;
+&lt;li&gt;To add all the folders and labels in your email account, Click on Advanced Features&amp;gt;Manage Folder Subscriptions or right-click on the email on the left side and click on Subscribe.&lt;/li&gt;
+&lt;li&gt;A pop-up will emerge, check the boxes in front of all those folders you want to add, click on subscribe and then OK.&lt;/li&gt;
+&lt;li&gt;Wait a minute, collapse and expand the email link on the left side, now you will see all the specified labels.&lt;/li&gt;
+&lt;li&gt;Repeat this procedure to add all the email accounts to the Thunderbird client.&lt;/li&gt;
+&lt;li&gt;Now, select the emails which you want to move or copy from one Gmail account to another, either one by one or ctr+select multiple emails from your email account and right-click, select the move or copy option, then select the target email account and the target label or folder to move or copy selected emails to that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can use this procedure for various email service providers Thunderbird can connect to.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>17 Popular Social Media Plugins</title>
+            <link href="https://esonusharma.github.io/17-popular-social-media-plugins.html"/>
+            <updated>2019-05-29T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/17-popular-social-media-plugins.html</id>
+            <content type="html">&lt;p&gt;&lt;strong&gt;WordPress social media plugins&lt;/strong&gt; are becoming a necessity for WordPress websites due to the rise of &lt;strong&gt;social networks&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4&gt;&lt;strong&gt;Are you getting confused about choosing the best WordPress social media plugin for your blog?&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Social networks&lt;/strong&gt; are changing the marketing arena and becoming the most important aspect of &lt;strong&gt;content marketing&lt;/strong&gt; and &lt;strong&gt;SEO&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;social media plugin&lt;/strong&gt; helps any content to become &lt;strong&gt;viral&lt;/strong&gt; by offering features like &lt;strong&gt;social sharing buttons&lt;/strong&gt; and &lt;strong&gt;social follow buttons&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social sharing buttons&lt;/strong&gt; placed near the content makes it easy for the reader to spot and share the content.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social follow buttons&lt;/strong&gt; placed at proper places can drive a lot of visitors to your social media profiles or pages.&lt;/p&gt;
+&lt;p&gt;More visitors mean more user engagement.&lt;/p&gt;
+&lt;p&gt;A large number of &lt;strong&gt;free&lt;/strong&gt; and paid &lt;strong&gt;social media plugins&lt;/strong&gt; are available for WordPress which makes it very difficult to choose the best plugin from this large repository.&lt;/p&gt;
+&lt;p&gt;This collection is aimed at making it easy to choose from the best available social media plugins.&lt;/p&gt;
+&lt;h2&gt;How to choose the Best Social Media Plugin for WordPress?&lt;/h2&gt;
+&lt;p&gt;The evaluation parameters can be performance and utility.&lt;/p&gt;
+&lt;p&gt;Filling up all the empty space of your site with &lt;strong&gt;social media icons&lt;/strong&gt; may degrade the user experience.&lt;/p&gt;
+&lt;p&gt;So, it is wise to use only those social networks which are used in social media marketing for your niche.&lt;/p&gt;
+&lt;p&gt;Also, if the plugin is too heavy, it will slow down your site and increase the response time.&lt;/p&gt;
+&lt;p&gt;And if your site is slow, then it will be difficult to retain the user.&lt;/p&gt;
+&lt;p&gt;Also, Google doesn’t like slow sites so it may bring down the ranking of your article for certain keywords.&lt;/p&gt;
+&lt;p&gt;Look for a &lt;strong&gt;WordPress social media plugin&lt;/strong&gt; that provides most of the functions at a single place like social sharing buttons, social follow buttons, and displaying social counts for showing the popularity of your article.&lt;/p&gt;
+&lt;p&gt;This may reduce the number of plugins needed.&lt;/p&gt;
+&lt;p&gt;But it depends completely on your choice, which functions you need and you can choose the social media plugin based on your needs.&lt;/p&gt;
+&lt;h2&gt;Blog2Social: Social Media Auto Post &amp;amp; Scheduler&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-blog2social.png&quot; alt=&quot;inline-blog2social&quot; title=&quot;inline-blog2social&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Blog2Social is a social media automation tool from Adenion.&lt;/p&gt;
+&lt;p&gt;With the rise of Social Networks, &lt;strong&gt;automated social media marketing&lt;/strong&gt; is becoming a new trend in the blogging community.&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;Need Social Media Automation Plugin?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Nowadays, it has become easier to automate social media sharing of blog posts with the help of quality plugins like Blog2Social specially created for WordPress.&lt;/p&gt;
+&lt;p&gt;Automatic social media posting saves a lot of time and effort which you can focus on creating quality content.&lt;/p&gt;
+&lt;p&gt;The plugin allows cross-posting and cross-promoting of blog posts in a single step on various popular social networks such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitter&lt;/li&gt;
+&lt;li&gt;Facebook (profiles, pages)&lt;/li&gt;
+&lt;li&gt;Google My Business&lt;/li&gt;
+&lt;li&gt;LinkedIn (profiles, pages)&lt;/li&gt;
+&lt;li&gt;XING (profiles, pages, groups)&lt;/li&gt;
+&lt;li&gt;Diigo&lt;/li&gt;
+&lt;li&gt;Reddit&lt;/li&gt;
+&lt;li&gt;VK&lt;/li&gt;
+&lt;li&gt;Bloglovin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Re-publishing&lt;/strong&gt; blog posts become easy on networks like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tumblr&lt;/li&gt;
+&lt;li&gt;Medium&lt;/li&gt;
+&lt;li&gt;Torial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Effortless &lt;strong&gt;Auto-sharing&lt;/strong&gt; of images on networks like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instagram&lt;/li&gt;
+&lt;li&gt;Flickr&lt;/li&gt;
+&lt;li&gt;Pinterest&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A long list of useful features documented below makes Blog2Social, a &lt;strong&gt;must-have plugin&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scheduling the posts for publishing at best times.&lt;/li&gt;
+&lt;li&gt;Custom scheduling.&lt;/li&gt;
+&lt;li&gt;Cross sharing to popular social networks.&lt;/li&gt;
+&lt;li&gt;Re-sharing the old posts once or recurring.&lt;/li&gt;
+&lt;li&gt;Auto-posting to social networks when you publish a post.&lt;/li&gt;
+&lt;li&gt;Editing or adding hashtags, comments, mentions.&lt;/li&gt;
+&lt;li&gt;Formatting the post optimally for each network.&lt;/li&gt;
+&lt;li&gt;One-step process.&lt;/li&gt;
+&lt;li&gt;Keep track of your social activities with the reporting feature.&lt;/li&gt;
+&lt;li&gt;Free and premium licensing for flexibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Social Warfare&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-social-warfare.png&quot; alt=&quot;inline-social-warfare&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social Warfare&lt;/strong&gt; is an extremely useful &lt;strong&gt;WordPress social media&lt;/strong&gt; plugin.&lt;/p&gt;
+&lt;p&gt;It is lightweight and provides share buttons for all major social media platforms including &lt;strong&gt;LinkedIn, Facebook, Twitter, Pinterest&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Placement options like above the post content, below the post content, both above and below post content, manual placement, and no placement are available.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Floating share buttons&lt;/strong&gt; can also be used instead of standard placements.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social share counts&lt;/strong&gt; are also available without signing up or registering anywhere.&lt;/p&gt;
+&lt;p&gt;Though the &lt;strong&gt;free plugin&lt;/strong&gt; is enough for many bloggers, extra options and networks can also be acquired through the Pro version.&lt;/p&gt;
+&lt;h2&gt;Swifty Bar, sticky bar by WPGens&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-swifty-bar.png&quot; alt=&quot;inline-swifty-bar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Swifty bar&lt;/strong&gt; is my personal favourite &lt;strong&gt;social sharing&lt;/strong&gt; plugin.&lt;/p&gt;
+&lt;p&gt;It provides some of the best utilities together in one simple &lt;strong&gt;sticky bar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The functions it performs are share buttons for popular networks with share counts, the time required to read the article, post title, category, author name, comment count, previous and next post links at one single place.&lt;/p&gt;
+&lt;p&gt;This plugin is lightweight despite providing so many options.&lt;/p&gt;
+&lt;p&gt;Different color options and icons are also present.&lt;/p&gt;
+&lt;p&gt;The plugin is lightweight and supports custom post types.&lt;/p&gt;
+&lt;p&gt;More options can be found in the premium version.&lt;/p&gt;
+&lt;h2&gt;Shared Counts&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-shared-counts.png&quot; alt=&quot;inline-shared-counts&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Shared Counts plugin&lt;/strong&gt; is a &lt;strong&gt;social media plugin&lt;/strong&gt; that covers most of the goodies combined with the speed.&lt;/p&gt;
+&lt;p&gt;Only the &lt;strong&gt;popular social networks&lt;/strong&gt; are included like &lt;strong&gt;Twitter, Facebook, Linkedin, Pinterest.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Social share counts can be shown individually for each network or combined for all networks.&lt;/p&gt;
+&lt;p&gt;Multiple styling and placement options like before and after the post are available.&lt;/p&gt;
+&lt;h2&gt;AddToAny Share Buttons&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-add-to-any.png&quot; alt=&quot;inline-add-to-any&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AddToAny&lt;/strong&gt; is a &lt;strong&gt;WordPress social media plugin&lt;/strong&gt; with a variety of social networks.&lt;/p&gt;
+&lt;p&gt;It provides options for &lt;strong&gt;floating social share bar&lt;/strong&gt; along with standard placement options.&lt;/p&gt;
+&lt;p&gt;Integration with &lt;strong&gt;Google Analytics&lt;/strong&gt; provides it with an extra edge.&lt;/p&gt;
+&lt;p&gt;Low resource requirement makes it perfect for shared hosting users.&lt;/p&gt;
+&lt;p&gt;Share counts can also be shown without external services.&lt;/p&gt;
+&lt;h2&gt;Sassy Social Share&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-sassy-social-share.png&quot; alt=&quot;inline-sassy-social-share&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sassy Social Share&lt;/strong&gt; provides a plethora of options.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Share buttons&lt;/strong&gt; can be placed in the content or kept &lt;strong&gt;sticky floating&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Different styling positioning options are also there.&lt;/p&gt;
+&lt;p&gt;Social counts can also be shown with sharing data extracted with the help of third-party utilities.&lt;/p&gt;
+&lt;h2&gt;AddThis-WordPress Share Buttons Plugin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-addthis-share.png&quot; alt=&quot;inline-addthis-share&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;AddThis&lt;/strong&gt; WordPress social plugin flaunts a huge list of social networks with &lt;strong&gt;responsive and simple share buttons&lt;/strong&gt; which can be customized according to the device.&lt;/p&gt;
+&lt;p&gt;It also includes networks like &lt;strong&gt;WhatsApp&lt;/strong&gt; and messenger.&lt;/p&gt;
+&lt;p&gt;A range of share button options including floating, inline, and expanding makes it desirable.&lt;/p&gt;
+&lt;h2&gt;AddThis-WordPress Follow Buttons Plugin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-addthis-follow.png&quot; alt=&quot;inline-addthis-follow&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Like &lt;strong&gt;AddThis share buttons&lt;/strong&gt;, this is a separate plugin providing &lt;strong&gt;social follow buttons&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The two plugins are having separate presence may be due to the possibility that many people use themes with any one of the utility missing.&lt;/p&gt;
+&lt;p&gt;AddThis follow buttons support a large number of social networks including the popular ones.&lt;/p&gt;
+&lt;p&gt;The buttons can also be placed horizontally or vertically at the top, footer, and sidebar.&lt;/p&gt;
+&lt;p&gt;Different display themes including dark, light, transparent, and grey make it easy to adapt according to different themes.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;free&lt;/strong&gt; AddThis account can also give you the analytics.&lt;/p&gt;
+&lt;p&gt;Various button sizes are also available.&lt;/p&gt;
+&lt;h2&gt;WordPress to Buffer&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-wordpress-to-buffer.png&quot; alt=&quot;inline-wordpress-to-buffer&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Buffer&lt;/strong&gt; is a service that allows automatic and &lt;strong&gt;scheduled sharing&lt;/strong&gt; of content to different social networks.&lt;/p&gt;
+&lt;p&gt;For using this &lt;strong&gt;social media plugin&lt;/strong&gt;, you need a buffer account.&lt;/p&gt;
+&lt;p&gt;The basic account with buffer is free with a limitation of three social networks that can be connected.&lt;/p&gt;
+&lt;p&gt;This plugin automatically shares the updates from your blog to the buffer account for publishing them to different social networks connected to your account.&lt;/p&gt;
+&lt;p&gt;The pro version of this plugin provides some extra goodies.&lt;/p&gt;
+&lt;h2&gt;Ultimate Social Media&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-ultimate-social-media.png&quot; alt=&quot;inline-ultimate-social-media&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ultimate Social Media&lt;/strong&gt; has two similar plugins.&lt;/p&gt;
+&lt;p&gt;Both can be used simultaneously for separate controls, but unlikely and seldom required.&lt;/p&gt;
+&lt;p&gt;Popular social share platforms are available in the &lt;strong&gt;free&lt;/strong&gt; version and more can be acquired through the &lt;strong&gt;paid&lt;/strong&gt; version.&lt;/p&gt;
+&lt;p&gt;You can choose from various stylish designs for your &lt;strong&gt;social share buttons&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Social share buttons can be floating, placed before or after posts, through shortcode, in a widget, or any specific location on the page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social counts&lt;/strong&gt; can be shown on the buttons.&lt;/p&gt;
+&lt;p&gt;You can also display social share buttons in a &lt;strong&gt;popup&lt;/strong&gt; on all or selected content pieces.&lt;/p&gt;
+&lt;p&gt;Different &lt;strong&gt;animations&lt;/strong&gt; and actions for buttons are available.&lt;/p&gt;
+&lt;h2&gt;Social Icons Widget by WPZOOM&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-social-icons-widget.png&quot; alt=&quot;inline-social-icons-widget&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social Icons Widget by WPZOOM&lt;/strong&gt; supports a large pool of &lt;strong&gt;social media networks&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It supports hundreds of custom icons, different icon sets, and colors.&lt;/p&gt;
+&lt;p&gt;It can also be integrated to &lt;strong&gt;FontAwesome&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It also supports &lt;strong&gt;WhatsApp, Viber, Skype, Email, Telephone&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Styles including icons with and without background are available.&lt;/p&gt;
+&lt;p&gt;Background types include square, rounded corners, round.&lt;/p&gt;
+&lt;h2&gt;Revive Old Post&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-revive-old-posts.png&quot; alt=&quot;inline-revive-old-posts&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Revive Old Post&lt;/strong&gt; is a very unique and useful &lt;strong&gt;WordPress social media plugin&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Though it can be used as an &lt;strong&gt;auto poster for Facebook and Twitter&lt;/strong&gt;, it is mainly preferred for its ability to share old posts on the blog.&lt;/p&gt;
+&lt;p&gt;As the name suggests, it automatically shares new and old posts as per the settings.&lt;/p&gt;
+&lt;p&gt;Sometimes your old content is forgotten and less seen, but still relevant and useful for many people unknown to its presence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resharing of old content on social media&lt;/strong&gt; platforms provides the content with a new life and great content to the new subscribers.&lt;/p&gt;
+&lt;p&gt;It can be integrated and used with &lt;strong&gt;URL shorteners and Google Analytics&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can also use hashtags, specify the time between sharing of posts, number of posts to share, exclude specific content pieces and categories, and include links to your blog.&lt;/p&gt;
+&lt;h2&gt;WordPress Social Login&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-wordpress-social-login.png&quot; alt=&quot;inline-wordpress-social-login&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WordPress Social Login&lt;/strong&gt; is a useful &lt;strong&gt;social media plugin&lt;/strong&gt; for WordPress sites and blogs with the facility to register.&lt;/p&gt;
+&lt;p&gt;You may have seen a number of sites that allow you to register and log in using your social accounts.&lt;/p&gt;
+&lt;p&gt;This saves time and effort as some of the data from your social profiles is directly used with your permission to fill up the required fields of the registering site.&lt;/p&gt;
+&lt;p&gt;The effort to fill up large forms and remembering different usernames and passwords is reduced.&lt;/p&gt;
+&lt;p&gt;Subscribers can register and log in using their social accounts.&lt;/p&gt;
+&lt;p&gt;The plugin is free, open-source, and free from any copyrights text or linkbacks.&lt;/p&gt;
+&lt;p&gt;It supports a decent number of social networks.&lt;/p&gt;
+&lt;h2&gt;WP Social Sharing&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-wp-social-sharing.png&quot; alt=&quot;inline-wp-social-sharing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;WP Social Sharing&lt;/strong&gt; is a responsive and one of the most lightweight WordPress social sharing plugin.&lt;/p&gt;
+&lt;p&gt;Share buttons can be placed on media, pages, posts, and custom post types.&lt;/p&gt;
+&lt;p&gt;It supports popular networks like &lt;strong&gt;Twitter, Xing, Facebook, Linkedin, Reddit, and Pinterest&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can change the button text, reorder the display positions.&lt;/p&gt;
+&lt;p&gt;The plugin is &lt;strong&gt;lightweight&lt;/strong&gt; because of &lt;strong&gt;CSS3 buttons in place of images&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Share buttons can be placed with a &lt;strong&gt;shortcode&lt;/strong&gt;, before and after content.&lt;/p&gt;
+&lt;h2&gt;Simple Social Icons&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-simple-social-icons.png&quot; alt=&quot;inline-simple-social-icons&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;As the name suggests, &lt;strong&gt;Simple Social Icons&lt;/strong&gt; is simple to use.&lt;/p&gt;
+&lt;p&gt;You can directly provide the color, size, and alignment settings in the widget form.&lt;/p&gt;
+&lt;h2&gt;Social Login&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-social-login.png&quot; alt=&quot;inline-social-login&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social login&lt;/strong&gt; plugin is an open-source social media plugin for WordPress which connects to 35+ social networks including Facebook, Linkedin, Twitter, Google, PayPal, Instagram, LiveJournal, Yahoo.&lt;/p&gt;
+&lt;p&gt;This plugin is &lt;strong&gt;compliant with GDPR&lt;/strong&gt; according to the author of this plugin.&lt;/p&gt;
+&lt;p&gt;The social login integrates with the default WordPress login/register system.&lt;/p&gt;
+&lt;p&gt;People can register, login, and comment using their social logins which also reduces spam.&lt;/p&gt;
+&lt;p&gt;The social networks can be added and removed from the WordPress user profile.&lt;/p&gt;
+&lt;h2&gt;Monarch Social Sharing Plugin (Paid)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Monarch&lt;/strong&gt; is a social sharing plugin from &lt;strong&gt;Elegant Themes&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It stands out from the large pool of free and premium social sharing plugins by providing a large number of social features for WordPress in one single plugin.&lt;/p&gt;
+&lt;p&gt;It supports &lt;strong&gt;40 social networks&lt;/strong&gt; to choose from with a variety of placing options for social sharing buttons and social follow buttons.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-social-networks.png&quot; alt=&quot;inline-monarch-social-networks&quot; /&gt;
+&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-positions.png&quot; alt=&quot;inline-monarch-positions&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It offers most of the social sharing features one can think of.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Flyin boxes&lt;/strong&gt; appear automatically when triggered by a preset trigger.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Floating share sidebar&lt;/strong&gt; floats along with the scrolling of your mouse from article start to the end, so that if the visitor at any point of reading thinks that the article is awesome, can easily click and share it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inline sharing buttons&lt;/strong&gt; above and/or below the posts allow the visitors to share the content when completed reading the article or after scrolling to the top.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automatic social pop-ups&lt;/strong&gt; are triggered by events you specify on the backend monarch menu and flash a pop-up containing social sharing buttons.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Share buttons on images and videos&lt;/strong&gt; enable the users to share images on networks such as Pinterest and videos on networks such as YouTube.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Follow buttons as widgets&lt;/strong&gt; and anywhere using shortcodes drive the visitors to your social media profiles and/or pages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;6 automatic triggers for pop-ups and fly-ins&lt;/strong&gt; make readers say wow and click on the share buttons.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Different button shapes, colors and hover effects&lt;/strong&gt; for making them match with your website color scheme.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display social count&lt;/strong&gt; to show the readers, the popularity of your content and woo the visitors to click on them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Responsive design&lt;/strong&gt; to fit all screen sizes from desktops to mobiles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Social statistics&lt;/strong&gt; to find out what is working and what is not.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy import and export of plugin data&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple dashboard&lt;/strong&gt; to pacify your eagerness to set up and use this wonderful plugin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inbuilt caching&lt;/strong&gt; for fast loading and not compromising the website speed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-flyins.png&quot; alt=&quot;inline-monarch-flyins&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-floating-sidebar.png&quot; alt=&quot;inline-monarch-floating-sidebar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-inline-buttons.png&quot; alt=&quot;inline-monarch-inline-buttons&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-social-popups.png&quot; alt=&quot;inline-monarch-social-popups&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-media-sharing.png&quot; alt=&quot;inline-monarch-media-sharing&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-hover-effects.png&quot; alt=&quot;inline-monarch-hover-effects&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-monarch-dashboard.png&quot; alt=&quot;inline-monarch-dashboard&quot; /&gt;&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>10 Free/Premium Popular Keyword Research Tools</title>
+            <link href="https://esonusharma.github.io/10-free-premium-popular-keyword-research-tools.html"/>
+            <updated>2019-05-29T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/10-free-premium-popular-keyword-research-tools.html</id>
+            <content type="html">&lt;p&gt;A collection of manually selected &lt;strong&gt;best keyword research tools&lt;/strong&gt; offering &lt;strong&gt;free&lt;/strong&gt; and &lt;strong&gt;premium&lt;/strong&gt; tools to find the most searched and &lt;strong&gt;profitable keywords&lt;/strong&gt; for any niche.&lt;/p&gt;
+&lt;p&gt;Before starting to discuss all the keyword research tools, I want to specifically mention my personal favorite &lt;strong&gt;Semrush&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The first step in creating useful content is &lt;strong&gt;keyword research&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;There are many articles regarding the importance and methods of finding the right keywords using different &lt;strong&gt;keyword research tools&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Here, through the medium of this article, I am contributing some facts which I have learned in my blogging journey.&lt;/p&gt;
+&lt;p&gt;According to &lt;strong&gt;Wikipedia&lt;/strong&gt;, Keyword research is a practice search engine optimization &lt;strong&gt;(SEO)&lt;/strong&gt; professionals use to find and research alternative search terms that people enter into search engines while looking for a similar subject.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;What are Keywords?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;The search terms used by search engine users to query the search engine for their requirements are termed as keywords.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;What is Keyword Research?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;It is the process of finding the most popular and extensively used keywords by the search engine users in your niche.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;How important is keyword research?&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Keywords are an important part of content marketing.&lt;/li&gt;
+&lt;li&gt;The choice of keywords decides the future of the content.&lt;/li&gt;
+&lt;li&gt;A carefully done keyword research helps in promoting the content through search engines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Search engines rank&lt;/strong&gt; content on the basis of some set rules and other dynamically created rules learned by the search engine &lt;strong&gt;algorithms&lt;/strong&gt; through &lt;strong&gt;artificial intelligence&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Nobody can predict those rules correctly.&lt;/p&gt;
+&lt;p&gt;But we believe that the algorithm creators of search engines created an equal platform for all, where good content is rewarded and bad practices are punished.&lt;/p&gt;
+&lt;p&gt;So the best practices include general ethics and good writing practices to be followed.&lt;/p&gt;
+&lt;p&gt;But, how a search engine will know that your content is relevant to a particular user query.&lt;/p&gt;
+&lt;p&gt;Here comes the role of keywords.&lt;/p&gt;
+&lt;p&gt;When you know the keywords which people are searching for the solutions you are providing through your content, then natural usage of those keywords will help you make your content great.&lt;/p&gt;
+&lt;p&gt;The use of &lt;strong&gt;popular phrases&lt;/strong&gt; and &lt;strong&gt;keywords&lt;/strong&gt; will help bring more traffic to your website.&lt;/p&gt;
+&lt;p&gt;Proper &lt;strong&gt;keyword research&lt;/strong&gt; is needed to make your &lt;strong&gt;content marketing&lt;/strong&gt; strategy successful.&lt;/p&gt;
+&lt;h4&gt;&lt;strong&gt;Why you need Keyword Research?&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;To grow traffic and popularity of your blog.&lt;/li&gt;
+&lt;li&gt;To create useful and search-worthy content.&lt;/li&gt;
+&lt;li&gt;To promote your content more effectively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;strong&gt;How to do proper Keyword Research?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Now that you have got the basic idea, we can discuss the recipe for proper keyword research.&lt;/p&gt;
+&lt;p&gt;Just choosing keywords randomly is not the correct way.&lt;/p&gt;
+&lt;p&gt;There are a lot of &lt;strong&gt;premium&lt;/strong&gt; and &lt;strong&gt;free keyword research tools&lt;/strong&gt; in the market which has a lot of experience in keyword research gained through data analytics techniques.&lt;/p&gt;
+&lt;p&gt;Now we are going to discuss some of the best keyword research tools which we have used in keyword research.&lt;/p&gt;
+&lt;h2&gt;SeoBook Keyword Tool&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Seobook&lt;/strong&gt; is a very popular SEO tool source.&lt;/p&gt;
+&lt;p&gt;One of their popular tools is the &lt;strong&gt;SeoBook Keyword Tool&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is &lt;strong&gt;not a plugin&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It is &lt;strong&gt;free&lt;/strong&gt;, you just have to &lt;strong&gt;register&lt;/strong&gt; with an email and password to create a Seobook account.&lt;/p&gt;
+&lt;p&gt;Only logged in users can access the tool.&lt;/p&gt;
+&lt;p&gt;Then search for the topic you are writing about, the tool will show you a long list of different &lt;strong&gt;profitable&lt;/strong&gt; and &lt;strong&gt;popular keywords&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-seobook-keyword-tool.png&quot; alt=&quot;inline-seobook-keyword-tool&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The amount of monthly and daily searches in the US and UK for different search engines like google, bing is also shown with &lt;strong&gt;CPC&lt;/strong&gt; and &lt;strong&gt;Traffic value&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A small checkbox (G Trends) for including &lt;strong&gt;Google Trends&lt;/strong&gt; data near to the search box is offered.&lt;/p&gt;
+&lt;p&gt;You can also export the &lt;strong&gt;keyword list&lt;/strong&gt; into a CSV file through the button provided for the same.&lt;/p&gt;
+&lt;p&gt;In short, the tool is extremely useful to find &lt;strong&gt;profitable keywords&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Moz Keyword Research Tool&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-moz-keyword-explorer-main.png&quot; alt=&quot;inline-moz-keyword-explorer-main&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Moz&lt;/strong&gt; is a strong SEO tools provider in the market.&lt;/p&gt;
+&lt;p&gt;Moz offers some free tools like &lt;strong&gt;Open site explorer&lt;/strong&gt; and &lt;strong&gt;Keyword research tool&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-moz-serp-analysis.png&quot; alt=&quot;inline-moz-serp-analysis&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Moz keyword tool&lt;/strong&gt; can be used after you register a &lt;strong&gt;free account with Moz&lt;/strong&gt; and log in.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-moz-keyword-explorer.png&quot; alt=&quot;inline-moz-keyword-explorer&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;Google Trends&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Google trends&lt;/strong&gt; is a very helpful tool to find out &lt;strong&gt;trending keywords&lt;/strong&gt; in the world.&lt;/p&gt;
+&lt;p&gt;You can search for your topic of interest in the search box and find out the latest and previous trends related to that topic.&lt;/p&gt;
+&lt;p&gt;If you are searching for a topic to write about, then it can help you find the most trending topics.&lt;/p&gt;
+&lt;p&gt;You can write a piece of content related to the latest trending topics if your blog vision allows you to incorporate that and attract a &lt;strong&gt;huge traffic&lt;/strong&gt; surge in your favor.&lt;/p&gt;
+&lt;h2&gt;Google Keyword Planner&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Google keyword planner&lt;/strong&gt; is also an important &lt;strong&gt;keyword research tool&lt;/strong&gt; offering the most &lt;strong&gt;trustworthy&lt;/strong&gt; keyword data.&lt;/p&gt;
+&lt;p&gt;This fantastic tool offers the &lt;strong&gt;AdWords&lt;/strong&gt; information about various keywords you search for and also shows the traffic and AdWords cost for that keyword.&lt;/p&gt;
+&lt;h2&gt;Semrush&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-semrush-main.png&quot; alt=&quot;inline-semrush-main&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Semrush&lt;/strong&gt; is the favorite keyword research and &lt;strong&gt;SEM&lt;/strong&gt; tool of most of the content marketers, all goes to its awesomeness.&lt;/p&gt;
+&lt;p&gt;It is one of the tops in the keyword SEO tools as it provides location-based data for keywords.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-semrush.png&quot; alt=&quot;inline-semrush&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Semrush is an all in one tool for &lt;strong&gt;SEO&lt;/strong&gt; and SEM.&lt;/p&gt;
+&lt;p&gt;Moreover, it provides many tools just for &lt;strong&gt;free&lt;/strong&gt; and some tools with free registration.&lt;/p&gt;
+&lt;p&gt;It offers keyword research and much more.&lt;/p&gt;
+&lt;h2&gt;KeywordTool.io&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-keywordtoolio-main.png&quot; alt=&quot;inline-keywordtoolio-main&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;KeywordTool.io&lt;/strong&gt; is one of the wonderful keyword research tools available in the market to get &lt;strong&gt;long-tail keyword&lt;/strong&gt; suggestions.&lt;/p&gt;
+&lt;p&gt;It can give you suggestions for different search engines like &lt;strong&gt;Google, Youtube, Bing, Amazon, and eBay, etc&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can get &lt;strong&gt;keyword suggestions&lt;/strong&gt; for different search locations in the world.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;free search&lt;/strong&gt; only provides the keyword suggestions and not the search volume data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-keywordtoolio.png&quot; alt=&quot;inline-keywordtoolio&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can try it and if you need the search volume data you can buy the PRO service.&lt;/p&gt;
+&lt;h2&gt;Keyword.io&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-keywordio.png&quot; alt=&quot;inline-keywordio&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keyword.io&lt;/strong&gt; offers &lt;strong&gt;Free Longtail Keyword Finder Tools&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can get keyword suggestions for &lt;strong&gt;Google, Youtube, Amazon, Bing, Yandex, Wikipedia, eBay, Alibaba, Playstore, Fiverr,&lt;/strong&gt; and more for free.&lt;/p&gt;
+&lt;p&gt;You can find keywords suggestions based on &lt;strong&gt;different locations&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;KWFinder&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-kwfinder-main.png&quot; alt=&quot;inline-kwfinder-main&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;KWFinder&lt;/strong&gt; provides suggestions for &lt;strong&gt;&lt;code&gt;&amp;lt;span class=&amp;quot;has-inline-color has-black-color&amp;quot;&amp;gt;&lt;/code&gt;long-tail keywords&lt;/strong&gt; with a &lt;strong&gt;low SEO difficulty level&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-kwfinder.png&quot; alt=&quot;inline-kwfinder&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Such keywords help you rank fast in search engine results for long-tail keywords and &lt;strong&gt;start bringing traffic&lt;/strong&gt; to your website.&lt;/p&gt;
+&lt;h2&gt;LongTailPro&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-longtailpro-main.png&quot; alt=&quot;inline-longtailpro-main&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LongTailPro&lt;/strong&gt; is a &lt;strong&gt;premium&lt;/strong&gt; keyword research tool.&lt;/p&gt;
+&lt;p&gt;It helps you get keyword suggestions for &lt;strong&gt;long-tail keywords&lt;/strong&gt; so that you can write content around them to rank higher in the search engines.&lt;/p&gt;
+&lt;p&gt;Long Tail Keywords are more specific than the &lt;strong&gt;head keywords&lt;/strong&gt;, and hence more likely to convert.&lt;/p&gt;
+&lt;h2&gt;Google Autocomplete/Autosuggest&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://esonusharma.github.io/assets/img/inline/inline-google-suggest.png&quot; alt=&quot;inline-google-suggest&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;This one is the most trustworthy keyword research tool as it is from the horse’s mouth.&lt;/p&gt;
+&lt;p&gt;When you start typing a phrase to search in google, google uses autocomplete to provide suggestions for possible search phrases to you as visible in the snapshot below.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;autocomplete phrases&lt;/strong&gt; are a source of long-tail keywords.&lt;/p&gt;
+&lt;p&gt;Thus you can get suggestions from Google itself.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>How to Install Latest Julia Version on Linux?</title>
+            <link href="https://esonusharma.github.io/how-to-install-latest-julia-version-on-linux.html"/>
+            <updated>2019-05-29T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/how-to-install-latest-julia-version-on-linux.html</id>
+            <content type="html">&lt;p&gt;Step-by-Step easy to follow procedure to install Julia programming language on Ubuntu and other Linux based operating systems.&lt;/p&gt;
+&lt;p&gt;I know how frustrated you are trying to successfully install the latest version of the Julia programming language on Linux.&lt;/p&gt;
+&lt;p&gt;Installation of Julia is straight-forward in Windows, as you just have to double-click the downloaded exe file and follow the instructions.&lt;/p&gt;
+&lt;p&gt;These are instructions for installation of Julia on Ubuntu but can be adapted on different Linux distributions such as Fedora etc.&lt;/p&gt;
+&lt;p&gt;When we want to install the latest version of Julia on Linux distributions, there are no specific instructions.&lt;/p&gt;
+&lt;p&gt;There is an easy way listed on some sites through a PPA available at &lt;a href=&quot;https://launchpad.net/~staticfloat/+archive/ubuntu/juliareleases&quot;&gt;https://launchpad.net/~staticfloat/+archive/ubuntu/juliareleases&lt;/a&gt;, which has some direct commands to be executed for installing Julia, but the version of the Julia you will get may not be the latest and also this is unsupported and untrusted as mentioned on the above link.&lt;/p&gt;
+&lt;p&gt;If you try to install Julia from the “Ubuntu Software Centre” or “Synaptic Package Manager” or directly using the command “sudo apt-get install julia”, you are probably going to get a very old version of Julia.&lt;/p&gt;
+&lt;p&gt;I also faced all these problems as I wanted to install an official, pure, untouched fresh copy of the latest version of Julia to learn and use it.&lt;/p&gt;
+&lt;p&gt;So finally I embarked upon the hard way of getting the latest Julia stable release version installed on my Ubuntu laptop.&lt;/p&gt;
+&lt;p&gt;Firstly, we have to download the latest released Julia version from the location “&lt;a href=&quot;https://julialang.org/downloads/&quot;&gt;https://julialang.org/downloads/&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;I used the “Generic Linux Binaries for x86” version. The choice between x86 and ARM depends on the processor of your machine. Also, choose between 32 bit and 64-bit versions based on the Operating system and processor you have on your machine.&lt;/p&gt;
+&lt;p&gt;After download, you will get a compressed tar.gz archive having a name similar to “julia-0.6.2-linux-x86_64.tar.gz”. As the “julia-0.6.2-linux-x86_64.tar.gz” name suggests that I downloaded the Julia version 0.6.2 which is latest at the time of writing this article, generic Linux binaries i.e. this can be used for any Linux system including Ubuntu, Fedora, Centos and more, x86 system and 64-bit operating system.&lt;/p&gt;
+&lt;p&gt;The names may differ. Adapt the names accordingly.&lt;/p&gt;
+&lt;p&gt;Remember these are binaries, these don’t need to be installed as they can be directly used from the directory they are extracted.&lt;/p&gt;
+&lt;p&gt;These instructions can be followed for getting Julia working on most of the Linux operating systems with little or no modifications, but I cannot guarantee the perfect result. Try it at your own risk.&lt;/p&gt;
+&lt;p&gt;I am assuming that the downloaded file is in your Downloads directory of Ubuntu.&lt;/p&gt;
+&lt;p&gt;Open the terminal and navigate to the directory where the downloaded tar.gz file resides, in the present case the Downloads directory.&lt;/p&gt;
+&lt;p&gt;The terminal when just opened will show&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where x should be replaced by your username and xpc should be replaced by your computer name&lt;/p&gt;
+&lt;p&gt;Navigate to the Downloads directory using “cd Downloads” command on the terminal written as&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~$ cd Downloads
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and then press enter to get following terminal&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~/Downloads$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Extract the tar.gz file using the command “tar -zxvf julia-0.6.2-linux-x86_64.tar.gz” as shown below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~/Downloads$ tar -zxvf julia-0.6.2-linux-x86_64.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now a directory with extracted contents will be generated in the same parent directory as of the compressed archive with a name similar to “julia-xxxxxxxxxx” where xxxxxxxxxx may be a combination of alphabets and numerals.&lt;/p&gt;
+&lt;p&gt;This is the final directory you need to run the latest Julia version, no installation is needed.&lt;/p&gt;
+&lt;p&gt;To run Julia, you can directly run using the Julia file in location “julia-xxxxxxxxxx/bin/julia” as discussed below&lt;/p&gt;
+&lt;p&gt;Navigate to the bin directory in the extracted directory using the command “cd /Downloads/julia-xxxxxxxxxx/bin” as expressed below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~$ cd /Downloads/julia-xxxxxxxxxx/bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The terminal will now be like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~/Downloads/julia-xxxxxxxxxx/bin$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now run the command “./julia” to run Julia on the terminal as shown below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~/Downloads/julia-xxxxxxxxxx/bin$ ./julia
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The terminal will now change to Julia as presented below.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; julia&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But the problem is that I have to navigate to the directory every-time to run Julia.&lt;/p&gt;
+&lt;p&gt;Many people have discussed on the internet about defining the path and alias through very complex procedures and as I am not a hardcore computer geek, it was really difficult for me to understand.&lt;/p&gt;
+&lt;p&gt;I came to know about making a soft-link.&lt;/p&gt;
+&lt;p&gt;So I decided to make a soft-link to the Julia to run it directly from anywhere with a short command without navigating to the directory containing it.&lt;/p&gt;
+&lt;p&gt;I always try to do things neatly, so I decided to keep the extracted directory named “julia-xxxxxxxxxx” in the “/opt” directory of my system as most of my important programs reside in that.&lt;/p&gt;
+&lt;p&gt;You need superuser terminal to copy a file into the “/opt” directory.&lt;/p&gt;
+&lt;p&gt;So I used the command “sudo su” and then provided the password to get the superuser privileges as expressed below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~$ sudo su
+ [sudo] password for x:
+ root@xpc:/home/x#
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now navigate to the directory presently containing the extracted directory as expressed below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; root@xpc:/home/x# cd /Downloads/
+ root@xpc:/home/x/Downloads#
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Copy the directory using the command “cp -r julia-xxxxxxxxxx /opt” as shown below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; root@xpc:/home/x/Downloads# cp -r julia-xxxxxxxxxx /opt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After the directory is copied to the destination, now we will make the soft-link in a directory which is in the system path so that the soft-link can be called from any location to run Julia.&lt;/p&gt;
+&lt;p&gt;To find out the directories in the system PATH use command “echo $PATH”, you will get a list of paths of directories separated by a colon(:) such as “/usr/local/bin”. You can use any of them. I used “/usr/local/bin” for the soft-link.&lt;/p&gt;
+&lt;p&gt;Navigate to the chosen folder&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; root@xpc:/home/x# cd /usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The terminal will become&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; root@xpc:/home/x/usr/local/bin#
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Create the soft-link using the command “sudo ln -s /opt/julia-xxxxxxxxxx/bin/julia julia” as shown below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; root@xpc:/home/x/usr/local/bin# sudo ln -s /opt/julia-xxxxxxxxxx/bin/julia julia
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now return to the normal user terminal using command “ctrl+D” at the empty terminal “root@xpc:/home/x/usr/local/bin#”.&lt;/p&gt;
+&lt;p&gt;The terminal will become&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Type the newly made soft-link i.e. “julia” on the terminal as shown below&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; x@xpc:~$ julia
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is where the magic happens and you get this&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; julia&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>How to 301 Permanent Redirect Blogger-Blogspot Blog to Domain?</title>
+            <link href="https://esonusharma.github.io/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain.html"/>
+            <updated>2019-05-28T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain.html</id>
+            <content type="html">&lt;p&gt;I know its difficult to migrate blogger/blogspot blog hosted at bare blogspot domain “&lt;a href=&quot;https://your-blog-name.blogspot.com/&quot;&gt;https://your-blog-name.blogspot.com&lt;/a&gt;” to newly bought branded domain name something like “&lt;a href=&quot;https://yoursite.com/&quot;&gt;https://yoursite.com&lt;/a&gt;”.&lt;/p&gt;
+&lt;h2&gt;So what exactly is SEO Redirection or 301 Redirection?&lt;/h2&gt;
+&lt;p&gt;When you want that a blog post or blog page of your blog should transfer its traffic and google search ranking authority to a new URL where this content is shifted, then you need SEO Redirection.&lt;/p&gt;
+&lt;p&gt;As you are &lt;strong&gt;permanently&lt;/strong&gt; moving your blog content under a &lt;strong&gt;new domain name&lt;/strong&gt;, you need to tell Google about it, so that Google acknowledges the change and transfers the authority of your content to a new address and does not treat the same content at a new URL as plagiarised content and deny &lt;strong&gt;rankings&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can inform this to Google by providing a &lt;strong&gt;301 Redirect&lt;/strong&gt; at the old address of the content.&lt;/p&gt;
+&lt;p&gt;301 Redirect tells Google that the content present at that location is &lt;strong&gt;permanently shifted&lt;/strong&gt; to a new address.&lt;/p&gt;
+&lt;p&gt;The traffic is shifted permanently by Google instantly when it finds this redirect.&lt;/p&gt;
+&lt;p&gt;But the rankings transfer takes some time.&lt;/p&gt;
+&lt;p&gt;Normally you can easily create a 301 Redirect for a personal domain name you own.&lt;/p&gt;
+&lt;h2&gt;301 Redirect can be created by&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Defining it in the &lt;strong&gt;.htaccess&lt;/strong&gt; file available in the hosting if you have hosting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forwarding&lt;/strong&gt; the domain name in your domain control panel provided by the domain name provider choosing the &lt;strong&gt;permanent redirect&lt;/strong&gt;/forward option if you don’t have hosting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But it seems next to impossible to do the same in the case when you don’t own the domain name as the case in &lt;strong&gt;blogger/blogspot&lt;/strong&gt; naked domain.&lt;/p&gt;
+&lt;p&gt;Now I am going to share a method in which you can achieve this.&lt;/p&gt;
+&lt;p&gt;I have tried this method when I was shifting from blogger to my own domain name and I was successful in &lt;strong&gt;transferring&lt;/strong&gt; the ranking of my popular blog posts to a &lt;strong&gt;new web address&lt;/strong&gt; but I cannot guarantee you the same as this is dependent on google and varies on case basis.&lt;/p&gt;
+&lt;p&gt;Insert the code shown below just after the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag in the &lt;strong&gt;blogger template&lt;/strong&gt; after replacing the generalized content to your own in the code below.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;b:if cond=&amp;quot;’data:blog.url&amp;quot; ==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/YEAR/MONTH/BLOG-POST-SLUG.html&amp;gt;”‘&amp;quot;&amp;gt;&amp;lt;meta content=&amp;quot;’0;url=http://yoursite.com/NEW-BLOG-POST-SLUG.html’&amp;quot; http-equiv=&amp;quot;’refresh’/&amp;quot;&amp;gt;&amp;lt;/b:if&amp;gt;
+
+ &amp;lt;b:if cond=&amp;quot;’data:blog.url&amp;quot; ==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/p/BLOG-PAGE-SLUG.html&amp;gt;”‘&amp;quot;&amp;gt;&amp;lt;meta content=&amp;quot;’0;url=http://yoursite.com/NEW-BLOG-PAGE-SLUG.html’&amp;quot; http-equiv=&amp;quot;’refresh’/&amp;quot;&amp;gt;&amp;lt;/b:if&amp;gt;
+
+ &amp;lt;b:if cond=&amp;quot;’data:blog.url&amp;quot; ==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/&amp;gt;”‘&amp;quot;&amp;gt;&amp;lt;meta content=&amp;quot;’0;url=http://yoursite.com/’&amp;quot; http-equiv=&amp;quot;’refresh’/&amp;quot;&amp;gt;&amp;lt;/b:if&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you are fortunate enough, after a few days of doing this you can see your new URL in place of the old URL in google search.&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>50+ Powerful Dofollow Backlinks that Really Work!</title>
+            <link href="https://esonusharma.github.io/50-powerful-dofollow-backlinks-that-really-work.html"/>
+            <updated>2019-05-28T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/50-powerful-dofollow-backlinks-that-really-work.html</id>
+            <content type="html">&lt;p&gt;Dofollow Sites like blogs, websites, and directories allow &lt;strong&gt;dofollow backlinks&lt;/strong&gt; to other websites.&lt;/p&gt;
+&lt;p&gt;A natural and strong &lt;strong&gt;backlink profile&lt;/strong&gt; can help your content rank higher in search engines.&lt;/p&gt;
+&lt;p&gt;But it is very difficult to get such valuable links, especially from &lt;strong&gt;High DA&lt;/strong&gt; Sites.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As the internet is ever-changing, many websites shutdown daily. It is very difficult for us to check the status of the websites listed here on regular basis, so we don’t assure that all links are working or dofollow/nofollow/ugc. We are human and errors are inevitable. If any of our readers found any discrepancies and dead links, please share your findings and suggestions through comments.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;strong&gt;Why dofollow backlinks matter?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Creating dofollow backlinks&lt;/strong&gt; with a white-hat method from high domain authority niche sites increases the &lt;strong&gt;domain authority&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;powerful dofollow backlinks&lt;/strong&gt; give &lt;strong&gt;link juice&lt;/strong&gt; to your blog, adding to the &lt;strong&gt;Domain Authority&lt;/strong&gt; of your website.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Also, keep in mind that even if you get a backlink from a web page, if the page is noindex or canonical is different from the URL itself, or link is ugc/nofollow then it will be of no SEO value for you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;&lt;strong&gt;What is a dofollow backlink?&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;Dofollow Backlink&lt;/strong&gt; looks like this in HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;a href=&amp;quot;https://esonusharma.github.io/dofollow-backlinks.html&amp;quot;&amp;gt;Dofollow Backlink&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A Nofollow Backlink looks like this in HTML:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;a href=&amp;quot;https://esonusharma.github.io/dofollow-backlinks.html&amp;quot; rel=&amp;quot;nofollow&amp;quot;&amp;gt;Nofollow Backlink&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A couple of more types like &lt;strong&gt;rel=”sponsored”&lt;/strong&gt; and &lt;strong&gt;rel=”ugc”&lt;/strong&gt; are explained in detail &lt;a href=&quot;https://moz.com/blog/nofollow-sponsored-ugc&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Link Building&lt;/strong&gt; is a tedious process, but the hard work pays off in the long-term.&lt;/p&gt;
+&lt;p&gt;A handful of strong dofollow backlinks from high authority sites like &lt;a href=&quot;https://www.entrepreneur.com/&quot;&gt;Entrepreneur&lt;/a&gt;, &lt;a href=&quot;https://www.huffpost.com/&quot;&gt;HuffingtonPost&lt;/a&gt;, &lt;a href=&quot;https://www.forbes.com/&quot;&gt;Forbes&lt;/a&gt;, &lt;a href=&quot;https://www.inc.com/&quot;&gt;Inc&lt;/a&gt;, and &lt;a href=&quot;https://www.businessinsider.com/&quot;&gt;BusinessInsider&lt;/a&gt; can dramatically slingshot your content to the top of the food chain.&lt;/p&gt;
+&lt;h2&gt;How to Make Dofollow Backlinks?&lt;/h2&gt;
+&lt;p&gt;The answer is simple, when you have a new website or blog, be slow and steady, get dofollow backlinks from &lt;strong&gt;high page rank&lt;/strong&gt; URLs.&lt;/p&gt;
+&lt;h2&gt;Is it that simple to ask an established publisher for a backlink?&lt;/h2&gt;
+&lt;p&gt;No, its not easy as popular publishers would not link to you when you are new.&lt;/p&gt;
+&lt;p&gt;Also, even if you pay to get backlinks from others or hire an agency to buy backlinks, most of backlinks may not be of the quality you desire.&lt;/p&gt;
+&lt;p&gt;Sometimes, by using unfair practices to get backlinks according to Google Policies, if Google notices this can lead you into trouble and penalize your website.&lt;/p&gt;
+&lt;h2&gt;So, how to get the ranking dice rolling?&lt;/h2&gt;
+&lt;p&gt;You can hire a &lt;a href=&quot;https://esonusharma.github.io/services&quot;&gt;best trustable seo service&lt;/a&gt; which can use &lt;strong&gt;white-hat&lt;/strong&gt; methods for &lt;strong&gt;organic growth&lt;/strong&gt; of your backlink profile.&lt;/p&gt;
+&lt;p&gt;Or you can build them on your own, if you have patience, time and expertise.&lt;/p&gt;
+&lt;p&gt;And I can tell you with my experience that for &lt;strong&gt;low competition keywords&lt;/strong&gt; or long-tail keywords it is easier to rank if you go by rule.&lt;/p&gt;
+&lt;p&gt;I am now compiling a list of such &lt;strong&gt;High-Quality&lt;/strong&gt; Backlinks Sources that offer Dofollow Backlinks.&lt;/p&gt;
+&lt;p&gt;Some of the following sites let you add “&lt;a href=&quot;https://moz.com/learn/seo/anchor-text&quot;&gt;anchor text&lt;/a&gt;” of your choice, some not, but either way a dofollow backlink from these sites will help.&lt;/p&gt;
+&lt;p&gt;Internet is ever changing and we don’t have the resources to check all the following links regularly, so if you find that any of them are not working or provide a nofollow or other non useful links, you can tell us in the comments.&lt;/p&gt;
+&lt;p&gt;Beware of the people selling High Domain Authority boost in very few days like &lt;a href=&quot;https://www.peopleperhour.com/hourlie/increase-domain-authority-to-50-in-14-days/660603&quot;&gt;this one&lt;/a&gt; as the method will increase Domain Authority metric of &lt;a href=&quot;https://moz.com/&quot;&gt;Moz&lt;/a&gt; but have no actual authority boost in Google Search.&lt;/p&gt;
+&lt;h2&gt;HandPicked Dofollow Backlinks Sources&lt;/h2&gt;
+&lt;h2&gt;GrowthHackers (Dofollow)&lt;/h2&gt;
+&lt;p&gt;GrowthHackers is a popular community and allows dofollow backlinks for your website and social pages or profiles on your &lt;strong&gt;GrowthHacker.com&lt;/strong&gt; profile. Other links are nofollow.&lt;/p&gt;
+&lt;p&gt;The profile links are now behind the login wall, so can’t be indexed by the search engines.&lt;/p&gt;
+&lt;p&gt;But if you post articles in the community, the “Read Full Post” button link is dofollow.&lt;/p&gt;
+&lt;h2&gt;Diigo (Dofollow)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Diigo&lt;/strong&gt; is a social bookmarking website.&lt;/p&gt;
+&lt;p&gt;All the bookmark links in your Diigo account are dofollow. So don’t forget to add your blog post bookmarks in Diigo.&lt;/p&gt;
+&lt;h2&gt;About.me (Update-Dofollow)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;About.me&lt;/strong&gt; is a portfolio website.&lt;/p&gt;
+&lt;p&gt;This needs a trick.&lt;/p&gt;
+&lt;p&gt;All other links on the profile page are nofollow except the social links.&lt;/p&gt;
+&lt;p&gt;So, choose any social network from social links menu and add your desired URL there to get a dofollow backlink.&lt;/p&gt;
+&lt;h2&gt;Github (Update-Dofollow)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Github&lt;/strong&gt; is a popular website. It provides nofollow links in the profile section.&lt;/p&gt;
+&lt;p&gt;You can get dofollow links from github.com in the issues section of repositories too.&lt;/p&gt;
+&lt;p&gt;Create a new repository, you can use any name for the repository.&lt;/p&gt;
+&lt;p&gt;You can specify your website URL in the URL field of the repository settings.&lt;/p&gt;
+&lt;h2&gt;Microsoft (Update-Noindex)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Page is noindex.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You won’t believe you can get a dofollow backlink immediately from a &lt;strong&gt;Domain Authority 100&lt;/strong&gt; website for free.&lt;/p&gt;
+&lt;p&gt;First, register a Microsoft account with any email id of yours, you can even use a Gmail account. If you already have a Microsoft account then skip this step.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Log in to your Microsoft account&lt;/li&gt;
+&lt;li&gt;Go to answers.microsoft.com, and go to the profile section, and edit profile.&lt;/li&gt;
+&lt;li&gt;Now you can write your anchor text in the Link Text box.&lt;/li&gt;
+&lt;li&gt;Add your link in the Link URL box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You got your &lt;strong&gt;dofollow link on DA 100 Microsoft&lt;/strong&gt; website.&lt;/p&gt;
+&lt;h2&gt;Blogadda (Update-Noindex)&lt;/h2&gt;
+&lt;p&gt;You can add your website and RSS to &lt;strong&gt;blogadda.com&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;New posts from your blog will automatically list on this blog directory from the RSS link you give in the details after they accept your application.&lt;/p&gt;
+&lt;h2&gt;Alltop (Update-Nofollow)&lt;/h2&gt;
+&lt;p&gt;You can add your own feed to your account which is visible on your public page but the page has a canonical tag to homepage of Alltop, so the backlinks have no value from SEO consideration, and content is also not syndicated to the homepage of alltop, so no use.&lt;/p&gt;
+&lt;p&gt;Alltop is an extremely top quality directory, and RSS aggregation site.&lt;/p&gt;
+&lt;p&gt;Create an account on it, and add the RSS of your blog to your profile.&lt;/p&gt;
+&lt;p&gt;Heading of the RSS will be nofollow link to your blog but the blog posts below the heading will only be a cache link.&lt;/p&gt;
+&lt;p&gt;There is no “meta robots index or noindex” tag there on the link page. So it seems that the page is indexable but not sure about some other way to block the indexing.&lt;/p&gt;
+&lt;h2&gt;Torial (Update-Nofollow)&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Torial&lt;/strong&gt; is a journalism and portfolio website.&lt;/p&gt;
+&lt;p&gt;You can add your website RSS to your torial account. The Read more button links to your blog post and it is &lt;code&gt;&amp;lt;s&amp;gt;&lt;/code&gt;dofollow&lt;code&gt;&amp;lt;/s&amp;gt;&lt;/code&gt; nofollow.&lt;/p&gt;
+&lt;h2&gt;Rank #1 with High Authority Social Bookmarking Sites&lt;/h2&gt;
+&lt;p&gt;Social Bookmarking Sites include &lt;strong&gt;social networking sites, bookmarking sites, micro-blogging sites&lt;/strong&gt;, etc.&lt;/p&gt;
+&lt;p&gt;You can share your full blog posts, a summary of your blog posts, RSS feed of your blog, and even just link to your blog posts on such websites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social Bookmarking&lt;/strong&gt; helps your content get found and indexed very fast by search engines. Most of these social bookmarking sites are High PR and High DA.&lt;/p&gt;
+&lt;p&gt;The Internet is always changing and with the course of time, the dofollow status of some of these websites can change.&lt;/p&gt;
+&lt;p&gt;But let me tell you that nofollow links are also important as they surely can drive an insane amount of traffic to your site.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Social Bookmarking Sites:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create backlinks which are mostly &lt;strong&gt;no-follow&lt;/strong&gt; backlinks but still valuable.&lt;/li&gt;
+&lt;li&gt;Increase the reach of the post to a large number of audience.&lt;/li&gt;
+&lt;li&gt;Brings traffic to your post in the initial phase of publishing when search rankings for &lt;strong&gt;higher traffic keywords&lt;/strong&gt; are not achieved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of the websites take your &lt;strong&gt;RSS feed&lt;/strong&gt; as input so that they always show links to some of your latest blog posts and hence make it easy for you to share and forget as once the RSS link is submitted, the links to new blog posts are automatically created in these websites without you bothering to make them again and again.&lt;/p&gt;
+&lt;p&gt;The sharing of your latest blog posts to most of non-RSS submission-based social sharing sites can easily be automated using &lt;strong&gt;social automation tools&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Some of the most popular and high authority social bookmarking sites are listed below:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Site&lt;/th&gt;
+&lt;th&gt;Details&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;facebook&lt;/td&gt;
+&lt;td&gt;nofollow but good for social signals, traffic generation through pages, groups, and sharing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;twitter&lt;/td&gt;
+&lt;td&gt;nofollow but good for social signals, traffic generation through sharing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;linkedin&lt;/td&gt;
+&lt;td&gt;nofollow but good for social signals, traffic generation through pages, and sharing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wordpress&lt;/td&gt;
+&lt;td&gt;nofollow but content syndication can indicate popularity of content to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;reddit&lt;/td&gt;
+&lt;td&gt;nofollow, strict moderators, easy to publish but if content is not acceptable to moderators, it will be taken down as soon as it is published, but if content stays, then can bring  a lot of traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;quora&lt;/td&gt;
+&lt;td&gt;nofollow, but answering questions relevant to blog post can bring traffic surge as the questions are highly ranked in google and have a lot of traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;nofollow, but content syndication can make it discoverable to medium readers and thus bring traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tumblr&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;disqus&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication through comments , and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;slashdot&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;typepad&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bloglovin&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;torial&lt;/td&gt;
+&lt;td&gt;nofollow, but content syndication can make it discoverable to torial readers and thus bring traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;diigo&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;folkd&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fark&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pocket&lt;/td&gt;
+&lt;td&gt;redirect link, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;instapaper&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;youtube&lt;/td&gt;
+&lt;td&gt;nofollow, video about content contributes to popularity, and brings traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pinterset&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bizsugar&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;scoopit&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, brings relevant targeted traffic from users, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mix&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;weebly&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wix&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;stackoverflow&lt;/td&gt;
+&lt;td&gt;nofollow, but answering questions relevant to blog post can bring traffic surge as the questions are highly ranked in google and have a lot of traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;stackexchange&lt;/td&gt;
+&lt;td&gt;nofollow, but answering questions relevant to blog post can bring traffic surge as the questions are highly ranked in google and have a lot of traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;woorank&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;scamadviser&lt;/td&gt;
+&lt;td&gt;nofollow, a good score can boost visitor confidence&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;List of High DA Backlinks Sources&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Site&lt;/th&gt;
+&lt;th&gt;Details&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;trello&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;symantec&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;github&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gravatar&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wordpress&lt;/td&gt;
+&lt;td&gt;nofollow but content syndication can indicate popularity of content to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;scoopit&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, brings relevant targeted traffic from users, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;myspace&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;soundcloud&lt;/td&gt;
+&lt;td&gt;nofollow, just signal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;slashdot&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vimeo&lt;/td&gt;
+&lt;td&gt;nofollow, video about content contributes to popularity, and brings traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;reddit&lt;/td&gt;
+&lt;td&gt;nofollow, strict moderators, easy to publish but if content is not acceptable to moderators, it will be taken down as soon as it is published, but if content stays, then can bring  a lot of traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;about.me&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;medium&lt;/td&gt;
+&lt;td&gt;nofollow, but content syndication can make it discoverable to medium readers and thus bring traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;livejournal&lt;/td&gt;
+&lt;td&gt;nofollow but content syndication can indicate popularity of content to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;deviantart&lt;/td&gt;
+&lt;td&gt;nofollow, just signal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;youtube&lt;/td&gt;
+&lt;td&gt;nofollow, video about content contributes to popularity, and brings traffic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pinterest&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ted&lt;/td&gt;
+&lt;td&gt;nofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;typepad&lt;/td&gt;
+&lt;td&gt;nofollow, content syndication, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;folkd&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;kikolani&lt;/td&gt;
+&lt;td&gt;nofollow, comments&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;diigo&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;moz&lt;/td&gt;
+&lt;td&gt;nofollow, signal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bizsugar&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tumblr&lt;/td&gt;
+&lt;td&gt;nofollow, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;linkedin&lt;/td&gt;
+&lt;td&gt;nofollow but good for social signals, traffic generation through pages, and sharing&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;blogger&lt;/td&gt;
+&lt;td&gt;nofollow but content syndication can indicate popularity of content to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pocket&lt;/td&gt;
+&lt;td&gt;redirect link, bookmarking, and popularity signal to search engines&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;instapaper&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;What about backlinks from blog comments?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Blog Commenting&lt;/strong&gt; is still an effective and easiest method of &lt;strong&gt;Link Building.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dofollow Comment Blogs&lt;/strong&gt; offer a opprtunity for &lt;strong&gt;creating quality backlinks&lt;/strong&gt; just by reading their articles and providing meaningful comments.&lt;/p&gt;
+&lt;p&gt;Most of these &lt;strong&gt;High Quality Backlink&lt;/strong&gt; sources are moderated, so comment responsibly, as spammy behaviour can lead you to a permanent ban to that blog.&lt;/p&gt;
+&lt;p&gt;Don’t use automatic &lt;strong&gt;Link Building&lt;/strong&gt; softwares and services as sooner or later they are going to land you in a &lt;strong&gt;Google Penalty&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Also &lt;strong&gt;make backlinks&lt;/strong&gt; in a scalable fashion to look natural to &lt;strong&gt;Google&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Also, look for sites that use &lt;strong&gt;Commentluv&lt;/strong&gt; plugin, it means you can promote your blog posts and at the same time get a dofollow backlink to your site and blog post.&lt;/p&gt;
+&lt;h2&gt;Are directory listings still relevant?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Dofollow Directories&lt;/strong&gt; are my favorite as you just have to register to these and fill up your blog URL and RSS link.&lt;/p&gt;
+&lt;p&gt;Most of these directories pull your RSS and thus giving out a &lt;strong&gt;dofollow backlink&lt;/strong&gt; to all your listed articles.&lt;/p&gt;
+&lt;p&gt;It works hands free as your content is shared and promoted automatically and you don’t have to do it manually for each article you write.&lt;/p&gt;
+&lt;h2&gt;List of High Domain Authority Forums&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Site&lt;/th&gt;
+&lt;th&gt;Details&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cfd-online&lt;/td&gt;
+&lt;td&gt;dofollow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Beginner Strategy to Get Backlinks&lt;/h2&gt;
+&lt;p&gt;How to &lt;strong&gt;Get Backlinks&lt;/strong&gt; is a common question asked by many beginners and bloggers. I know what are you going through now because I was also there once.&lt;/p&gt;
+&lt;p&gt;Backlinks or inbound links are important for a website to get higher authority and rank higher in the search rankings. Only good quality links help in achieving the goal.&lt;/p&gt;
+&lt;p&gt;According to Wikipedia, a backlink is also termed as incoming link, inbound link, inlink, inward link, and citation.&lt;/p&gt;
+&lt;p&gt;The best way to create quality backlinks is to create them manually as it may take ages to get them naturally.&lt;/p&gt;
+&lt;p&gt;Backlinking is a time-consuming and tedious process. But the hard work pays off. I have built backlinks to my blog using these methods.&lt;/p&gt;
+&lt;p&gt;The shortcut ways of backlinking may end up in a penalty. The most dangerous method of building inbound links is by using automatic software.&lt;/p&gt;
+&lt;p&gt;Building backlinks too aggressively also hurt the SEO process. Remember Google has to roll out just one update to penalize those using these methods.&lt;/p&gt;
+&lt;p&gt;When a new Google update rolls out, many businesses that use dubious methods go out of business.&lt;/p&gt;
+&lt;p&gt;Keep in mind that a way of making shady backlinks is not in the blacklist of the search engines today but the very moment search engines came to know about such methods, they carry out an update to curb these malpractices.&lt;/p&gt;
+&lt;p&gt;The methods discussed below are the best practices to make inbound links in the safest possible way.&lt;/p&gt;
+&lt;p&gt;But don’t overdo anything, as search engines love &lt;strong&gt;natural backlinks&lt;/strong&gt;. In link building, slow and steady still wins the race.&lt;/p&gt;
+&lt;h2&gt;Safe Backlinking Strategy&lt;/h2&gt;
+&lt;p&gt;Google considers over &lt;strong&gt;200+ factors&lt;/strong&gt; while ranking a webpage for a particular keyword.&lt;/p&gt;
+&lt;p&gt;But &lt;strong&gt;Inbound Links&lt;/strong&gt; or Backlinks are most influential in this process. I observed this while building backlinks for my blog.&lt;/p&gt;
+&lt;p&gt;The key points I took care of and you have to, while backlinking are listed below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Firstly, keep patience, it will take time to get the results.&lt;/li&gt;
+&lt;li&gt;In creating high-quality backlinks, slow is better.&lt;/li&gt;
+&lt;li&gt;Don’t buy backlinks from anybody, no matter how trustworthy the seller and the website is.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You have to create a lot of accounts on various websites, so choose a dedicated email address for creating and verifying these accounts.&lt;/p&gt;
+&lt;p&gt;Remember, most of the websites only accept email ids of well-known email services like Gmail, Microsoft, and Yahoo, and not your branded email id like &lt;a href=&quot;mailto:yourname@yourwebsite.com&quot;&gt;yourname@yourwebsite.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As the internet is ever-changing, many websites shut down daily. It is very difficult for us to check the status of the websites listed here on a regular basis, so we don’t assure that all links are working. We are human and errors are inevitable. If any of our readers found any discrepancies and dead links, please share your findings and suggestions through comments.&lt;/p&gt;
+&lt;h2&gt;Commentluv&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Commentluv&lt;/strong&gt; is a WordPress plugin, used by various bloggers to attract visitors to their blogs.&lt;/p&gt;
+&lt;p&gt;The plugin enables the visitors to get a backlink to one of their own blog posts, thus becoming a good source to start the backlinking process to your blog posts.&lt;/p&gt;
+&lt;p&gt;Read the articles completely and carefully, and give useful comments as these comments are mostly moderated to keep the spam in control.&lt;/p&gt;
+&lt;p&gt;This method is beneficial for both the blog owner and the commenter, as the blog owner gets loyal visitors and commenters get a backlink.&lt;/p&gt;
+&lt;p&gt;But sometimes commentluv links are not so effective, as some blog owners using commentluv plugin do not limit the number of comments on a particular blog post which leads to a number of outgoing links on a single page which downgrades the quality of backlinks.&lt;/p&gt;
+&lt;p&gt;Too many comment links may look unnatural to search engines, so don’t go too far in building these.&lt;/p&gt;
+&lt;p&gt;Don’t create these links too fast, keep it low-key.&lt;/p&gt;
+&lt;p&gt;Try to get these links for different posts on your blogs from different commentluv blogs.&lt;/p&gt;
+&lt;h2&gt;Guest Blogging&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Guest blogging&lt;/strong&gt; is a very good white hat method of creating inbound links if used correctly.&lt;/p&gt;
+&lt;p&gt;If you create guest articles on high-quality &lt;strong&gt;niche blogs&lt;/strong&gt; with your relevant blog post links in the article itself and in the author bio section, it will give you strong high-quality backlinks as well as bring targeted traffic to your blog.&lt;/p&gt;
+&lt;p&gt;It is a difficult task to convince the bloggers to publish your guest post on their blogs. Firstly you should build a relationship with the targeted bloggers on their blogs by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading and commenting on the blog posts.&lt;/li&gt;
+&lt;li&gt;Actively following them on social networks.&lt;/li&gt;
+&lt;li&gt;Signing up for the newsletter.&lt;/li&gt;
+&lt;li&gt;Replying back suitably to their emails.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In short becoming their loyal followers which will, in fact, enrich your knowledge too.&lt;/p&gt;
+&lt;p&gt;After completing these tasks, pitch your article to the blogger. If your article is good, the blogger will accept the article.&lt;/p&gt;
+&lt;p&gt;Don’t try to pitch a substandard article, just write a fresh, unique, good quality article of a relevant niche with at least 800 words.&lt;/p&gt;
+&lt;h2&gt;Broken Links&lt;/h2&gt;
+&lt;p&gt;The Internet is huge. A lot of content pops daily and a lot disappears daily.&lt;/p&gt;
+&lt;p&gt;Articles contain links to pages, if those pages vanish, the links to these pages go broken and that is a bad experience for the readers.&lt;/p&gt;
+&lt;p&gt;Bloggers do not want these broken links in their articles.&lt;/p&gt;
+&lt;p&gt;But many bloggers have a lot of articles in their blogs containing a lot of links.&lt;/p&gt;
+&lt;p&gt;It is almost impossible for these busy bloggers to keep track of all the links.&lt;/p&gt;
+&lt;p&gt;If you find broken links in their articles and suggest them suitable replacement links of a similar type as a loyal reader, you can gain a backlink by slipping a link to one of your blog posts as a replacement.&lt;/p&gt;
+&lt;h2&gt;Testimonials&lt;/h2&gt;
+&lt;p&gt;You can get a backlink from the high authority websites whose products you buy and use by offering a &lt;strong&gt;testimonial&lt;/strong&gt; to their product on their website.&lt;/p&gt;
+&lt;p&gt;Most sellers like to showcase testimonials to their products to attract potential buyers.&lt;/p&gt;
+&lt;p&gt;This is a win-win situation for both.&lt;/p&gt;
+&lt;p&gt;Sometimes, these sellers also sweeten the deal by giving away free products, services, and support to the testimonial provider along with the backlink.&lt;/p&gt;
+&lt;p&gt;All these methods discussed here are manual, slow, and tedious but in the long-term give a strong foundation to your blog without compromising its quality index in search engines.&lt;/p&gt;
+&lt;p&gt;Now, I am going to compile a list of Backlinking opportunities.&lt;/p&gt;
+&lt;p&gt;The Backlink sources can be a &lt;strong&gt;mix of profile backlinks, comment backlinks, commentluv backlinks, directory backlinks, forum backlinks, .gov backlinks, .org backlinks, .edu backlinks,&lt;/strong&gt; and many more.&lt;/p&gt;
+&lt;p&gt;Try to get backlinks from these websites in any possible way as it will boost your search rankings manifold.&lt;/p&gt;
+&lt;p&gt;Also, remember to make backlinks to all your articles and not all of them just to the homepage or any single post.&lt;/p&gt;
+</content>
+        </entry>
+</feed>
