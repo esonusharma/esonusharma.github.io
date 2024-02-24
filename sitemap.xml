@@ -172,16 +172,6 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/research/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
-            <loc>https://esonusharma.github.io/tags/publication/</loc>
-            <lastmod>2023-11-01</lastmod>
-        </url>
-        
-        <url>
             <loc>https://esonusharma.github.io/tags/howto/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
@@ -192,7 +182,12 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/glossary/</loc>
+            <loc>https://esonusharma.github.io/tags/research/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/publication/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
@@ -207,12 +202,17 @@
         </url>
         
         <url>
-            <loc>https://esonusharma.github.io/tags/keyword/</loc>
+            <loc>https://esonusharma.github.io/tags/glossary/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
         <url>
             <loc>https://esonusharma.github.io/tags/mathematics/</loc>
+            <lastmod>2023-11-01</lastmod>
+        </url>
+        
+        <url>
+            <loc>https://esonusharma.github.io/tags/keyword/</loc>
             <lastmod>2023-11-01</lastmod>
         </url>
         
