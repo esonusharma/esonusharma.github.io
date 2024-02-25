@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://esonusharma.github.io/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain.html</loc>
+        <lastmod>2019-05-28</lastmod>
+    </url>
+    
+    <url>
         <loc>https://esonusharma.github.io/how-to-install-latest-julia-version-on-linux.html</loc>
         <lastmod>2019-05-29</lastmod>
     </url>
@@ -77,12 +82,7 @@
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/cfd/</loc>
-        <lastmod>2023-11-01</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://esonusharma.github.io/tags/theory/</loc>
+        <loc>https://esonusharma.github.io/tags/mathematics/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
@@ -92,7 +92,7 @@
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/email/</loc>
+        <loc>https://esonusharma.github.io/tags/cfd/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
@@ -112,17 +112,32 @@
     </url>
     
     <url>
+        <loc>https://esonusharma.github.io/tags/code/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
         <loc>https://esonusharma.github.io/tags/physics/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/mathematics/</loc>
+        <loc>https://esonusharma.github.io/tags/theory/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/code/</loc>
+        <loc>https://esonusharma.github.io/tags/seo/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://esonusharma.github.io/tags/redirect/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://esonusharma.github.io/tags/email/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     

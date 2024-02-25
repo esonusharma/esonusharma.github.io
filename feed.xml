@@ -848,4 +848,37 @@ sudo update-grub
 &lt;/code&gt;&lt;/pre&gt;
 </content>
         </entry>
+        
+        <entry>
+            <title>How to 301 Permanent Redirect Blogger-Blogspot Blog to Domain?</title>
+            <link href="https://esonusharma.github.io/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain.html"/>
+            <updated>2019-05-28T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain.html</id>
+            <content type="html">&lt;p&gt;I know its difficult to migrate blogger/blogspot blog hosted at bare blogspot domain “&lt;a href=&quot;https://your-blog-name.blogspot.com/&quot;&gt;https://your-blog-name.blogspot.com&lt;/a&gt;” to newly bought branded domain name something like “&lt;a href=&quot;https://yoursite.com/&quot;&gt;https://yoursite.com&lt;/a&gt;”.&lt;/p&gt;
+&lt;h2&gt;So what exactly is SEO Redirection or 301 Redirection?&lt;/h2&gt;
+&lt;p&gt;When you want that a blog post or blog page of your blog should transfer its traffic and google search ranking authority to a new URL where this content is shifted, then you need SEO Redirection.&lt;/p&gt;
+&lt;p&gt;As you are &lt;strong&gt;permanently&lt;/strong&gt; moving your blog content under a &lt;strong&gt;new domain name&lt;/strong&gt;, you need to tell Google about it, so that Google acknowledges the change and transfers the authority of your content to a new address and does not treat the same content at a new URL as plagiarised content and deny &lt;strong&gt;rankings&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can inform this to Google by providing a &lt;strong&gt;301 Redirect&lt;/strong&gt; at the old address of the content.&lt;/p&gt;
+&lt;p&gt;301 Redirect tells Google that the content present at that location is &lt;strong&gt;permanently shifted&lt;/strong&gt; to a new address.&lt;/p&gt;
+&lt;p&gt;The traffic is shifted permanently by Google instantly when it finds this redirect.&lt;/p&gt;
+&lt;p&gt;But the rankings transfer takes some time.&lt;/p&gt;
+&lt;p&gt;Normally you can easily create a 301 Redirect for a personal domain name you own.&lt;/p&gt;
+&lt;h2&gt;301 Redirect can be created by&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Defining it in the &lt;strong&gt;.htaccess&lt;/strong&gt; file available in the hosting if you have hosting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forwarding&lt;/strong&gt; the domain name in your domain control panel provided by the domain name provider choosing the &lt;strong&gt;permanent redirect&lt;/strong&gt;/forward option if you don’t have hosting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But it seems next to impossible to do the same in the case when you don’t own the domain name as the case in &lt;strong&gt;blogger/blogspot&lt;/strong&gt; naked domain.&lt;/p&gt;
+&lt;p&gt;Now I am going to share a method in which you can achieve this.&lt;/p&gt;
+&lt;p&gt;I have tried this method when I was shifting from blogger to my own domain name and I was successful in &lt;strong&gt;transferring&lt;/strong&gt; the ranking of my popular blog posts to a &lt;strong&gt;new web address&lt;/strong&gt; but I cannot guarantee you the same as this is dependent on google and varies on case basis.&lt;/p&gt;
+&lt;p&gt;Insert the code shown below just after the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag in the &lt;strong&gt;blogger template&lt;/strong&gt; after replacing the generalized content to your own in the code below.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;b:if cond=&amp;quot;’data:blog.url&amp;quot; ==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/YEAR/MONTH/BLOG-POST-SLUG.html&amp;gt;”‘&amp;quot;&amp;gt;&amp;lt;meta content=&amp;quot;’0;url=http://yoursite.com/NEW-BLOG-POST-SLUG.html’&amp;quot; http-equiv=&amp;quot;’refresh’/&amp;quot;&amp;gt;&amp;lt;/b:if&amp;gt;
+
+ &amp;lt;b:if cond=&amp;quot;’data:blog.url&amp;quot; ==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/p/BLOG-PAGE-SLUG.html&amp;gt;”‘&amp;quot;&amp;gt;&amp;lt;meta content=&amp;quot;’0;url=http://yoursite.com/NEW-BLOG-PAGE-SLUG.html’&amp;quot; http-equiv=&amp;quot;’refresh’/&amp;quot;&amp;gt;&amp;lt;/b:if&amp;gt;
+
+ &amp;lt;b:if cond=&amp;quot;’data:blog.url&amp;quot; ==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/&amp;gt;”‘&amp;quot;&amp;gt;&amp;lt;meta content=&amp;quot;’0;url=http://yoursite.com/’&amp;quot; http-equiv=&amp;quot;’refresh’/&amp;quot;&amp;gt;&amp;lt;/b:if&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you are fortunate enough, after a few days of doing this you can see your new URL in place of the old URL in google search.&lt;/p&gt;
+</content>
+        </entry>
 </feed>
