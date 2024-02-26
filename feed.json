@@ -94,10 +94,10 @@
                 ,
                 "date_published": "2024-02-20T00:00:00Z"
             },{
-                "id": "https://esonusharma.github.io/green-s-theorem.html",
-                "url": "https://esonusharma.github.io/green-s-theorem.html",
-                "title": "Green&#39;s theorem",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/green-s-theorem.html\">Video Lecture</a></li>\n</ol>\n<p>Green’s theorem relates the line integral around a closed curve with a double integral over the region inside the curve:</p>\n<p>$$\n\\int_{C} F \\cdot ds = \\int \\int_{D} (curl F)\\cdot k dA\n$$</p>\n<p>$$\n\\oint_C \\textbf{f}\\cdot d\\textbf{r} = \\iint\\limits_R \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right)dA\n$$</p>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://math.libretexts.org/Bookshelves/Calculus/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.03%3A_Greens_Theorem\">Source 1</a></li>\n</ul>\n"
+                "id": "https://esonusharma.github.io/greens-theorem.html",
+                "url": "https://esonusharma.github.io/greens-theorem.html",
+                "title": "Greens theorem",
+                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/greens-theorem.html\">Video Lecture</a></li>\n</ol>\n<p>Green’s theorem relates the line integral around a closed curve with a double integral over the region inside the curve:</p>\n<p>$$\n\\int_{C} F \\cdot ds = \\int \\int_{D} (curl F)\\cdot k dA\n$$</p>\n<p>$$\n\\oint_C \\textbf{f}\\cdot d\\textbf{r} = \\iint\\limits_R \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right)dA\n$$</p>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://math.libretexts.org/Bookshelves/Calculus/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.03%3A_Greens_Theorem\">Source 1</a></li>\n</ul>\n"
                 ,
                 "date_published": "2024-02-20T00:00:00Z"
             },{
