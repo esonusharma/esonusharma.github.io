@@ -10,48 +10,6 @@
         "url": "https://esonusharma.github.io/profile.html"
     },
     "items": [{
-                "id": "https://esonusharma.github.io/",
-                "url": "https://esonusharma.github.io/",
-                "title": "Cauchy stress tensor",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/\">Video Lecture</a></li>\n</ol>\n<h2>Traction vector (suman chakraborty intro to fluid mechanics course)</h2>\n<h2>Cauchy stress tensor (suman chakraborty intro to fluid mechanics course)</h2>\n<h2>Cauchy's equation (suman chakraborty intro to fluid mechanics course)</h2>\n<h2>Concept of pressure from cauchy stress tensor (suman chakraborty intro to fluid mechanics course,tobias book pressure trace of shear tensor)</h2>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://esonusharma.github.io/\">Source 1</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 2</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 3</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 4</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 5</a></li>\n</ul>\n"
-                ,
-                "date_published": "2024-02-26T17:16:34Z"
-            },{
-                "id": "https://esonusharma.github.io/",
-                "url": "https://esonusharma.github.io/",
-                "title": "Material derivative",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/\">Video Lecture</a></li>\n</ol>\n<h2>Lagrangian (System)</h2>\n<h2>Eulerian (Control Volume)</h2>\n<h2>Material derivative</h2>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://esonusharma.github.io/\">Source 1</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 2</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 3</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 4</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 5</a></li>\n</ul>\n"
-                ,
-                "date_published": "2024-02-26T17:16:33Z"
-            },{
-                "id": "https://esonusharma.github.io/",
-                "url": "https://esonusharma.github.io/",
-                "title": "Mathematical Products",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/\">Video Lecture</a></li>\n</ol>\n<h2>Inner Product</h2>\n<h2>Outer Product</h2>\n<h2>Dot Product (Scalar Product)</h2>\n<h2>Cross Product (Vector Product)</h2>\n<h2>Dyadic Cross Product (Tensor Product)</h2>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://eng.libretexts.org/Bookshelves/Introductory_Engineering/EGR_1010%3A_Introduction_to_Engineering_for_Engineers_and_Scientists/14%3A_Fundamentals_of_Engineering/14.05%3A_Scalars_vectors_and_tensors\">Source 1</a></li>\n<li><a href=\"https://phys.libretexts.org/Bookshelves/Classical_Mechanics/Variational_Principles_in_Classical_Mechanics_(Cline)/19%3A_Mathematical_Methods_for_Classical_Mechanics/19.06%3A_Appendix_-_Tensor_Algebra\">Source 2</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 3</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 4</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 5</a></li>\n</ul>\n"
-                ,
-                "date_published": "2024-02-26T16:36:52Z"
-            },{
-                "id": "https://esonusharma.github.io/",
-                "url": "https://esonusharma.github.io/",
-                "title": "Matrix Algebra",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/\">Video Lecture</a></li>\n</ol>\n<h2>Trace of Matrix</h2>\n<h2>Rank of Matrix</h2>\n<h2>Eigen Values</h2>\n<h2>Determinant</h2>\n<h2>Transpose</h2>\n<h2>Adjoint</h2>\n<h2>Inverse</h2>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://phys.libretexts.org/Bookshelves/Quantum_Mechanics/Advanced_Quantum_Mechanics_(Kok)/01%3A_Linear_Vector_Spaces_and_Hilbert_Space/1.05%3A_The_Trace_and_Determinant_of_an_Operator\">Source 1</a></li>\n</ul>\n"
-                ,
-                "date_published": "2024-02-26T16:36:49Z"
-            },{
-                "id": "https://esonusharma.github.io/",
-                "url": "https://esonusharma.github.io/",
-                "title": "Mathematical Operators",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/\">Video Lecture</a></li>\n</ol>\n<h2>Nabla</h2>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://esonusharma.github.io/\">Source 1</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 2</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 3</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 4</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 5</a></li>\n</ul>\n"
-                ,
-                "date_published": "2024-02-26T16:36:47Z"
-            },{
-                "id": "https://esonusharma.github.io/",
-                "url": "https://esonusharma.github.io/",
-                "title": "",
-                "content_html":"<h2>Resources</h2>\n<ol>\n<li><a href=\"https://esonusharma.github.io/\">Video Lecture</a></li>\n</ol>\n<h2>Heading</h2>\n<h2>References</h2>\n<ul>\n<li><a href=\"https://esonusharma.github.io/\">Source 1</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 2</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 3</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 4</a></li>\n<li><a href=\"https://esonusharma.github.io/\">Source 5</a></li>\n</ul>\n"
-                ,
-                "date_published": "2024-02-26T16:35:13Z"
-            },{
                 "id": "https://esonusharma.github.io/pressure.html",
                 "url": "https://esonusharma.github.io/pressure.html",
                 "title": "Pressure",
