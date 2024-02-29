@@ -24,7 +24,7 @@
 &lt;p&gt;Total pressure is the pressure a fluid would have if brought to rest isentropically.&lt;/p&gt;
 &lt;p&gt;Total pressure (stagnation pressure) = static pressure + dynamic pressure + hydrostatic pressure&lt;/p&gt;
 &lt;p&gt;$$
-p_{stag}=p_{static}+\frac{1}{2}(\rho u^{2})+\rho gh (along~a~streamline)
+p_{stag}=p_{static}+\frac{1}{2}(\rho u^{2})+\rho gh~(along~a~streamline)
 $$&lt;/p&gt;
 &lt;h2&gt;References&lt;/h2&gt;
 &lt;ul&gt;
