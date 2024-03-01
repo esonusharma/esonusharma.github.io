@@ -82,11 +82,6 @@
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/code/</loc>
-        <lastmod>2023-11-01</lastmod>
-    </url>
-    
-    <url>
         <loc>https://esonusharma.github.io/tags/theory/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
@@ -98,6 +93,11 @@
     
     <url>
         <loc>https://esonusharma.github.io/tags/howto/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://esonusharma.github.io/tags/code/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
