@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-grey.css">
+
+html * {
+    font-family: "CMU Serif", "NewComputerModern08", serif;
+}
+
+table,
+td,
+th {
+    font-size: 12pt;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    overflow-x: auto;
+    padding: 11px;
+    tab-size: 4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow-x: auto;
+    box-shadow: inset 0px 0px 11px #cccccc;
+}
+
+td {
+    text-align: center;
+}
+
+pre::-webkit-scrollbar {}
+
+pre::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+pre {
+    font-size: 12pt;
+    border-radius: 4px;
+    overflow-x: auto;
+    padding: 11px;
+    tab-size: 4;
+    box-shadow: inset 0px 0px 11px #000000;
+}
+
+p {
+    font-size: 12pt;
+}
+
+h2 {
+    box-shadow: inset 0px 0px 11px #cccccc;
+}
+
+h3 {
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: inset 0px 0px 11px #cccccc;
+}
+
+</style>
