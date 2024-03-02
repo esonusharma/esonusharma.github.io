@@ -133,8 +133,8 @@
 </head>
 
 <body>
-    <div class="w3-container w3-content w3-margin-top w3-transparent" style="max-width:1400px;">
-        <div style="width:280px; z-index:3;" class="w3-round w3-padding w3-margin-top w3-amber w3-sidebar w3-collapse">
+    <div class="w3-container w3-content w3-margin-top" style="max-width:1400px;">
+        <div style="width:280px; z-index:3;" class="w3-container w3-round w3-padding w3-margin-top w3-amber w3-sidebar w3-collapse" id="sidebar">
             <div class="w3-bar w3-center">
                 <a class="w3-bar-item w3-button" style="width:33.33%" href="javascript:void(0)"
                     onclick="openNav('nav01')"><i class="fa fa-bars w3-large"></i></a>
@@ -210,7 +210,7 @@
 
         <div class="w3-main" style="margin-left:300px;">
 
-            <div class="w3-top w3-theme w3-large w3-hide-large">
+            <div class="w3-container w3-top w3-large w3-hide-large">
                 <i class="fa fa-bars w3-button w3-large" onclick="w3_open()"></i>
             </div>
 
@@ -291,7 +291,7 @@
         <script>
             function w3_open() {
                 document
-                    .getElementById("mySidebar")
+                    .getElementById("sidebar")
                     .style
                     .display = "block";
                 document
@@ -302,7 +302,7 @@
 
             function w3_close() {
                 document
-                    .getElementById("mySidebar")
+                    .getElementById("sidebar")
                     .style
                     .display = "none";
                 document
