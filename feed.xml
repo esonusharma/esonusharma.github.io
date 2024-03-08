@@ -723,6 +723,7 @@ int main() {
 &lt;p&gt;I will suggest you to follow the latest instructions on the official site &lt;a href=&quot;http://openfoam.org/&quot;&gt;OpenFOAM&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Besides that, you can always take a cue from this post too.&lt;/p&gt;
 &lt;p&gt;Also, you should be connected to internet for installing OpenFOAM.&lt;/p&gt;
+&lt;hr /&gt;
 &lt;h2&gt;Steps to install OpenFOAM on Ubuntu&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Open the terminal using the icon or Shortcut “Ctrl+Alt+T”.&lt;/li&gt;
