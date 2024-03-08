@@ -20,7 +20,7 @@
                 "id": "https://esonusharma.github.io/pointer.html",
                 "url": "https://esonusharma.github.io/pointer.html",
                 "title": "Pointer",
-                "content_html":"<h2>Pointer</h2>\n<pre><code>#include&lt;iostream&gt;\n\nusing namespace std;\n\nint main()\n{\n    int x, *y;\n    x=7;\n    y=&amp;x;\n    cout&lt;&lt;&quot;x= &quot;&lt;&lt;x&lt;&lt;endl;\n    cout&lt;&lt;&quot;*y= &quot;&lt;&lt;*y&lt;&lt;endl;\n    cout&lt;&lt;&quot;&amp;x= &quot;&lt;&lt;&amp;x&lt;&lt;endl;\n    cout&lt;&lt;&quot;y= &quot;&lt;&lt;y&lt;&lt;endl;\n    return 0;\n}\n\nOutput:\n\nx= 7\n*y= 7\n&amp;x= 0x8kkkkkkkwn6c\ny= 0x8kkkkkkkwn6c\n</code></pre>\n"
+                "content_html":"<pre><code>#include&lt;iostream&gt;\n\nusing namespace std;\n\nint main()\n{\n    int x, *y;\n    x=7;\n    y=&amp;x;\n    cout&lt;&lt;&quot;x= &quot;&lt;&lt;x&lt;&lt;endl;\n    cout&lt;&lt;&quot;*y= &quot;&lt;&lt;*y&lt;&lt;endl;\n    cout&lt;&lt;&quot;&amp;x= &quot;&lt;&lt;&amp;x&lt;&lt;endl;\n    cout&lt;&lt;&quot;y= &quot;&lt;&lt;y&lt;&lt;endl;\n    return 0;\n}\n\nOutput:\n\nx= 7\n*y= 7\n&amp;x= 0x8kkkkkkkwn6c\ny= 0x8kkkkkkkwn6c\n</code></pre>\n"
                 ,
                 "date_published": "2024-02-23T00:00:00Z"
             },{

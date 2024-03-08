@@ -42,8 +42,7 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/pointer.html"/>
             <updated>2024-02-23T00:00:00Z</updated>
             <id>https://esonusharma.github.io/pointer.html</id>
-            <content type="html">&lt;h2&gt;Pointer&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+            <content type="html">&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
 
 using namespace std;
 
