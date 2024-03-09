@@ -104,14 +104,14 @@
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
       <a href="/" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">{esonusharma}</a>
-      <a href="/resources.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white" title="Resources"><i class="fa-solid fa-book fa-beat-fade"></i>&ensp;Resources</a>
-      <div class="w3-dropdown-hover w3-right">
+      <a href="/resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Resources"><i class="fa-solid fa-book fa-beat-fade"></i>&ensp;Resources</a>
+      <div class="w3-dropdown-hover w3-hide-small w3-right">
         <button class="w3-button w3-padding-large" title="Calculators"><i class="fa-solid fa-calculator w3-large"></i>&ensp;Calculators<span class="w3-badge w3-right w3-small w3-green">1</span></button>
         <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-right" style="width:300px">
           <a href="/cfdcalculator.html" class="w3-bar-item w3-button"><i class="fa-solid fa-laptop"></i>&ensp;cfdCalculator</a>
         </div>
       </div>
-      <div class="w3-dropdown-hover w3-right">
+      <div class="w3-dropdown-hover w3-hide-small w3-right">
         <button class="w3-button w3-padding-large" title="Courses"><i class="fa-solid fa-user-graduate w3-large"></i>&ensp;Courses<span class="w3-badge w3-right w3-small w3-green">6</span></button>
         <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-right" style="width:300px">
           <a class="w3-bar-item w3-button" href="/cfd.html"><i class="fa-solid fa-fan"></i>&ensp;CFD</a>
@@ -125,7 +125,21 @@
     </div>
   </div>
 
-  
+  <!-- Navbar on small screens -->
+  <div id="navSmall" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/" class="w3-bar-item w3-button w3-padding-large"><i class="fa-solid fa-house"></i>&ensp;Home</a>
+    <a href="/resources.html" class="w3-bar-item w3-button"><i class="fa-solid fa-book fa-beat-fade" title="Resources"></i>&ensp;Resources</a>
+    <hr>
+    <p>&ensp;<i class="fa-solid fa-calculator"></i>&ensp;Calculators</p>
+    <a href="/cfdcalculator.html" class="w3-bar-item w3-button"><i class="fa-solid fa-laptop"></i>&ensp;cfdCalculator</a>
+    <hr>
+    <p>&ensp;<i class="fa-solid fa-user-graduate"></i>&ensp;Courses</p>
+    <a class="w3-bar-item w3-button" href="/cfd.html"><i class="fa-solid fa-fan"></i>&ensp;CFD</a>
+    <a class="w3-bar-item w3-button" href="/cpp.html"><i class="fa-solid fa-code"></i>&ensp;C++</a>
+    <a class="w3-bar-item w3-button" href="/mathematics.html"><i class="fa-solid fa-infinity"></i>&ensp;Mathematics</a>
+    <a class="w3-bar-item w3-button" href="/physics.html"><i class="fa-solid fa-space-shuttle"></i></i>&ensp;Physics</a>
+    <a class="w3-bar-item w3-button" href="/fluid-mechanics.html"><i class="fa-solid fa-wind"></i>&ensp;Fluid Mechanics</a>
+    <a class="w3-bar-item w3-button" href="/thermodynamics.html"><i class="fa-solid fa-fire"></i>&ensp;Thermodynamics</a>
 
   <!-- Page Container -->
   <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
