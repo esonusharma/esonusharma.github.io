@@ -16,23 +16,20 @@
             <link href="https://esonusharma.github.io/pressure.html"/>
             <updated>2024-02-26T00:00:00Z</updated>
             <id>https://esonusharma.github.io/pressure.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Total pressure&lt;/h2&gt;
+&lt;h3&gt;Total pressure&lt;/h3&gt;
 &lt;p&gt;Total pressure is the pressure a fluid would have if brought to rest isentropically.&lt;/p&gt;
 &lt;p&gt;Total pressure (stagnation pressure) = static pressure + dynamic pressure + hydrostatic pressure&lt;/p&gt;
 &lt;p&gt;$$
 p_{stag}=p_{static}+\frac{1}{2}(\rho u^{2})+\rho gh~(along~a~streamline)
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 5&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         </entry>
@@ -343,11 +340,11 @@ y= 0x8kkkkkkkwn6c
             <link href="https://esonusharma.github.io/turbulence.html"/>
             <updated>2024-02-21T00:00:00Z</updated>
             <id>https://esonusharma.github.io/turbulence.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Turbulence&lt;/h2&gt;
+&lt;h3&gt;How to Quantify Turbulence?&lt;/h3&gt;
 &lt;p&gt;In CFD, turbulence intensity $(I)$ is an important parameter as its numerical value can be further used to calculate the turbulence parameters.&lt;/p&gt;
 &lt;p&gt;Mathematically,&lt;/p&gt;
 &lt;p&gt;$$
@@ -356,13 +353,10 @@ $$&lt;/p&gt;
 &lt;p&gt;$u^{\prime}~=~root~mean~square~(rms)~/~standard~deviation~(\sigma)~of~the~turbulent~velocity~fluctuations$
 $at~a~particular~location~over~a~specified~time~period$&lt;/p&gt;
 &lt;p&gt;$\bar{u} = velocity~average~at~same~location~over~same~time~period$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Source 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Source 3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Source 4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/turbulence.html&quot;&gt;Source 5&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         </entry>
@@ -372,26 +366,26 @@ $at~a~particular~location~over~a~specified~time~period$&lt;/p&gt;
             <link href="https://esonusharma.github.io/solvers.html"/>
             <updated>2024-02-21T00:00:00Z</updated>
             <id>https://esonusharma.github.io/solvers.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Jacobi Method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Gauss-Jordan Method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Gauss-Seidel method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Symmetric Gauss-Seidel&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Conjugate gradient method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;diagonal-based incomplete Cholesky (DIC)&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;diagonal-based incomplete LU (DILU)&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Biconjugate gradient stabilised method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;preconditioned CG (PCG) method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;preconditioned biconjugate gradient (PBiCG)&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;preconditioned biconjugate gradient stabilised method (PBiCGStab)&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;PCG with DIC Preconditioning&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;PBiCGStab with DILU preconditioning&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Multi-grid method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;GAMG method&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Jacobi Method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Gauss-Jordan Method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Gauss-Seidel method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Symmetric Gauss-Seidel&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Conjugate gradient method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;diagonal-based incomplete Cholesky (DIC)&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;diagonal-based incomplete LU (DILU)&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Biconjugate gradient stabilised method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;preconditioned CG (PCG) method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;preconditioned biconjugate gradient (PBiCG)&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;preconditioned biconjugate gradient stabilised method (PBiCGStab)&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;PCG with DIC Preconditioning&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;PBiCGStab with DILU preconditioning&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;Multi-grid method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/solvers.html&quot;&gt;GAMG method&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://doc.cfd.direct/notes/cfd-general-principles/algorithms-and-solvers&quot;&gt;Source 2&lt;/a&gt;&lt;/li&gt;
@@ -404,19 +398,19 @@ $at~a~particular~location~over~a~specified~time~period$&lt;/p&gt;
             <link href="https://esonusharma.github.io/cfd-equations.html"/>
             <updated>2024-02-21T00:00:00Z</updated>
             <id>https://esonusharma.github.io/cfd-equations.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/cfd-equations.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/leibniz-integral-rule.html&quot;&gt;Leibniz integral rule&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/leibniz-rule-material-volume.html&quot;&gt;Leibniz rule material volume&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/reynolds-transport-theorem.html&quot;&gt;Reynolds transport theorem / Reynolds theorem&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/greens-theorem.html&quot;&gt;Green&#39;s theorem&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/gauss-divergence-theorem.html&quot;&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/stokes-theorem.html&quot;&gt;Stokes theorem&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/material-derivative.html&quot;&gt;Material derivative&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/cauchy-stress-tensor.html&quot;&gt;Cauchy stress tensor&lt;/a&gt;&lt;/h2&gt;
-&lt;h2&gt;&lt;a href=&quot;https://esonusharma.github.io/navier-stokes-equation.html&quot;&gt;Navier-Stokes equation&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/leibniz-integral-rule.html&quot;&gt;Leibniz integral rule&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/leibniz-rule-material-volume.html&quot;&gt;Leibniz rule material volume&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/reynolds-transport-theorem.html&quot;&gt;Reynolds transport theorem / Reynolds theorem&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/greens-theorem.html&quot;&gt;Green&#39;s theorem&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/gauss-divergence-theorem.html&quot;&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/stokes-theorem.html&quot;&gt;Stokes theorem&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/material-derivative.html&quot;&gt;Material derivative&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/cauchy-stress-tensor.html&quot;&gt;Cauchy stress tensor&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;a href=&quot;https://esonusharma.github.io/navier-stokes-equation.html&quot;&gt;Navier-Stokes equation&lt;/a&gt;&lt;/h3&gt;
 </content>
         </entry>
         
@@ -425,7 +419,7 @@ $at~a~particular~location~over~a~specified~time~period$&lt;/p&gt;
             <link href="https://esonusharma.github.io/stokes-theorem.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/stokes-theorem.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/stokes-theorem.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -433,7 +427,7 @@ $at~a~particular~location~over~a~specified~time~period$&lt;/p&gt;
 &lt;p&gt;$$
 \int_{S} \nabla \times \overrightarrow{A} \cdot \overrightarrow{n} da=\oint_{C} \overrightarrow{A} \cdot \overrightarrow{d}l
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Electromagnetics_I_(Ellingson)/04%3A_Vector_Analysis/4.09%3A_Stokes&#39;_Theorem&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -445,16 +439,16 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/reynolds-transport-theorem.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/reynolds-transport-theorem.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/reynolds-transport-theorem.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Reynolds transport theorem / Reynolds theorem&lt;/h2&gt;
+&lt;h3&gt;Reynolds transport theorem / Reynolds theorem&lt;/h3&gt;
 &lt;p&gt;Reynolds Transport theorem is a generalization of the Leibniz rule and thus the same arguments are used. The only difference is that the velocity has three components and only the perpendicular component enters into the calculations.&lt;/p&gt;
 &lt;p&gt;$$
 \frac{D}{DT} \int_{sys} f \rho dV = \frac{d}{dt} \int_{c.v.} f \rho dV + \int_{S_{c.v.}}  f \rho U_{rn} dA
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_Fluid_Mechanics_(Bar-Meir)/05%3A_The_Control_Volume_and_Mass_Conservation/5.4%3A_Reynolds_Transport_Theorem&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -466,15 +460,15 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/navier-stokes-equation.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/navier-stokes-equation.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/navier-stokes-equation.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Einstein summation convention&lt;/h2&gt;
+&lt;h3&gt;Einstein summation convention&lt;/h3&gt;
 &lt;p&gt;$$ \frac{\partial \rho}{\partial t} + \frac{\partial(\rho u_{i})}{\partial x_{i}} = 0 $$&lt;/p&gt;
 &lt;p&gt;$$ \frac{\partial (\rho u_{i})}{\partial t} + \frac{\partial[\rho u_{i}u_{j}]}{\partial x_{j}} = -\frac{\partial p}{\partial x_{i}} + \frac{\partial \tau_{ij}}{\partial x_{j}} + \rho f_{i} $$&lt;/p&gt;
 &lt;p&gt;$$ \frac{\partial (\rho e)}{\partial t} + (\rho e+p)\frac{\partial u_{i}}{\partial x_{i}} = \frac{\partial(\tau_{ij}u_{j})}{\partial x_{i}} + \rho f_{i}u_{i} + \frac{\partial(\dot{ q_{i}})}{\partial x_{i}} + r $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/navier-stokes-equation.html&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -486,14 +480,14 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/leibniz-rule-material-volume.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/leibniz-rule-material-volume.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/leibniz-rule-material-volume.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;$$
 \frac{D}{D t} \int_{V_{m}(t)} f(\vec{x}, t) d V=\int_{V_{m}(t)}\left(\frac{\partial f}{\partial t}+\vec{\nabla} \cdot f \vec{u}\right) dV
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods#EQN+6.1.4&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -505,7 +499,7 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/leibniz-integral-rule.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/leibniz-integral-rule.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/leibniz-integral-rule.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -513,7 +507,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \frac{d}{d t} \int_{V(t)} f(\vec{x}, t) d V=\int_{V(t)} \frac{\partial f}{\partial t} d V+\int_{A(t)} f \vec{u}_{A} \cdot \hat{n} dA
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Civil_Engineering/Book%3A_All_Things_Flow_-_Fluid_Mechanics_for_the_Natural_Sciences_(Smyth)/06%3A_Fluid_Dynamics/6.01%3A_Solution_methods&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -525,7 +519,7 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/greens-theorem.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/greens-theorem.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/greens-theorem.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -536,7 +530,7 @@ $$&lt;/p&gt;
 &lt;p&gt;$$
 \oint_C \textbf{f}\cdot d\textbf{r} = \iint\limits_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right)dA
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://math.libretexts.org/Bookshelves/Calculus/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.03%3A_Greens_Theorem&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -548,16 +542,16 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/gauss-divergence-theorem.html"/>
             <updated>2024-02-20T00:00:00Z</updated>
             <id>https://esonusharma.github.io/gauss-divergence-theorem.html</id>
-            <content type="html">&lt;h2&gt;Resources&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Resources&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/gauss-divergence-theorem.html&quot;&gt;Video Lecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h2&gt;
+&lt;h3&gt;Divergence theorem / Gauss divergence theorem / Gauss’ theorem / Ostrogradsky’s theorem / Gauss-Ostrogradsky theorem&lt;/h3&gt;
 &lt;p&gt;The divergence theorem relates an integral over a volume to an integral over the surface bounding that volume. The divergence theorem states that the integral of the divergence of a vector field over a volume is equal to the flux of that field through the surface bounding that volume.&lt;/p&gt;
 &lt;p&gt;$$
 \int_{\mathcal V} \left( \nabla \cdot {\bf A} \right) dv = \oint_{\mathcal S} {\bf A}\cdot d{\bf s}
 $$&lt;/p&gt;
-&lt;h2&gt;References&lt;/h2&gt;
+&lt;h3&gt;References&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Continuum_Electromechanics_(Melcher)/02%3A_Electrodynamic_Laws_Approximations_and_Relations/2.06%3A_Integral_Theorems&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -569,8 +563,7 @@ $$&lt;/p&gt;
             <link href="https://esonusharma.github.io/cfdcode-cpp-1d-diffusion-equation.html"/>
             <updated>2024-02-06T00:00:00Z</updated>
             <id>https://esonusharma.github.io/cfdcode-cpp-1d-diffusion-equation.html</id>
-            <content type="html">&lt;h2&gt;cfdCode c++ 1D Diffusion Equation&lt;/h2&gt;
-&lt;ol&gt;
+            <content type="html">&lt;ol&gt;
 &lt;li&gt;source file&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
@@ -648,7 +641,7 @@ int main() {
 &lt;pre&gt;&lt;code&gt;- Problem with the nomenclature
 - nomencl latex won&#39;t show output
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;h3&gt;Solution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 1. In Visual Studio Code, Open File -&amp;gt; Preferences -&amp;gt; Settings and search for &amp;quot;latex-workshop.latex.tools&amp;quot; in that.&lt;/li&gt;
 &lt;li&gt;Step 2. Add the following code inside the &amp;quot;latex-workshop.latex.tools&amp;quot;&lt;/li&gt;
@@ -703,7 +696,7 @@ int main() {
             <link href="https://esonusharma.github.io/difference-between-sci-and-scie.html"/>
             <updated>2020-07-18T00:00:00Z</updated>
             <id>https://esonusharma.github.io/difference-between-sci-and-scie.html</id>
-            <content type="html">&lt;h2&gt;Master Journal List : Removal of SCI&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Master Journal List : Removal of SCI&lt;/h3&gt;
 &lt;p&gt;SCI has been removed from the Clarivate Analytics Master Journal List, the details can be found on an official link &lt;a href=&quot;https://support.clarivate.com/ScientificandAcademicResearch/s/article/Master-Journal-List-Removal-of-SCI?language=en_US&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Present Master Journal List can be found &lt;a href=&quot;https://mjl.clarivate.com/collection-list-downloads&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -720,8 +713,7 @@ int main() {
 &lt;p&gt;I will suggest you to follow the latest instructions on the official site &lt;a href=&quot;http://openfoam.org/&quot;&gt;OpenFOAM&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Besides that, you can always take a cue from this post too.&lt;/p&gt;
 &lt;p&gt;Also, you should be connected to internet for installing OpenFOAM.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Steps to install OpenFOAM on Ubuntu&lt;/h2&gt;
+&lt;h3&gt;Steps to install OpenFOAM on Ubuntu&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Open the terminal using the icon or Shortcut “Ctrl+Alt+T”.&lt;/li&gt;
 &lt;li&gt;Type following commands one by one pressing enter at the end of each command.&lt;/li&gt;
@@ -805,7 +797,7 @@ If you get an error related to ca-certificates then just run the following comma
             <link href="https://esonusharma.github.io/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed.html"/>
             <updated>2020-06-24T00:00:00Z</updated>
             <id>https://esonusharma.github.io/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed.html</id>
-            <content type="html">&lt;h2&gt;Execute commands below to solve this problem&lt;/h2&gt;
+            <content type="html">&lt;h3&gt;Execute commands below to solve this problem&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;sudo apt-get purge grub\*
 sudo apt-get install grub-efi
 sudo apt-get autoremove
@@ -827,7 +819,7 @@ sudo update-grub
 - Errors were encountered while processing
 - E: Sub-process /usr/bin/dpkg returned an error code (1)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Solution&lt;/h2&gt;
+&lt;h3&gt;Solution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Step 1. Execute command in terminal&lt;/li&gt;
 &lt;/ul&gt;
@@ -863,14 +855,14 @@ sudo update-grub
 &lt;p&gt;The best and easy way to do this is by using an email client over IMAP.&lt;/p&gt;
 &lt;p&gt;The one I have personally used is Mozilla’s &lt;a href=&quot;https://www.mozilla.org/en-US/thunderbird&quot;&gt;Thunderbird&lt;/a&gt; email client.&lt;/p&gt;
 &lt;p&gt;Yes, it is not very fancy looking, but it works.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;You can use this method:&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;You can use this method:&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;If changing the name of a business.&lt;/li&gt;
 &lt;li&gt;To copy your emails from office email account to personal email account.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Download Thunderbird and install it on your Laptop or PC.&lt;/p&gt;
 &lt;p&gt;Now you have to add the email accounts in Thunderbird between which you want to transfer emails.&lt;/p&gt;
-&lt;h2&gt;Stepwise Procedure to transfer emails&lt;/h2&gt;
+&lt;h3&gt;Stepwise Procedure to transfer emails&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Launch Thunderbird Client.&lt;/li&gt;
 &lt;li&gt;Click on Accounts&amp;gt;Create a new account&amp;gt;Email, a pop-up will emerge.&lt;/li&gt;
@@ -989,7 +981,7 @@ sudo update-grub
             <updated>2019-05-28T00:00:00Z</updated>
             <id>https://esonusharma.github.io/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain.html</id>
             <content type="html">&lt;p&gt;I know its difficult to migrate blogger/blogspot blog hosted at bare blogspot domain “&lt;a href=&quot;https://your-blog-name.blogspot.com/&quot;&gt;https://your-blog-name.blogspot.com&lt;/a&gt;” to newly bought branded domain name something like “&lt;a href=&quot;https://yoursite.com/&quot;&gt;https://yoursite.com&lt;/a&gt;”.&lt;/p&gt;
-&lt;h2&gt;So what exactly is SEO Redirection or 301 Redirection?&lt;/h2&gt;
+&lt;h3&gt;So what exactly is SEO Redirection or 301 Redirection?&lt;/h3&gt;
 &lt;p&gt;When you want that a blog post or blog page of your blog should transfer its traffic and google search ranking authority to a new URL where this content is shifted, then you need SEO Redirection.&lt;/p&gt;
 &lt;p&gt;As you are &lt;strong&gt;permanently&lt;/strong&gt; moving your blog content under a &lt;strong&gt;new domain name&lt;/strong&gt;, you need to tell Google about it, so that Google acknowledges the change and transfers the authority of your content to a new address and does not treat the same content at a new URL as plagiarised content and deny &lt;strong&gt;rankings&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;You can inform this to Google by providing a &lt;strong&gt;301 Redirect&lt;/strong&gt; at the old address of the content.&lt;/p&gt;
@@ -997,7 +989,7 @@ sudo update-grub
 &lt;p&gt;The traffic is shifted permanently by Google instantly when it finds this redirect.&lt;/p&gt;
 &lt;p&gt;But the rankings transfer takes some time.&lt;/p&gt;
 &lt;p&gt;Normally you can easily create a 301 Redirect for a personal domain name you own.&lt;/p&gt;
-&lt;h2&gt;301 Redirect can be created by&lt;/h2&gt;
+&lt;h3&gt;301 Redirect can be created by&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Defining it in the &lt;strong&gt;.htaccess&lt;/strong&gt; file available in the hosting if you have hosting.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Forwarding&lt;/strong&gt; the domain name in your domain control panel provided by the domain name provider choosing the &lt;strong&gt;permanent redirect&lt;/strong&gt;/forward option if you don’t have hosting.&lt;/li&gt;
