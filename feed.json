@@ -10,6 +10,13 @@
         "url": "https://esonusharma.github.io/profile.html"
     },
     "items": [{
+                "id": "https://esonusharma.github.io/1-day-faculty-development-program-on-introduction-to-open-source-software.html",
+                "url": "https://esonusharma.github.io/1-day-faculty-development-program-on-introduction-to-open-source-software.html",
+                "title": "1 Day Faculty Development Program on Introduction to Open-Source Software",
+                "content_html":"<h1>Brochure</h1>\n<br />\n<br />\n<h1>Centre of Excellence, Modelling and Simulation</h1>\n<h3>Department of Mechanical Engineering, CUIET-AE, Chitkara University, Punjab</h3>\n<br />\n<br />\n<h3>Announces</h3>\n<br />\n<br />\n<h1>1 Day Faculty Development Program on Introduction to Open-Source Software</h1>\n<h3>on 16/03/24, Saturday</h3>\n<br />\n<br />\n<br />\n<br />\n<h2>Convener and Resource Person</h2>\n<h3>Dr. Sonu Sharma</h3>\n<p>Department of Mechanical Engineering, CUIET-AE, Chitkara University, Punjab</p>\n<br />\n<h3>Venue</h3>\n<hr />\n<p>Centre of Excellence, Modelling and Simulation, Tesla Block,\nDepartment of Mechanical Engineering, CUIET-AE, Chitkara University, Punjab\n<br />\n<br /></p>\n<h1>Content</h1>\n<ul>\n<li>Introduction to Free/Libre and Open Source Terminology</li>\n<li>Linux</li>\n<li>Ubuntu</li>\n<li>Oracle Virtualbox</li>\n<li>Installation tips for Ubuntu</li>\n<li>Installation of software in Ubuntu</li>\n<li>Shell</li>\n<li>Automating tasks with shell</li>\n<li>Ubuntu settings and tools</li>\n<li>Programming</li>\n<li>C++</li>\n<li>HTML, CSS, Javascript</li>\n<li>Evolution and Google Accounts</li>\n<li>Gedit and Nano</li>\n<li>LibreOffice</li>\n<li>Github</li>\n<li>VS Code</li>\n<li>FreeCAD</li>\n</ul>\n"
+                ,
+                "date_published": "2024-03-16T00:00:00Z"
+            },{
                 "id": "https://esonusharma.github.io/pressure.html",
                 "url": "https://esonusharma.github.io/pressure.html",
                 "title": "Pressure",
