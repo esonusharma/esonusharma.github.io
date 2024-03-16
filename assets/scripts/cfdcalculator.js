@@ -10,39 +10,62 @@ const tkeoutput = document.querySelector('.tkeoutput');
 const tdoutput = document.querySelector('.tdoutput');
 const nutoutput = document.querySelector('.nutoutput');
 const sdroutput = document.querySelector('.sdroutput');
+let gr;
+let density;
+let viscosity;
+let velocity;
+let length;
+let yplus;
+let re;
+let cf;
+let tw;
+let ut;
+let yp;
+let yh;
+let bl;
+let k;
+let fl;
+let mn;
+let cmu;
+let ti;
+let lm;
+let tke;
+let td;
+let nut;
+let sdr;
 document.getElementById("cfdCalculatorForm").addEventListener('submit', cfdCalculatorFunction, false);
 function cfdCalculatorFunction(event) {
-    var gr = document.getElementById("gr").value;
-    var density = document.getElementById("density").value;
-    var viscosity = document.getElementById("viscosity").value;
-    var velocity = document.getElementById("velocity").value;
-    var length = document.getElementById("length").value;
-    var yplus = document.getElementById("yplus").value;
-    var re = ((density * velocity * length) / viscosity);
-    var cf = Math.pow(((2 * Math.log10(re)) - 0.65), -2.3);
-    var tw = (1 / 2) * density * Math.pow(velocity, 2) * cf;
-    var ut = Math.sqrt(tw / density);
-    var yp = (yplus * viscosity) / (ut * density);
-    var yh = 2 * yp;
+    gr = document.getElementById("gr").value;
+    density = document.getElementById("density").value;
+    viscosity = document.getElementById("viscosity").value;
+    velocity = document.getElementById("velocity").value;
+    length = document.getElementById("length").value;
+    yplus = document.getElementById("yplus").value;
+    re = ((density * velocity * length) / viscosity);
+    cf = Math.pow(((2 * Math.log10(re)) - 0.65), -2.3);
+    tw = (1 / 2) * density * Math.pow(velocity, 2) * cf;
+    ut = Math.sqrt(tw / density);
+    yp = (yplus * viscosity) / (ut * density);
+    yh = 2 * yp;
     reoutput.textContent = 'Reynolds Number=' + re.toFixed(8);
     yhoutput.textContent = 'First Mesh Layer Height=' + yh.toFixed(8);
     if (re <= 500000) {
-        var bl = ((4.91 * length) / Math.sqrt(re));
+        bl = ((4.91 * length) / Math.sqrt(re));
     }
     else {
-        var bl = ((0.38 * length) / Math.pow(re, (1 / 5)));
+        bl = ((0.38 * length) / Math.pow(re, (1 / 5)));
     }
     bloutput.textContent = 'Boundary Layer Height=' + bl.toFixed(8);
     if ((gr >= 1.01) && (gr <= 2)) {
-        var k = yh;
+        k = yh;
         for (n = 0; n <= 99; n++) {
             k = gr * k;
             if (k >= bl) {
                 break;
             }
         }
-        var fl = k - (k / gr);
-        var mn = gr * k;
+        fl = k - (k / gr);
+        mn = gr * k;
         noutput.textContent = 'Number of Layers=' + n;
         floutput.textContent = 'Final Layer Thickness=' + fl.toFixed(8);
         mnoutput.textContent = 'Minimum Mesh Size=' + mn.toFixed(8);
@@ -50,13 +73,13 @@ function cfdCalculatorFunction(event) {
     else {
         noutput.textContent = 'Wrong Growth Ratio';
     }
-    var cmu = 0.09;
-    var ti = 0.055 * Math.pow(re, -0.041);
-    var lm = 0.07 * length;
-    var tke = (3 / 2) * Math.pow((velocity * ti), 2);
-    var td = ((Math.pow(cmu, (3 / 4))) * (Math.pow(tke, (3 / 2)))) / lm;
-    var nut = (cmu * (Math.pow(tke, 2))) / td;
-    var sdr = ((Math.pow(cmu, (-1 / 4))) * (Math.pow(tke, (1 / 2)))) / lm;
+    cmu = 0.09;
+    ti = 0.055 * Math.pow(re, -0.041);
+    lm = 0.07 * length;
+    tke = (3 / 2) * Math.pow((velocity * ti), 2);
+    td = ((Math.pow(cmu, (3 / 4))) * (Math.pow(tke, (3 / 2)))) / lm;
+    nut = (cmu * (Math.pow(tke, 2))) / td;
+    sdr = ((Math.pow(cmu, (-1 / 4))) * (Math.pow(tke, (1 / 2)))) / lm;
     tioutput.textContent = 'Turbulence Intensity=' + ti.toFixed(8);
     lmoutput.textContent = 'Length Scale/Mixing Length=' + lm.toFixed(8);
     tkeoutput.textContent = 'Turbulent Kinetic Energy=' + tke.toFixed(8);
