@@ -4,12 +4,40 @@
     <subtitle>academy</subtitle>
      <link href="https://esonusharma.github.io/feed.xml" rel="self"/>
     <link href="https://esonusharma.github.io/"/>
-    <updated>2024-03-14T00:00:00Z</updated>
+    <updated>2024-04-02T00:00:00Z</updated>
     <id>https://esonusharma.github.io/</id>
     <author>
         <name>sonu sharma</name>
         <email></email>
     </author>
+        
+        <entry>
+            <title>cpp Data Types</title>
+            <link href="https://esonusharma.github.io/cpp-data-types.html"/>
+            <updated>2024-04-02T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/cpp-data-types.html</id>
+            <content type="html">&lt;h2&gt;Built in Data Types&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;int&lt;/li&gt;
+&lt;li&gt;float&lt;/li&gt;
+&lt;li&gt;char&lt;/li&gt;
+&lt;li&gt;double&lt;/li&gt;
+&lt;li&gt;bool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;User Defined Data Types&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Struct&lt;/li&gt;
+&lt;li&gt;Union&lt;/li&gt;
+&lt;li&gt;Enum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Derived Data Types&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/cpp-pointer.html&quot;&gt;Pointer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Function&lt;/li&gt;
+&lt;li&gt;Array&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
         
         <entry>
             <title>Free/Libre and Open-Source Software</title>
@@ -92,37 +120,6 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://esonusharma.github.io/pressure.html&quot;&gt;Source 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-        </entry>
-        
-        <entry>
-            <title>Pointer</title>
-            <link href="https://esonusharma.github.io/pointer.html"/>
-            <updated>2024-02-23T00:00:00Z</updated>
-            <id>https://esonusharma.github.io/pointer.html</id>
-            <content type="html">&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
-
-using namespace std;
-
-int main()
-{
-    int x, *y;
-    x=7;
-    y=&amp;amp;x;
-    cout&amp;lt;&amp;lt;&amp;quot;x= &amp;quot;&amp;lt;&amp;lt;x&amp;lt;&amp;lt;endl;
-    cout&amp;lt;&amp;lt;&amp;quot;*y= &amp;quot;&amp;lt;&amp;lt;*y&amp;lt;&amp;lt;endl;
-    cout&amp;lt;&amp;lt;&amp;quot;&amp;amp;x= &amp;quot;&amp;lt;&amp;lt;&amp;amp;x&amp;lt;&amp;lt;endl;
-    cout&amp;lt;&amp;lt;&amp;quot;y= &amp;quot;&amp;lt;&amp;lt;y&amp;lt;&amp;lt;endl;
-    return 0;
-}
-
-Output:
-
-x= 7
-*y= 7
-&amp;amp;x= 0x8kkkkkkkwn6c
-y= 0x8kkkkkkkwn6c
-&lt;/code&gt;&lt;/pre&gt;
 </content>
         </entry>
         
@@ -393,6 +390,37 @@ y= 0x8kkkkkkkwn6c
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>cpp Pointer</title>
+            <link href="https://esonusharma.github.io/cpp-pointer.html"/>
+            <updated>2024-02-23T00:00:00Z</updated>
+            <id>https://esonusharma.github.io/cpp-pointer.html</id>
+            <content type="html">&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+
+using namespace std;
+
+int main()
+{
+    int x, *y;
+    x=7;
+    y=&amp;amp;x;
+    cout&amp;lt;&amp;lt;&amp;quot;x= &amp;quot;&amp;lt;&amp;lt;x&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;*y= &amp;quot;&amp;lt;&amp;lt;*y&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;&amp;amp;x= &amp;quot;&amp;lt;&amp;lt;&amp;amp;x&amp;lt;&amp;lt;endl;
+    cout&amp;lt;&amp;lt;&amp;quot;y= &amp;quot;&amp;lt;&amp;lt;y&amp;lt;&amp;lt;endl;
+    return 0;
+}
+
+Output:
+
+x= 7
+*y= 7
+&amp;amp;x= 0x8kkkkkkkwn6c
+y= 0x8kkkkkkkwn6c
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         </entry>
         

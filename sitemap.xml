@@ -82,12 +82,7 @@
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/howto/</loc>
-        <lastmod>2023-11-01</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://esonusharma.github.io/tags/stc/</loc>
+        <loc>https://esonusharma.github.io/tags/code/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
@@ -97,17 +92,22 @@
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/openfoam/</loc>
+        <loc>https://esonusharma.github.io/tags/stc/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
     <url>
-        <loc>https://esonusharma.github.io/tags/code/</loc>
+        <loc>https://esonusharma.github.io/tags/howto/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
     <url>
         <loc>https://esonusharma.github.io/tags/research/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://esonusharma.github.io/tags/openfoam/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
@@ -207,17 +207,17 @@
     </url>
     
     <url>
+        <loc>https://esonusharma.github.io/cpp-pointer.html</loc>
+        <lastmod>2024-02-23</lastmod>
+    </url>
+    
+    <url>
         <loc>https://esonusharma.github.io/greek-letters.html</loc>
         <lastmod>2024-02-23</lastmod>
     </url>
     
     <url>
         <loc>https://esonusharma.github.io/mathematical-symbols.html</loc>
-        <lastmod>2024-02-23</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://esonusharma.github.io/pointer.html</loc>
         <lastmod>2024-02-23</lastmod>
     </url>
     
@@ -279,5 +279,10 @@
     <url>
         <loc>https://esonusharma.github.io/free-libre-and-open-source-software.html</loc>
         <lastmod>2024-03-14</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://esonusharma.github.io/cpp-data-types.html</loc>
+        <lastmod>2024-04-02</lastmod>
     </url>
 </urlset>
