@@ -82,6 +82,16 @@
     </url>
     
     <url>
+        <loc>https://esonusharma.github.io/tags/code/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://esonusharma.github.io/tags/openfoam/</loc>
+        <lastmod>2023-11-01</lastmod>
+    </url>
+    
+    <url>
         <loc>https://esonusharma.github.io/tags/theory/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
@@ -93,16 +103,6 @@
     
     <url>
         <loc>https://esonusharma.github.io/tags/research/</loc>
-        <lastmod>2023-11-01</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://esonusharma.github.io/tags/code/</loc>
-        <lastmod>2023-11-01</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://esonusharma.github.io/tags/openfoam/</loc>
         <lastmod>2023-11-01</lastmod>
     </url>
     
