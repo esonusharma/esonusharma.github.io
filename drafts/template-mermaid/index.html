@@ -224,10 +224,20 @@
         </header>
 
         <div class="w3-container w3-card w3-white w3-round w3-margin">
-          <section id="page-main" role="main">
-<h1 class="w3-container w3-round w3-theme w3-card">Contact</h1>
-<p>You can contact us by sending a direct message on <a href="https://x.com/esonusharma">X</a>.</p>
-          </section> <!-- /#page-main -->
+          <article class="post" id="page-main" role="main">
+<h1 class="w3-container w3-round w3-theme w3-card">template-mermaid</h1>
+<p class="w3-round w3-padding-large w3-border">Published on: 05 July 2024</p>
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
+
+<pre class="mermaid">
+flowchart LR
+  A(Node Publisher 1) --Message 1--> B(Topic 1);
+  C(Node Publisher 2) --Message 2--> B;
+  B --Message 1,Message 2--> D(Node Subscriber 1);
+  B --Message 1, Message 2--> E(Node Subscriber 2);
+  B --Message 1, Message 2--> F(Node Subscriber 3);
+</pre>
+          </article> <!-- /#page-main -->
         </div>
 
         <!-- End Middle Column -->
