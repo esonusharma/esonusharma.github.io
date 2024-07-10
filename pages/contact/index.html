@@ -227,13 +227,16 @@
           <section id="page-main" role="main">
 <h1 class="w3-container w3-round w3-theme w3-card">Contact</h1>
 <p>You can contact us by sending a direct message on <a href="https://x.com/esonusharma">X</a>.</p>
-<p><code>mermaid
+<script type="module"> import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs'; mermaid.initialize({ startOnLoad: true }); </script>
+
+<pre class="mermaid">
 flowchart LR
-  A(Node Publisher 1) --Message 1--&gt; B(Topic 1);
-  C(Node Publisher 2) --Message 2--&gt; B;
-  B --Message 1,Message 2--&gt; D(Node Subscriber 1);
-  B --Message 1, Message 2--&gt; E(Node Subscriber 2);
-  B --Message 1, Message 2--&gt; F(Node Subscriber 3);</code></p>
+  A(Node Publisher 1) --Message 1--> B(Topic 1);
+  C(Node Publisher 2) --Message 2--> B;
+  B --Message 1,Message 2--> D(Node Subscriber 1);
+  B --Message 1, Message 2--> E(Node Subscriber 2);
+  B --Message 1, Message 2--> F(Node Subscriber 3);
+</pre>
           </section> <!-- /#page-main -->
         </div>
 
