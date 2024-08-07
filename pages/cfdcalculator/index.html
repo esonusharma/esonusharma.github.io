@@ -226,35 +226,70 @@
 
         <div class="w3-container w3-card w3-white w3-round w3-margin">
           <section id="page-main" role="main">
-<h1 class="w3-container w3-round w3-theme w3-card">Category howto</h1>
-<table class="table">
-    <tbody>
-        <tr>
-            <td>14 Jul 2023</td>
-            <td><a href='https://esonusharma.github.io/posts/solved-nomenclature-not-generated-in-pdf-created-by-visual-studio-code-latex-workshop-extension/'>Solved Nomenclature Not Generated in PDF Created by Visual Studio Code LaTeX Workshop Extension</a></td>
-        </tr>
-        <tr>
-            <td>24 Jun 2020</td>
-            <td><a href='https://esonusharma.github.io/posts/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed/'>Solved errors were encountered while processing grub efi amd64 signed</a></td>
-        </tr>
-        <tr>
-            <td>02 Jun 2020</td>
-            <td><a href='https://esonusharma.github.io/posts/fix-the-error-debconf-dbdriver-config-varcachedebconfconfigdat-is-locked-by-another-process-resource-temporarily-unavailable/'>Fix the Error "debconf DbDriver "config" /var/cache/debconf/config.dat is locked by another process Resource temporarily unavailable</a></td>
-        </tr>
-        <tr>
-            <td>29 May 2019</td>
-            <td><a href='https://esonusharma.github.io/posts/how-to-install-latest-julia-version-on-linux/'>How to Install Latest Julia Version on Linux?</a></td>
-        </tr>
-        <tr>
-            <td>29 May 2019</td>
-            <td><a href='https://esonusharma.github.io/posts/how-to-transfer-email-from-one-account-to-another/'>How to Transfer Email from One Account to Another?</a></td>
-        </tr>
-        <tr>
-            <td>28 May 2019</td>
-            <td><a href='https://esonusharma.github.io/posts/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain/'>How to 301 Permanent Redirect Blogger-Blogspot Blog to Domain?</a></td>
-        </tr>
-    </tbody>
-</table>
+<h1 class="w3-container w3-round w3-theme w3-card">CFD Calculator</h1>
+<div class="w3-container w3-round w3-padding">
+    <h3>Input</h3>
+    <br>
+    <br>
+    <form id="cfdCalculatorForm" class="w3-container">
+        <input type="number" id="gr" required="required" step="any" placeholder="Desired Growth Ratio (Between 1.01 and 2)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="density" required="required" step="any" placeholder="Mass Density" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="viscosity" required="required" step="any" placeholder="Dynamic Viscosity" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="velocity" required="required" step="any" placeholder="Free Stream Velocity/Inlet Velocity" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="length" required="required" step="any" placeholder="Characteristic Length/Hydraulic Diameter" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="yplus" required="required" step="any" placeholder="Desired y+" class="w3-input">
+        <br>
+        <br>
+        <button class="submit">Calculate</button>
+        <br>
+        <br>
+    </form>
+</div>
+<p><br>
+<br></p>
+<div class="w3-container w3-round w3-padding">
+    <h3 class="w3-serif">Output</h3>
+    <br>
+    <br>
+    <div class="w3-container">
+        <div class="reoutput"></div>
+        <br>
+        <div class="yhoutput"></div>
+        <br>
+        <div class="bloutput"></div>
+        <br>
+        <div class="noutput"></div>
+        <br>
+        <div class="floutput"></div>
+        <br>
+        <div class="mnoutput"></div>
+        <br>
+        <div class="tioutput"></div>
+        <br>
+        <div class="lmoutput"></div>
+        <br>
+        <div class="tkeoutput"></div>
+        <br>
+        <div class="tdoutput"></div>
+        <br>
+        <div class="nutoutput"></div>
+        <br>
+        <div class="sdroutput"></div>
+        <br>
+        <br>
+    </div>
+</div>
+<script src="/static/scripts/cfdcalculator.js"></script>
           </section> <!-- /#page-main -->
         </div>
 
