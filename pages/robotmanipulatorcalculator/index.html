@@ -236,28 +236,20 @@
     <h3>Input</h3>
     <br>
     <br>
-    <form id="cfdCalculatorForm" class="w3-container">
-        <input type="number" id="gr" required="required" step="any" placeholder="Desired Growth Ratio (Between 1.01 and 2)" class="w3-input">
-        <br>
-        <br>
-        <input type="number" id="density" required="required" step="any" placeholder="Mass Density" class="w3-input">
-        <br>
-        <br>
-        <input type="number" id="viscosity" required="required" step="any" placeholder="Dynamic Viscosity" class="w3-input">
-        <br>
-        <br>
-        <input type="number" id="velocity" required="required" step="any" placeholder="Free Stream Velocity/Inlet Velocity" class="w3-input">
-        <br>
-        <br>
-        <input type="number" id="length" required="required" step="any" placeholder="Characteristic Length/Hydraulic Diameter" class="w3-input">
-        <br>
-        <br>
-        <input type="number" id="yplus" required="required" step="any" placeholder="Desired y+" class="w3-input">
-        <br>
-        <br>
-        <button class="submit">Calculate</button>
-        <br>
-        <br>
+    <form id="manipulatorForm">
+        <label for="length1">Length of Link 1:</label>
+        <input type="number" id="length1" name="length1"><br><br>
+
+        <label for="length2">Length of Link 2:</label>
+        <input type="number" id="length2" name="length2"><br><br>
+
+        <label for="theta1">Theta 1 (degrees):</label>
+        <input type="number" id="theta1" name="theta1"><br><br>
+
+        <label for="theta2">Theta 2 (degrees):</label>
+        <input type="number" id="theta2" name="theta2"><br><br>
+
+        <input type="button" value="Calculate" onClick="calculate()">
     </form>
 </div>
 <p><br>
@@ -267,31 +259,7 @@
     <br>
     <br>
     <div class="w3-container">
-        <div class="reoutput"></div>
-        <br>
-        <div class="yhoutput"></div>
-        <br>
-        <div class="bloutput"></div>
-        <br>
-        <div class="noutput"></div>
-        <br>
-        <div class="floutput"></div>
-        <br>
-        <div class="mnoutput"></div>
-        <br>
-        <div class="tioutput"></div>
-        <br>
-        <div class="lmoutput"></div>
-        <br>
-        <div class="tkeoutput"></div>
-        <br>
-        <div class="tdoutput"></div>
-        <br>
-        <div class="nutoutput"></div>
-        <br>
-        <div class="sdroutput"></div>
-        <br>
-        <br>
+        <div class="results"></div>
     </div>
 </div>
 <script src="/theme/scripts/robotmanipulatorcalculator.js"></script>
