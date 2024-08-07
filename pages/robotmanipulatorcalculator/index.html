@@ -232,8 +232,70 @@
 
         <div class="w3-container w3-card w3-white w3-round w3-margin">
           <section id="page-main" role="main">
-<h1 class="w3-container w3-round w3-theme w3-card">Contact</h1>
-<p>You can contact us by sending a direct message on <a href="https://x.com/esonusharma">X</a>.</p>
+<h1 class="w3-container w3-round w3-theme w3-card">Robot Manipulator Calculator</h1>
+<div class="w3-container w3-round w3-padding">
+    <h3>Input</h3>
+    <br>
+    <br>
+    <form id="cfdCalculatorForm" class="w3-container">
+        <input type="number" id="gr" required="required" step="any" placeholder="Desired Growth Ratio (Between 1.01 and 2)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="density" required="required" step="any" placeholder="Mass Density" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="viscosity" required="required" step="any" placeholder="Dynamic Viscosity" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="velocity" required="required" step="any" placeholder="Free Stream Velocity/Inlet Velocity" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="length" required="required" step="any" placeholder="Characteristic Length/Hydraulic Diameter" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="yplus" required="required" step="any" placeholder="Desired y+" class="w3-input">
+        <br>
+        <br>
+        <button class="submit">Calculate</button>
+        <br>
+        <br>
+    </form>
+</div>
+<p><br>
+<br></p>
+<div class="w3-container w3-round w3-padding">
+    <h3 class="w3-serif">Output</h3>
+    <br>
+    <br>
+    <div class="w3-container">
+        <div class="reoutput"></div>
+        <br>
+        <div class="yhoutput"></div>
+        <br>
+        <div class="bloutput"></div>
+        <br>
+        <div class="noutput"></div>
+        <br>
+        <div class="floutput"></div>
+        <br>
+        <div class="mnoutput"></div>
+        <br>
+        <div class="tioutput"></div>
+        <br>
+        <div class="lmoutput"></div>
+        <br>
+        <div class="tkeoutput"></div>
+        <br>
+        <div class="tdoutput"></div>
+        <br>
+        <div class="nutoutput"></div>
+        <br>
+        <div class="sdroutput"></div>
+        <br>
+        <br>
+    </div>
+</div>
+<script src="/theme/scripts/robotmanipulatorcalculator.js"></script>
           </section> <!-- /#page-main -->
         </div>
 
