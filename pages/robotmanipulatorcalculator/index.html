@@ -237,20 +237,103 @@
     <br>
     <br>
     <form id="manipulatorForm">
-        <label for="length1">Length of Link 1:</label>
-        <input type="number" id="length1" name="length1"><br><br>
 
-        <label for="length2">Length of Link 2:</label>
-        <input type="number" id="length2" name="length2"><br><br>
+        <!-- Link Weights -->
+        <label for="W2Text">Weight 2 (W2):</label>
+        <input type="number" id="W2Text" step="any"><br>
 
-        <label for="theta1">Theta 1 (degrees):</label>
-        <input type="number" id="theta1" name="theta1"><br><br>
+        <label for="W4Text">Weight 4 (W4):</label>
+        <input type="number" id="W4Text" step="any"><br>
 
-        <label for="theta2">Theta 2 (degrees):</label>
-        <input type="number" id="theta2" name="theta2"><br><br>
+        <label for="W6Text">Weight 6 (W6):</label>
+        <input type="number" id="W6Text" step="any"><br>
 
-        <input type="button" value="Calculate" onClick="calculate()">
+        <label for="W7Text">Weight 7 (W7):</label>
+        <input type="number" id="W7Text" step="any"><br>
+
+        <!-- Motor Weights -->
+        <label for="Motor1Text">Motor 1:</label>
+        <input type="number" id="Motor1Text" step="any"><br>
+
+        <label for="Motor2Text">Motor 2:</label>
+        <input type="number" id="Motor2Text" step="any"><br>
+
+        <label for="Motor3Text">Motor 3:</label>
+        <input type="number" id="Motor3Text" step="any"><br>
+
+        <!-- Link Lengths -->
+        <label for="L1Text">Length 1 (L1):</label>
+        <input type="number" id="L1Text" step="any"><br>
+
+        <label for="L2Text">Length 2 (L2):</label>
+        <input type="number" id="L2Text" step="any"><br>
+
+        <label for="L3Text">Length 3 (L3):</label>
+        <input type="number" id="L3Text" step="any"><br>
+
+        <!-- Velocities -->
+        <label for="V0Text">V0:</label>
+        <input type="number" id="V0Text" step="any"><br>
+
+        <label for="V1Text">V1:</label>
+        <input type="number" id="V1Text" step="any"><br>
+
+        <label for="V2Text">V2:</label>
+        <input type="number" id="V2Text" step="any"><br>
+
+        <label for="V3Text">V3:</label>
+        <input type="number" id="V3Text" step="any"><br>
+
+        <!-- Efficiency -->
+        <label for="eff1Text">Efficiency 1 (%):</label>
+        <input type="number" id="eff1Text" step="any"><br>
+
+        <label for="eff2Text">Efficiency 2 (%):</label>
+        <input type="number" id="eff2Text" step="any"><br>
+
+        <label for="eff3Text">Efficiency 3 (%):</label>
+        <input type="number" id="eff3Text" step="any"><br>
+
+        <!-- Other Inputs -->
+        <label for="clicksText">Clicks:</label>
+        <input type="number" id="clicksText" step="any"><br>
+
+        <!-- Unit Selection -->
+        <label for="dimLengthSelect">Length Unit:</label>
+        <select id="dimLengthSelect">
+            <option value="eng">Inches</option>
+            <option value="met">Meters</option>
+        </select><br>
+
+        <label for="dimWeightSelect">Weight Unit:</label>
+        <select id="dimWeightSelect">
+            <option value="eng">Pounds</option>
+            <option value="met">Kilograms</option>
+        </select><br>
+
+        <label for="dimMotWeightSelect">Motor Weight Unit:</label>
+        <select id="dimMotWeightSelect">
+            <option value="eng">Pounds</option>
+            <option value="met">Kilograms</option>
+        </select><br>
+
+        <label for="dimTorSelect">Torque Unit:</label>
+        <select id="dimTorSelect">
+            <optionvalue="eng">Pound-force inches</option>
+            <option value="met">Newton meters</option>
+        </select><br>
+
+        <label for="dimTotWeightSelect">Total Weight Unit:</label>
+        <select id="dimTotWeightSelect">
+            <option value="eng">Pounds</option>
+            <option value="met">Kilograms</option>
+        </select><br>
+
+        <input type="button" value="Calculate" onClick="tw_calc()">
     </form>
+
+    <h4>Results:</h4>
+
 </div>
 <p><br>
 <br></p>
@@ -259,7 +342,23 @@
     <br>
     <br>
     <div class="w3-container">
-        <div class="results"></div>
+        <label for="M0Output">Torque Motor 0 (M0):</label>
+        <input type="text" id="M0Output" readonly><br>
+
+        <label for="M1Output">Torque Motor 1 (M1):</label>
+        <input type="text" id="M1Output" readonly><br>
+
+        <label for="M2Output">Torque Motor 2 (M2):</label>
+        <input type="text" id="M2Output" readonly><br>
+
+        <label for="M3Output">Torque Motor 3 (M3):</label>
+        <input type="text" id="M3Output" readonly><br>
+
+        <label for="WeightOutput">Total Weight:</label>
+        <input type="text" id="WeightOutput" readonly><br>
+
+        <label for="EncoderOutput">Encoder Accuracy:</label>
+        <input type="text" id="EncoderOutput" readonly><br>
     </div>
 </div>
 <script src="/theme/scripts/robotmanipulatorcalculator.js"></script>
