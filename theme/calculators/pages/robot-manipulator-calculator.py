@@ -24,17 +24,19 @@ def manipulator_calculator():
         qdd1 = st.slider("Joint 1 Acceleration (rad/s^2)", min_value=0.0, max_value=10.0, value=0.0)
         qdd2 = st.slider("Joint 2 Acceleration (rad/s^2)", min_value=0.0, max_value=10.0, value=0.0)
 
-        if st.button('Compute Torques'):
-            # Convert positions from degrees to radians
-            q = [np.deg2rad(q1), np.deg2rad(q2)]
-            qd = [qd1, qd2]
-            qdd = [qdd1, qdd2]
+    # Convert positions from degrees to radians before using them
+    q = [np.deg2rad(q1), np.deg2rad(q2)]
+    qd = [qd1, qd2]
+    qdd = [qdd1, qdd2]
 
-        # Calculate the torques using the RNE algorithm
-        tau = twolink.rne(q, qd, qdd)
-
-    st.write("Computed Joint Torques:")
-    st.write(f"Tau = {tau}")
+    if st.button('Compute Torques'):
+        try:
+            # Calculate the torques using the RNE algorithm
+            tau = twolink.rne(q, qd, qdd)
+            st.write("Computed Joint Torques:")
+            st.write(f"Tau = {tau}")
+        except Exception as e:
+            st.error(f"An error occurred: {str(e)}")
 
 # Main app
 manipulator_calculator()
