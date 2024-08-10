@@ -236,99 +236,72 @@
     <h3>Input</h3>
     <br>
     <br>
-    <form id="manipulatorForm">
-
+    <form id="manipulatorForm" class="w3-container">
         <!-- Link Weights -->
-        <label for="W2Text">Weight 2 (W2):</label>
-        <input type="number" id="W2Text" step="any"><br>
-
-        <label for="W4Text">Weight 4 (W4):</label>
-        <input type="number" id="W4Text" step="any"><br>
-
-        <label for="W6Text">Weight 6 (W6):</label>
-        <input type="number" id="W6Text" step="any"><br>
-
-        <label for="W7Text">Weight 7 (W7):</label>
-        <input type="number" id="W7Text" step="any"><br>
+        <input type="number" id="w2" step="any" placeholder="Weight 2 (W2)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="w4" step="any" placeholder="Weight 4 (W4)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="w6" step="any" placeholder="Weight 6 (W6)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="w7" step="any" placeholder="Weight 7 (W7)" class="w3-input">
+        <br>
+        <br>
 
         <!-- Motor Weights -->
-        <label for="Motor1Text">Motor 1:</label>
-        <input type="number" id="Motor1Text" step="any"><br>
-
-        <label for="Motor2Text">Motor 2:</label>
-        <input type="number" id="Motor2Text" step="any"><br>
-
-        <label for="Motor3Text">Motor 3:</label>
-        <input type="number" id="Motor3Text" step="any"><br>
+        <input type="number" id="motor1" step="any" placeholder="Motor 1" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="motor2" step="any" placeholder="Motor 2" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="motor3" step="any" placeholder="Motor 3" class="w3-input">
+        <br>
+        <br>
 
         <!-- Link Lengths -->
-        <label for="L1Text">Length 1 (L1):</label>
-        <input type="number" id="L1Text" step="any"><br>
-
-        <label for="L2Text">Length 2 (L2):</label>
-        <input type="number" id="L2Text" step="any"><br>
-
-        <label for="L3Text">Length 3 (L3):</label>
-        <input type="number" id="L3Text" step="any"><br>
+        <input type="number" id="l1" step="any" placeholder="Length 1 (L1)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="l2" step="any" placeholder="Length 2 (L2)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="l3" step="any" placeholder="Length 3 (L3)" class="w3-input">
+        <br>
+        <br>
 
         <!-- Velocities -->
-        <label for="V0Text">V0:</label>
-        <input type="number" id="V0Text" step="any"><br>
-
-        <label for="V1Text">V1:</label>
-        <input type="number" id="V1Text" step="any"><br>
-
-        <label for="V2Text">V2:</label>
-        <input type="number" id="V2Text" step="any"><br>
-
-        <label for="V3Text">V3:</label>
-        <input type="number" id="V3Text" step="any"><br>
+        <input type="number" id="v0" step="any" placeholder="V0" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="v1" step="any" placeholder="V1" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="v2" step="any" placeholder="V2" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="v3" step="any" placeholder="V3" class="w3-input">
+        <br>
+        <br>
 
         <!-- Efficiency -->
-        <label for="eff1Text">Efficiency 1 (%):</label>
-        <input type="number" id="eff1Text" step="any"><br>
-
-        <label for="eff2Text">Efficiency 2 (%):</label>
-        <input type="number" id="eff2Text" step="any"><br>
-
-        <label for="eff3Text">Efficiency 3 (%):</label>
-        <input type="number" id="eff3Text" step="any"><br>
+        <input type="number" id="eff1" step="any" placeholder="Efficiency 1 (%)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="eff2" step="any" placeholder="Efficiency 2 (%)" class="w3-input">
+        <br>
+        <br>
+        <input type="number" id="eff3" step="any" placeholder="Efficiency 3 (%)" class="w3-input">
+        <br>
+        <br>
 
         <!-- Other Inputs -->
-        <label for="clicksText">Clicks:</label>
-        <input type="number" id="clicksText" step="any"><br>
-
-        <!-- Unit Selection -->
-        <label for="dimLengthSelect">Length Unit:</label>
-        <select id="dimLengthSelect">
-            <option value="eng">Inches</option>
-            <option value="met">Meters</option>
-        </select><br>
-
-        <label for="dimWeightSelect">Weight Unit:</label>
-        <select id="dimWeightSelect">
-            <option value="eng">Pounds</option>
-            <option value="met">Kilograms</option>
-        </select><br>
-
-        <label for="dimMotWeightSelect">Motor Weight Unit:</label>
-        <select id="dimMotWeightSelect">
-            <option value="eng">Pounds</option>
-            <option value="met">Kilograms</option>
-        </select><br>
-
-        <label for="dimTorSelect">Torque Unit:</label>
-        <select id="dimTorSelect">
-            <optionvalue="eng">Pound-force inches</option>
-            <option value="met">Newton meters</option>
-        </select><br>
-
-        <label for="dimTotWeightSelect">Total Weight Unit:</label>
-        <select id="dimTotWeightSelect">
-            <option value="eng">Pounds</option>
-            <option value="met">Kilograms</option>
-        </select><br>
-
+        <input type="number" id="clicksText" step="any" placeholder="Clicks" class="w3-input">
+        <br>
+        <br>
         <input type="button" value="Calculate" onClick="tw_calc()">
     </form>
 
@@ -342,6 +315,22 @@
     <br>
     <br>
     <div class="w3-container">
+        <div class="m0"></div>
+        <br>
+        <div class="m1"></div>
+        <br>
+        <div class="m2"></div>
+        <br>
+        <div class="m3"></div>
+        <br>
+        <div class="w"></div>
+        <br>
+        <div class="encoder"></div>
+        <br>
+        <br>
+
+
+
         <label for="M0Output">Torque Motor 0 (M0):</label>
         <input type="text" id="M0Output" readonly><br>
 
