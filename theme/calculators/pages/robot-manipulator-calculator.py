@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import roboticstoolbox
 from roboticstoolbox import DHRobot, RevoluteDH
 
 def manipulator_calculator():
