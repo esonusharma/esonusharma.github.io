@@ -21,26 +21,10 @@ function tw_calc() {
 
     // Convert to English units if needed
     var lengthUnit = document.getElementById("dimLengthSelect").value;
-    if (lengthUnit == "met") {
-        L1 *= 39.3700787; // Meters to inches
-        L2 *= 39.3700787; // Meters to inches
-        L3 *= 39.3700787; // Meters to inches
-    }
     
     var weightUnit = document.getElementById("dimWeightSelect").value;
-    if (weightUnit == "met") {
-        W2 *= 2.20462262; // Kg to pounds
-        W4 *= 2.20462262; // Kg to pounds
-        W6 *= 2.20462262; // Kg to pounds
-        W7 *= 2.20462262; // Kg to pounds
-    }
     
     var motorWeightUnit = document.getElementById("dimMotWeightSelect").value;
-    if (motorWeightUnit == "met") {
-        Motor1 *= 2.20462262; // Kg to pounds
-        Motor2 *= 2.204622
-        Motor3 *= 2.20462262; // Kg to pounds
-    }
 
     var total_weight = Motor1 + W2 + Motor2 + W4 + Motor3 + W6 + W7;
     var encoder_acc = 2 * Math.PI * (L1 + L2 + L3) / clicks;
@@ -77,24 +61,10 @@ function tw_calc() {
 
     // Convert total weight to metric if needed
     var totalWeightUnit = document.getElementById("dimTotWeightSelect").value;
-    if (totalWeightUnit == "met") {
-        total_weight *= 0.45359237; // Pounds to kg
-    }
 
     // Convert torques to metric if needed
     var torqueUnit = document.getElementById("dimTorSelect").value;
-    if (torqueUnit == "met") {
-        M0 *= 0.112984829; // Pound-force inch to Newton meters
-        M1 *= 0.112984829; // Pound-force inch to Newton meters
-        M2 *= 0.112984829; // Pound-force inch to Newton meters
-        M3 *= 0.112984829; // Pound-force inch to Newton meters
-    }
 
     // Output the results
-    document.getElementById("M0Output").value = M0.toPrecision(3);
-    document.getElementById("M1Output").value = M1.toPrecision(3);
-    document.getElementById("M2Output").value = M2.toPrecision(3);
-    document.getElementById("M3Output").value = M3.toPrecision(3);
-    document.getElementById("WeightOutput").value = total_weight.toPrecision(3);
-    document.getElementById("EncoderOutput").value = encoder_acc.toPrecision(3);
+    m0output.textContent = 'Torque Motor 0 (M0):' + ti.toFixed(8);
 }
