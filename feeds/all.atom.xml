@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>esonusharma.github.io</title><link href="https://esonusharma.github.io/" rel="alternate"></link><link href="https://esonusharma.github.io/feeds/all.atom.xml" rel="self"></link><id>https://esonusharma.github.io/</id><updated>2024-04-02T00:00:00+05:30</updated><entry><title>cfdCode cpp 1D Diffusion Equation</title><link href="https://esonusharma.github.io/posts/cfdcode-cpp-1d-diffusion-equation/" rel="alternate"></link><published>2024-04-02T00:00:00+05:30</published><updated>2024-04-02T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2024-04-02:/posts/cfdcode-cpp-1d-diffusion-equation/</id><summary type="html">&lt;p&gt;cfdCode c++ 1D diffusion equation.&lt;/p&gt;</summary><content type="html">&lt;ol&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>esonusharma.github.io</title><link href="https://esonusharma.github.io/" rel="alternate"></link><link href="https://esonusharma.github.io/feeds/all.atom.xml" rel="self"></link><id>https://esonusharma.github.io/</id><updated>2025-02-03T00:00:00+05:30</updated><entry><title>CFD Workflow</title><link href="https://esonusharma.github.io/posts/cfd-workflow/" rel="alternate"></link><published>2025-02-03T00:00:00+05:30</published><updated>2025-02-03T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2025-02-03:/posts/cfd-workflow/</id><summary type="html">&lt;p&gt;CFD Workflow&lt;/p&gt;</summary><content type="html">&lt;h2&gt;General CFD Workflow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to Transport Equations&lt;/li&gt;
+&lt;li&gt;The 1D Diffusion Equation&lt;/li&gt;
+&lt;li&gt;The 1D Convection-Diffusion Equation&lt;/li&gt;
+&lt;li&gt;Upwind Differencing&lt;/li&gt;
+&lt;li&gt;Dirichlet and Neumann Boundary Conditions&lt;/li&gt;
+&lt;li&gt;Transport Equations in 2D&lt;/li&gt;
+&lt;li&gt;Wall Functions&lt;/li&gt;
+&lt;li&gt;Inflation Layer Calculation&lt;/li&gt;
+&lt;li&gt;Growth Ratio Calculation&lt;/li&gt;
+&lt;li&gt;Final Layer Thickness Calculation&lt;/li&gt;
+&lt;li&gt;Mesh Quality&lt;/li&gt;
+&lt;li&gt;Inlet Turbulence Calculation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width="100%" height="900" src="/theme/documents/notes.pdf"&gt;&lt;/iframe&gt;</content><category term="theory"></category><category term="cfd"></category></entry><entry><title>cfdCode cpp 1D Diffusion Equation</title><link href="https://esonusharma.github.io/posts/cfdcode-cpp-1d-diffusion-equation/" rel="alternate"></link><published>2024-04-02T00:00:00+05:30</published><updated>2024-04-02T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2024-04-02:/posts/cfdcode-cpp-1d-diffusion-equation/</id><summary type="html">&lt;p&gt;cfdCode c++ 1D diffusion equation.&lt;/p&gt;</summary><content type="html">&lt;ol&gt;
 &lt;li&gt;source file&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;#include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;iostream&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
