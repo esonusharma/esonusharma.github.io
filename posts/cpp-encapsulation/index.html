@@ -239,51 +239,84 @@
         </header>
 
         <div class="w3-container w3-card w3-white w3-round w3-margin">
-          <section id="page-main" role="main">
-<article class="post">
-  <a href="posts/cpp-class-object/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>cpp Class Object</h3>
-      <hr>
-      <p><p>Class and Object in c++</p></p>
-    </div>
-  </a>
-</article>
-<article class="post">
-  <a href="posts/cpp-constructor-destructor/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>cpp Constructor Destructor</h3>
-      <hr>
-      <p><p>Constructors and Destructors in C++</p></p>
-    </div>
-  </a>
-</article>
-<article class="post">
-  <a href="posts/cpp-encapsulation/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>cpp Encapsulation</h3>
-      <hr>
-      <p><p>Encapsulation in C++</p></p>
-    </div>
-  </a>
-</article>
-<article class="post">
-  <a href="posts/cpp-friend-class-function/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>cpp Friend Class Function</h3>
-      <hr>
-      <p><p>Friend Class and Friend Function in C++</p></p>
-    </div>
-  </a>
-</article>
-  
-  <br>
-  <div class="w3-bar w3-border w3-round">
-      <a href="https://esonusharma.github.io/index.html"  aria-current="page"  class="w3-bar-item w3-button">1</a>      <a href="https://esonusharma.github.io/index2.html"  class="w3-bar-item w3-button">2</a>      <a href="https://esonusharma.github.io/index3.html"  class="w3-bar-item w3-button">3</a>      <a href="https://esonusharma.github.io/index4.html"  class="w3-bar-item w3-button">4</a>      <a href="https://esonusharma.github.io/index5.html"  class="w3-bar-item w3-button">5</a>      <a href="https://esonusharma.github.io/index6.html"  class="w3-bar-item w3-button">6</a>      <a href="https://esonusharma.github.io/index7.html"  class="w3-bar-item w3-button">7</a>      <a href="https://esonusharma.github.io/index8.html"  class="w3-bar-item w3-button">8</a>    
-      <a href="https://esonusharma.github.io/index2.html" class="w3-bar-item w3-button">&rang;</a>
-  </div>
-  <br>
-          </section> <!-- /#page-main -->
+          <article class="post" id="page-main" role="main">
+<h1 class="w3-container w3-round w3-theme w3-card">cpp Encapsulation</h1>
+<p class="w3-round w3-padding-large w3-border">Published on: 04 February 2025</p>
+<h2>Resources</h2>
+<ol>
+<li><a href="">Video Lecture</a></li>
+</ol>
+<h2>Aim: Write a program that showcases the application of Encapsulation.</h2>
+<h3>Practice Exercise 8: Write a program that showcases the application of Encapsulation.</h3>
+<h4>Theory:</h4>
+<p>The program defines a Material class that represents materials with their names and densities. It includes private data members for encapsulation and public member functions for access and modification. The constructor initializes material properties, while getter and setter functions allow retrieving and updating values. In the main function, two Material objects (steel and aluminum) are created and their properties are displayed. Later, the density of steel and the name of aluminum are modified, demonstrating encapsulation and object manipulation in C++.</p>
+<h4>Algorithm:</h4>
+<ol>
+<li>Define a <code>Material</code> class with private members: <code>name</code> and <code>density</code>.</li>
+<li>Implement a constructor to initialize <code>name</code> and <code>density</code>.</li>
+<li>Provide getter functions to retrieve material properties.</li>
+<li>Provide setter functions to modify material properties.</li>
+<li>In <code>main</code>, create two <code>Material</code> objects with initial values.</li>
+<li>Display the name and density of each material.</li>
+<li>Modify <code>steel</code>'s density and <code>aluminum</code>'s name using setter functions.</li>
+<li>Display the updated properties.</li>
+<li>End the program.</li>
+</ol>
+<h4>Code:</h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+
+<span class="kr">class</span><span class="w"> </span><span class="nc">Material</span>
+<span class="p">{</span>
+<span class="kr">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kr">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">density</span><span class="p">;</span>
+
+<span class="kr">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">Material</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">string</span><span class="w"> </span><span class="n">getName</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">getDensity</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">density</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setName</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setDensity</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Material</span><span class="w"> </span><span class="n">steel</span><span class="p">(</span><span class="s">&quot;Steel&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">7.85</span><span class="p">);</span>
+<span class="w">    </span><span class="n">Material</span><span class="w"> </span><span class="n">aluminum</span><span class="p">(</span><span class="s">&quot;Aluminum&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">2.70</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The density of &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">steel</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">steel</span><span class="p">.</span><span class="n">getDensity</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; g/cm^3.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The density of &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">aluminum</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">aluminum</span><span class="p">.</span><span class="n">getDensity</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; g/cm^3.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">steel</span><span class="p">.</span><span class="n">setDensity</span><span class="p">(</span><span class="mf">7.90</span><span class="p">);</span>
+<span class="w">    </span><span class="n">aluminum</span><span class="p">.</span><span class="n">setName</span><span class="p">(</span><span class="s">&quot;Aluminum Alloy&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The new density of &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">steel</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">steel</span><span class="p">.</span><span class="n">getDensity</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; g/cm^3.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;The new name of the material is &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">aluminum</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2>References</h2>
+<p>There may be some AI Generated content in this article used for demonstration purposes.</p>
+          </article> <!-- /#page-main -->
         </div>
 
         <!-- End Middle Column -->
