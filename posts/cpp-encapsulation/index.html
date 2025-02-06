@@ -108,6 +108,7 @@
   </style>
   <link rel="alternate" type="application/atom+xml" title="esonusharma.github.io — Flux Atom"
     href="https://esonusharma.github.io/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs.css">
 </head>
 
 <body>
@@ -268,32 +269,32 @@
 
 <span class="kr">class</span><span class="w"> </span><span class="nc">Material</span>
 <span class="p">{</span>
-<span class="kr">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">density</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">density</span><span class="p">;</span>
 
-<span class="kr">public</span><span class="o">:</span>
-<span class="w">    </span><span class="n">Material</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
-<span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kr">string</span><span class="w"> </span><span class="n">getName</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">getDensity</span><span class="p">()</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">density</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setName</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setDensity</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
+<span class="w">        </span><span class="n">Material</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">            </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kr">string</span><span class="w"> </span><span class="n">getName</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">getDensity</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">density</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setName</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setDensity</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
@@ -443,6 +444,8 @@
       }
     }
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 
 </html>

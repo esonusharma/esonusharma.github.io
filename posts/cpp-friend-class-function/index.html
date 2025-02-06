@@ -108,6 +108,7 @@
   </style>
   <link rel="alternate" type="application/atom+xml" title="esonusharma.github.io — Flux Atom"
     href="https://esonusharma.github.io/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs.css">
 </head>
 
 <body>
@@ -268,30 +269,30 @@
 <span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 
 <span class="kr">class</span><span class="w"> </span><span class="nc">Particle</span><span class="w"> </span><span class="p">{</span>
-<span class="kr">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
 
-<span class="kr">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">dy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
-<span class="w">        </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">dy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
+<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setPosition</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">newX</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">newY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newX</span><span class="p">;</span>
-<span class="w">        </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newY</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setPosition</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">newX</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">newY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newX</span><span class="p">;</span>
+<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newY</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 
-<span class="w">    </span><span class="c1">// Friend class declaration</span>
-<span class="w">    </span><span class="kr">friend</span><span class="w"> </span><span class="kr">class</span><span class="w"> </span><span class="nc">Show</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// Friend class declaration (It doesn&#39;t matter if you declare this under private or public)</span>
+<span class="w">        </span><span class="kr">friend</span><span class="w"> </span><span class="kr">class</span><span class="w"> </span><span class="nc">Show</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="c1">// Friend class definition</span>
 <span class="kr">class</span><span class="w"> </span><span class="nc">Show</span><span class="w"> </span><span class="p">{</span>
-<span class="kr">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">showPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Particle Position: (&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;)&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">showPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Particle Position: (&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;)&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
@@ -330,22 +331,22 @@
 <span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 
 <span class="kr">class</span><span class="w"> </span><span class="nc">Particle</span><span class="w"> </span><span class="p">{</span>
-<span class="kr">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
 
-<span class="kr">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">dy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
-<span class="w">        </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">dy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
+<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setPosition</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">newX</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">newY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newX</span><span class="p">;</span>
-<span class="w">        </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newY</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setPosition</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">newX</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">newY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newX</span><span class="p">;</span>
+<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newY</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 
-<span class="w">    </span><span class="c1">// Friend function declaration in public</span>
-<span class="w">    </span><span class="kr">friend</span><span class="w"> </span><span class="kr">void</span><span class="w"> </span><span class="n">printPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Friend function declaration</span>
+<span class="w">        </span><span class="kr">friend</span><span class="w"> </span><span class="kr">void</span><span class="w"> </span><span class="n">printPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">);</span>
 <span class="p">};</span>
 
 <span class="c1">// Friend function definition</span>
@@ -380,25 +381,25 @@
 
 <span class="kr">class</span><span class="w"> </span><span class="nc">Material</span>
 <span class="p">{</span>
-<span class="kr">private</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">modulus_of_elasticity</span><span class="p">;</span>
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">modulus_of_rigidity</span><span class="p">;</span>
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">poisson_ratio</span><span class="p">;</span>
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">unit_weight</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">modulus_of_elasticity</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">modulus_of_rigidity</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">poisson_ratio</span><span class="p">;</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">unit_weight</span><span class="p">;</span>
 
-<span class="w">    </span><span class="c1">// Friend function declaration in private</span>
-<span class="w">    </span><span class="kr">friend</span><span class="w"> </span><span class="kr">void</span><span class="w"> </span><span class="nf">displayMaterialProperties</span><span class="p">(</span><span class="n">Material</span><span class="w"> </span><span class="n">mat</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Friend function declaration in private</span>
+<span class="w">        </span><span class="kr">friend</span><span class="w"> </span><span class="kr">void</span><span class="w"> </span><span class="nf">displayMaterialProperties</span><span class="p">(</span><span class="n">Material</span><span class="w"> </span><span class="n">mat</span><span class="p">);</span>
 
-<span class="kr">public</span><span class="o">:</span>
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">setValues</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">G</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">w</span><span class="p">)</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
-<span class="w">        </span><span class="n">modulus_of_elasticity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
-<span class="w">        </span><span class="n">modulus_of_rigidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">G</span><span class="p">;</span>
-<span class="w">        </span><span class="n">poisson_ratio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
-<span class="w">        </span><span class="n">unit_weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
+<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setValues</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">G</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">w</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
+<span class="w">            </span><span class="n">modulus_of_elasticity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
+<span class="w">            </span><span class="n">modulus_of_rigidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">G</span><span class="p">;</span>
+<span class="w">            </span><span class="n">poisson_ratio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
+<span class="w">            </span><span class="n">unit_weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="c1">// Friend function definition</span>
@@ -566,6 +567,8 @@
       }
     }
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </body>
 
 </html>
