@@ -252,17 +252,13 @@
 <h4>Theory:</h4>
 <p>We calculate the kinetic energy of a flowing fluid using its density, flow rate, and velocity. Kinetic energy is the energy possessed by an object due to its motion.
 <strong>Formula:</strong><br>
-[
-KE = \frac{1}{2} \rho Q V^2
-]</p>
+$ KE = \frac{1}{2} \rho Q V^2 $</p>
 <h4>Algorithm:</h4>
 <ol>
 <li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>flowRate</code>.</li>
 <li>Define the derived class <code>KineticEnergy</code> that inherits from <code>Fluid</code>.</li>
 <li>Create a method to calculate kinetic energy:<br>
-   [
-   KE = \frac{1}{2} \rho Q V^2
-   ]</li>
+$ KE = \frac{1}{2} \rho Q V^2 $</li>
 <li>Instantiate the derived class, set fluid properties, and compute kinetic energy.</li>
 </ol>
 <h4>Code:</h4>
@@ -315,13 +311,11 @@ KE = \frac{1}{2} \rho Q V^2
 <p>A fluid's kinetic energy and potential energy are calculated. Kinetic energy depends on fluid velocity, while potential energy depends on the fluid's height above a reference point.
 <strong>Formulas:</strong><br>
 - Kinetic Energy:<br>
-[
-KE = \frac{1}{2} \rho Q V^2
-]<br>
-- Potential Energy:<br>
-[
-PE = \rho Q g h
-]</p>
+$ KE = \frac{1}{2} \rho Q V^2 $</p>
+<ul>
+<li>Potential Energy:<br>
+$ PE = \rho Q g h $</li>
+</ul>
 <h4>Algorithm:</h4>
 <ol>
 <li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>flowRate</code>.</li>
@@ -396,18 +390,14 @@ PE = \rho Q g h
 <h4>Theory:</h4>
 <p>The Reynolds number is a dimensionless quantity that determines the flow regime of fluid (laminar, transitional, or turbulent). It is calculated using the fluid's density, velocity, pipe diameter, and viscosity.
 <strong>Formula:</strong><br>
-[
-Re = \frac{\rho V D}{\mu}
-]</p>
+$ Re = \frac{\rho V D}{\mu} $</p>
 <h4>Algorithm:</h4>
 <ol>
 <li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>viscosity</code>.</li>
 <li>Define the class <code>Velocity</code> to calculate flow velocity using the flow rate and pipe diameter.</li>
 <li>Create a derived class <code>ReynoldsNumber</code> that inherits from both <code>Fluid</code> and <code>Velocity</code>.</li>
 <li>Calculate the Reynolds number using the formula:
-   [
-   Re = \frac{\rho V D}{\mu}
-   ]</li>
+$ Re = \frac{\rho V D}{\mu} $</li>
 <li>Display the flow regime based on the Reynolds number.</li>
 </ol>
 <h4>Code:</h4>
@@ -472,13 +462,9 @@ Re = \frac{\rho V D}{\mu}
 <p>Kinetic and potential energy depend on the fluid's properties such as velocity and height. Multiple derived classes can inherit from the same base class.
 <strong>Formulas:</strong><br>
 - Kinetic Energy:<br>
-[
-KE = \frac{1}{2} \rho Q V^2
-]<br>
+$ KE = \frac{1}{2} \rho Q V^2
 - Potential Energy:<br>
-[
-PE = \rho Q g h
-]</p>
+$ PE = \rho Q g h $</p>
 <h4>Algorithm:</h4>
 <ol>
 <li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>flowRate</code>.</li>
@@ -557,18 +543,14 @@ PE = \rho Q g h
 <h4>Theory:</h4>
 <p>Hybrid inheritance combines both multiple and multilevel inheritance concepts. In this case, the Reynolds number is calculated using fluid and velocity properties, where fluid and velocity are inherited separately.</p>
 <p><strong>Formula:</strong><br>
-[
-Re = \frac{\rho V D}{\mu}
-]</p>
+$ Re = \frac{\rho V D}{\mu} $</p>
 <h4>Algorithm:</h4>
 <ol>
 <li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>viscosity</code>.</li>
 <li>Define the class <code>Velocity</code> to calculate flow velocity using flow rate and pipe diameter.</li>
 <li>Create a derived class <code>ReynoldsNumber</code> that inherits from both <code>Fluid</code> and <code>Velocity</code>.</li>
 <li>Calculate Reynolds number:
-   [
-   Re = \frac{\rho V D}{\mu}
-   ]</li>
+$ Re = \frac{\rho V D}{\mu} $</li>
 <li>Display the flow regime based on the Reynolds number.</li>
 </ol>
 <h4>Code:</h4>
