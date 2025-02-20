@@ -250,22 +250,33 @@
 <h2>Aim: Construct a program that demonstrates implementation of Inheritance - Single and Multilevel</h2>
 <h3>Practice Exercise 9: Write a program to demonstrate the concept of single inheritance by calculating the kinetic energy of fluid flow.</h3>
 <h4>Theory:</h4>
-<p>We calculate the kinetic energy of a flowing fluid using its density, flow rate, and velocity. Kinetic energy is the energy possessed by an object due to its motion.</p>
-<p><strong>Formula:</strong></p>
+<p><strong>Theory of Kinetic Energy in Fluid Flow</strong>  </p>
+<p>Kinetic energy in fluid mechanics refers to the energy possessed by a moving fluid due to its velocity. It is given by the equation:  </p>
 <p>$$
-KE = \frac{1}{2} \rho Q V^2
+KE = \frac{1}{2} m v^2
+$$</p>
+<p>where $m$ is the mass of the fluid and $v$ is its velocity. Since mass flow rate ($\dot{m}$) is defined as:</p>
+<p>$$
+\dot{m} = \rho Q
+$$</p>
+<p>where $\rho$ is fluid density and $Q$ is the volumetric flow rate, the kinetic energy per unit time can be expressed as:</p>
+<p>$$
+KE = \frac{1}{2} \rho Q v^2
 $$</p>
 <h4>Algorithm:</h4>
 <ol>
-<li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>flowRate</code>.</li>
-<li>Define the derived class <code>KineticEnergy</code> that inherits from <code>Fluid</code>.</li>
-<li>Create a method to calculate kinetic energy:</li>
+<li>Start  </li>
+<li>Input fluid density ($\rho$), flow rate ($Q$), and velocity ($v$)  </li>
+<li>Compute mass flow rate:</li>
 </ol>
-<p>$$
-KE = \frac{1}{2} \rho Q V^2
-$$</p>
+<p>$$ \dot{m} = \rho Q $$</p>
 <ol>
-<li>Instantiate the derived class, set fluid properties, and compute kinetic energy.</li>
+<li>Compute kinetic energy:</li>
+</ol>
+<p>$$ KE = \frac{1}{2} \rho Q v^2 $$</p>
+<ol>
+<li>Output the kinetic energy  </li>
+<li>End  </li>
 </ol>
 <h4>Code:</h4>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
@@ -276,14 +287,26 @@ $$</p>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">density</span><span class="p">;</span><span class="w">   </span><span class="c1">// Fluid density (kg/m³)</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">flowRate</span><span class="p">;</span><span class="w">  </span><span class="c1">// Flow rate (m³/s)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setFluidProperties</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Parameterized Constructor</span>
+<span class="w">    </span><span class="n">Fluid</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
 <span class="w">        </span><span class="n">flowRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">showType</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Fluid System:</span>
-<span class="s">&quot;;</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">showType</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Fluid System:&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Calculation function for mass flow rate</span>
+<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">calculateMassFlowRate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">density</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">flowRate</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Calculation function for momentum (takes velocity as input)</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">calculateMomentum</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">velocity</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">massFlowRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateMassFlowRate</span><span class="p">();</span>
+<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">momentum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">massFlowRate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">velocity</span><span class="p">;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Momentum: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">momentum</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; kg·m/s&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
@@ -291,23 +314,30 @@ $$</p>
 <span class="kr">public</span><span class="o">:</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">velocity</span><span class="p">;</span><span class="w">  </span><span class="c1">// Fluid velocity (m/s)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setVelocity</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Parameterized Constructor</span>
+<span class="w">    </span><span class="n">KineticEnergy</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Fluid</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">calculateKE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Calculation function for kinetic energy</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">calculateKE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">KE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">density</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">flowRate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">velocity</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">velocity</span><span class="p">;</span>
-<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Kinetic Energy: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">KE</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Joules</span>
-<span class="s">&quot;;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Kinetic Energy: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">KE</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Joules&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">KineticEnergy</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">;</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setFluidProperties</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">);</span><span class="w">  </span><span class="c1">// Example values: density, flow rate</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setVelocity</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="w">  </span><span class="c1">// Example velocity</span>
+<span class="w">    </span><span class="c1">// Creating an object using the parameterized constructor</span>
+<span class="w">    </span><span class="n">KineticEnergy</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span><span class="w">  </span><span class="c1">// density, flow rate, velocity</span>
 <span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">showType</span><span class="p">();</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateKE</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Calling calculation functions from Fluid class</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Mass Flow Rate: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateMassFlowRate</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; kg/s&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateMomentum</span><span class="p">(</span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">velocity</span><span class="p">);</span><span class="w">  </span><span class="c1">// Call momentum calculation</span>
+
+<span class="w">    </span><span class="c1">// Calling calculation function from derived class</span>
+<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateKE</span><span class="p">();</span><span class="w">  </span>
+
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
