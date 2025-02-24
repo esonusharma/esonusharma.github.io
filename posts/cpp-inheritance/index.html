@@ -344,26 +344,47 @@ $$</p>
 
 <h3>Practice Exercise 10: Write a program to demonstrate multilevel inheritance by calculating the kinetic and potential energy of fluid flow.</h3>
 <h4>Theory:</h4>
-<p>A fluid's kinetic energy and potential energy are calculated. Kinetic energy depends on fluid velocity, while potential energy depends on the fluid's height above a reference point.</p>
-<p><strong>Formulas:</strong></p>
+<p>Fluid systems exhibit both kinetic energy (KE) due to motion and potential energy (PE) due to height.</p>
 <ul>
-<li>Kinetic Energy:  </li>
+<li><code>Fluid</code> Class:  </li>
+<li>Represents a fluid with density and flow rate.  </li>
+<li>
+<p>Uses a constructor to initialize properties.</p>
+</li>
+<li>
+<p><code>KineticEnergy</code> Class <em>(Inherits from <code>Fluid</code>)</em>:  </p>
+</li>
+<li>Adds velocity and initializes it using a constructor.  </li>
+<li>
+<p>Computes kinetic energy using:<br>
+    $$
+    KE = \frac{1}{2} \times \text{density} \times \text{flowRate} \times \text{velocity}^2
+    $$</p>
+</li>
+<li>
+<p><code>PotentialEnergy</code> Class <em>(Inherits from <code>KineticEnergy</code>)</em>:  </p>
+</li>
+<li>Adds height and initializes it using a constructor.  </li>
+<li>Computes potential energy using:<br>
+    $$
+    PE = \text{density} \times \text{flowRate} \times 9.81 \times \text{height}
+    $$</li>
 </ul>
-<p>$$
-KE = \frac{1}{2} \rho Q V^2
-$$</p>
-<ul>
-<li>Potential Energy:  </li>
-</ul>
-<p>$$
-PE = \rho Q g h
-$$</p>
 <h4>Algorithm:</h4>
 <ol>
-<li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>flowRate</code>.</li>
-<li>Define the intermediate class <code>KineticEnergy</code> to calculate kinetic energy.</li>
-<li>Define the derived class <code>PotentialEnergy</code> to calculate potential energy.</li>
-<li>Instantiate the derived classes, set fluid properties, and compute kinetic and potential energy.</li>
+<li>Start  </li>
+<li>Define <code>Fluid</code> class with <code>density</code> and <code>flowRate</code>, initialized via constructor.  </li>
+<li>Define <code>KineticEnergy</code> class (inherits <code>Fluid</code>), adding <code>velocity</code> and <code>calculateKE()</code>:<br>
+$$
+KE = \frac{1}{2} \times \text{density} \times \text{flowRate} \times \text{velocity}^2
+$$</li>
+<li>Define <code>PotentialEnergy</code> class (inherits <code>KineticEnergy</code>), adding <code>height</code> and <code>calculatePE()</code>:<br>
+$$
+PE = \text{density} \times \text{flowRate} \times 9.81 \times \text{height}
+$$</li>
+<li>Instantiate <code>PotentialEnergy</code> in <code>main()</code> with constructor values.  </li>
+<li>Call <code>showType()</code>, <code>calculateKE()</code>, and <code>calculatePE()</code>.  </li>
+<li>End  </li>
 </ol>
 <h4>Code:</h4>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
@@ -374,14 +395,11 @@ $$</p>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">density</span><span class="p">;</span><span class="w">   </span><span class="c1">// Fluid density (kg/m³)</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">flowRate</span><span class="p">;</span><span class="w">  </span><span class="c1">// Flow rate (m³/s)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setFluidProperties</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
-<span class="w">        </span><span class="n">flowRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// Constructor to initialize fluid properties</span>
+<span class="w">    </span><span class="n">Fluid</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">density</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="w"> </span><span class="n">flowRate</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">showType</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Fluid System:</span>
-<span class="s">&quot;;</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">showType</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Fluid System:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
@@ -389,11 +407,10 @@ $$</p>
 <span class="kr">public</span><span class="o">:</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">velocity</span><span class="p">;</span><span class="w">  </span><span class="c1">// Fluid velocity (m/s)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setVelocity</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// Constructor to initialize fluid properties and velocity</span>
+<span class="w">    </span><span class="n">KineticEnergy</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Fluid</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">),</span><span class="w"> </span><span class="n">velocity</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="nf">calculateKE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">calculateKE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">density</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">flowRate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">velocity</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">velocity</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
@@ -402,27 +419,24 @@ $$</p>
 <span class="kr">public</span><span class="o">:</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="nf">height</span><span class="p">;</span><span class="w">  </span><span class="c1">// Height (m)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setHeight</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">h</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nf">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">h</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="c1">// Constructor to initialize all properties including height</span>
+<span class="w">    </span><span class="n">PotentialEnergy</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">h</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">KineticEnergy</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">),</span><span class="w"> </span><span class="nf">height</span><span class="p">(</span><span class="n">h</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">calculatePE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">calculatePE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">PE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">density</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">flowRate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">9.81</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">height</span><span class="p">;</span>
-<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Potential Energy: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">PE</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Joules</span>
-<span class="s">&quot;;</span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Potential Energy: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">PE</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Joules</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">PotentialEnergy</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">;</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setFluidProperties</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">);</span><span class="w">  </span><span class="c1">// Example values: density, flow rate</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setVelocity</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="w">  </span><span class="c1">// Example velocity</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setHeight</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w">   </span><span class="c1">// Example height</span>
+<span class="w">    </span><span class="c1">// Creating an object with constructor initialization</span>
+<span class="w">    </span><span class="n">PotentialEnergy</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span><span class="w">  </span><span class="c1">// Density, Flow rate, Velocity, Height</span>
 
 <span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">showType</span><span class="p">();</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Kinetic Energy: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateKE</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Joules</span>
-<span class="s">&quot;;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Kinetic Energy: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateKE</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; Joules</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculatePE</span><span class="p">();</span>
+
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -430,23 +444,38 @@ $$</p>
 <h2>Aim: Construct a program that demonstrates implementation of Inheritance - Multiple, Hierarchical and Hybrid.</h2>
 <h3>Practice Exercise 11: Write a program to demonstrate multiple inheritance by calculating the Reynolds number of fluid flow.</h3>
 <h4>Theory:</h4>
-<p>The Reynolds number is a dimensionless quantity that determines the flow regime of fluid (laminar, transitional, or turbulent). It is calculated using the fluid's density, velocity, pipe diameter, and viscosity.</p>
-<p><strong>Formula:</strong></p>
+<p>The <strong>Reynolds number</strong> is a dimensionless quantity used to predict fluid flow behavior in a pipe. It determines whether the flow is <strong>laminar, transitional, or turbulent</strong> based on the relationship between <strong>fluid properties and velocity</strong>. The Reynolds number is calculated using the formula:</p>
 <p>$$
 Re = \frac{\rho V D}{\mu}
 $$</p>
+<p>Where:<br>
+- $ \rho $ = Fluid density (kg/m³)<br>
+- $ V $ = Flow velocity (m/s)<br>
+- $ D $ = Pipe diameter (m)<br>
+- $ \mu $ = Fluid viscosity (Pa·s)  </p>
+<p>The velocity $ V $ is calculated as:</p>
+<p>$$
+V = \frac{Q}{\frac{\pi D^2}{4}}
+$$</p>
+<p>where $ Q $ is the <strong>flow rate (m³/s)</strong>.  </p>
 <h4>Algorithm:</h4>
 <ol>
-<li>Define the base class <code>Fluid</code> with properties <code>density</code> and <code>viscosity</code>.</li>
-<li>Define the class <code>Velocity</code> to calculate flow velocity using the flow rate and pipe diameter.</li>
-<li>Create a derived class <code>ReynoldsNumber</code> that inherits from both <code>Fluid</code> and <code>Velocity</code>.</li>
-<li>Calculate the Reynolds number using the formula:</li>
+<li><strong>Define the <code>Fluid</code> class</strong> with a constructor to initialize <strong>density</strong> and <strong>viscosity</strong>.</li>
+<li><strong>Define the <code>Velocity</code> class</strong> with a constructor to initialize <strong>flow rate</strong> and <strong>pipe diameter</strong>.</li>
+<li><strong>Implement the <code>calculateVelocity()</code> function</strong> in <code>Velocity</code> to compute velocity using the given formula.</li>
+<li><strong>Define the <code>ReynoldsNumber</code> class</strong> inheriting from both <code>Fluid</code> and <code>Velocity</code>.</li>
+<li><strong>Use a constructor in <code>ReynoldsNumber</code></strong> to initialize fluid and velocity properties.</li>
+<li><strong>Calculate the Reynolds number</strong> using the given formula.</li>
 </ol>
 <p>$$
 Re = \frac{\rho V D}{\mu}
 $$</p>
 <ol>
-<li>Display the flow regime based on the Reynolds number.</li>
+<li><strong>Determine the flow regime</strong> based on the Reynolds number:</li>
+<li>$ Re &lt; 2000 $ → <strong>Laminar flow</strong>  </li>
+<li>$ 2000 \leq Re \leq 4000 $ → <strong>Transitional flow</strong>  </li>
+<li>$ Re &gt; 4000 $ → <strong>Turbulent flow</strong>  </li>
+<li><strong>Display the Reynolds number and flow type</strong>.</li>
 </ol>
 <h4>Code:</h4>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
@@ -457,7 +486,8 @@ $$</p>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">density</span><span class="p">;</span><span class="w">   </span><span class="c1">// Fluid density (kg/m³)</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">viscosity</span><span class="p">;</span><span class="w"> </span><span class="c1">// Fluid viscosity (Pa.s)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setFluidProperties</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Constructor for Fluid properties</span>
+<span class="w">    </span><span class="n">Fluid</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
 <span class="w">        </span><span class="n">viscosity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
@@ -468,38 +498,40 @@ $$</p>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">flowRate</span><span class="p">;</span><span class="w">  </span><span class="c1">// Flow rate (m³/s)</span>
 <span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">diameter</span><span class="p">;</span><span class="w">  </span><span class="c1">// Pipe diameter (m)</span>
 
-<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="nf">setVelocityProperties</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Constructor for Velocity properties</span>
+<span class="w">    </span><span class="n">Velocity</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">flowRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
 <span class="w">        </span><span class="n">diameter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 
-<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="nf">calculateVelocity</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Function to calculate velocity</span>
+<span class="w">    </span><span class="kr">double</span><span class="w"> </span><span class="n">calculateVelocity</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">flowRate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="mf">3.1416</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diameter</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diameter</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">4</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kr">class</span><span class="w"> </span><span class="nc">ReynoldsNumber</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kr">public</span><span class="w"> </span><span class="n">Fluid</span><span class="p">,</span><span class="w"> </span><span class="kr">public</span><span class="w"> </span><span class="n">Velocity</span><span class="w"> </span><span class="p">{</span>
 <span class="kr">public</span><span class="o">:</span>
+<span class="w">    </span><span class="c1">// Constructor to initialize both Fluid and Velocity properties</span>
+<span class="w">    </span><span class="n">ReynoldsNumber</span><span class="p">(</span><span class="kr">double</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">dia</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="o">:</span><span class="w"> </span><span class="n">Fluid</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">),</span><span class="w"> </span><span class="n">Velocity</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="w"> </span><span class="n">dia</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+
 <span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">calculateReynolds</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateVelocity</span><span class="p">();</span>
 <span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">Re</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">density</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">velocity</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">diameter</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">viscosity</span><span class="p">;</span>
 <span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Reynolds Number: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">Re</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Re</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2000</span><span class="p">)</span>
-<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Flow is Laminar.</span>
-<span class="s">&quot;;</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Flow is Laminar.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Re</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">4000</span><span class="p">)</span>
-<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Flow is Turbulent.</span>
-<span class="s">&quot;;</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Flow is Turbulent.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">        </span><span class="k">else</span>
-<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Flow is Transitional.</span>
-<span class="s">&quot;;</span>
+<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Flow is Transitional.&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">};</span>
 
 <span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">ReynoldsNumber</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">;</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setFluidProperties</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mf">0.001</span><span class="p">);</span><span class="w">  </span><span class="c1">// Example values: density, viscosity</span>
-<span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">setVelocityProperties</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Example flow rate, diameter</span>
+<span class="w">    </span><span class="c1">// Creating an object with constructor parameters</span>
+<span class="w">    </span><span class="n">ReynoldsNumber</span><span class="w"> </span><span class="n">fluidSystem</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mf">0.001</span><span class="p">,</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
 <span class="w">    </span><span class="n">fluidSystem</span><span class="p">.</span><span class="n">calculateReynolds</span><span class="p">();</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
