@@ -248,12 +248,57 @@
 <li><a href="">Video Lecture</a></li>
 </ol>
 <h2>Aim: Construct a program that illustrates the concept and implementation of class and objects</h2>
+<h3>Practice Exercise 1: Write a program to calculate the density using class and object.</h3>
+<h4>Theory:</h4>
+<p>Density ($\rho$) is a measure of how much mass ($m$) is contained in a given volume ($V$). The formula for density is:  </p>
+<p>$$
+\rho = \frac{m}{V}
+$$</p>
+<p>In this C++ program, we use a class <code>Density</code> to represent mass and volume. The class contains:<br>
+- Two public float variables: <code>mass</code> and <code>volume</code>.<br>
+- A member function <code>mDensity()</code> that calculates density using the formula $$ \rho = \frac{m}{V} $$.  </p>
+<p>The <code>main</code> function creates an object <code>d</code> of class <code>Density</code>, assigns values to <code>mass</code> and <code>volume</code>, and calls <code>mDensity()</code> to compute and display the density. </p>
+<h4>Algorithm:</h4>
+<ol>
+<li>Define a class <code>Density</code> with float variables <code>mass</code> and <code>volume</code>.  </li>
+<li>Create a member function <code>mDensity()</code> that returns <code>mass/volume</code>.  </li>
+<li>Create an object <code>d</code> of class <code>Density</code>.  </li>
+<li>Assign values to <code>d.mass</code> and <code>d.volume</code>.  </li>
+<li>Call <code>d.mDensity()</code> and print the result.</li>
+</ol>
+<h4>Code:</h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+
+<span class="kr">class</span><span class="w"> </span><span class="nc">Density</span>
+<span class="p">{</span>
+<span class="kr">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">mass</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">volume</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="nf">mDensity</span><span class="p">()</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mass</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">volume</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="n">d</span><span class="p">.</span><span class="n">mass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="w">    </span><span class="n">d</span><span class="p">.</span><span class="n">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">mDensity</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h3>Self Assessment</h3>
 <ol>
 <li>Declare an Car Class with data members and member functions with private and public access specifiers. </li>
 <li>Declare an object to call the show function printing the variable values on screen.</li>
 </ol>
-<h3>Practice Exercise 1: Write a program to calculate the position of a particle using class and object.</h3>
+<h3>Extra Self Practice Material</h3>
+<h4>Self Practice Program 1: Write a program to calculate the position of a particle using class and object.</h4>
 <h4>Theory:</h4>
 <p>A class is a blueprint for creating objects. It encapsulates data (attributes) and methods (functions). 
 In this example, the class 'Particle' represents a 2D particle with attributes 'x' and 'y' for position 
@@ -299,7 +344,7 @@ of their attributes and behaviors.</p>
 <span class="p">}</span>
 </code></pre></div>
 
-<h3>Practice Exercise 2: Write a program to print material properties using class and object.</h3>
+<h4>Self Practice Program 2: Write a program to print material properties using class and object.</h4>
 <h4>Theory:</h4>
 <p>The program uses a <code>Material</code> class to store and display material properties like modulus of elasticity, modulus of rigidity, Poisson's ratio, and unit weight. Each material is initialized using a setter method and displayed in a formatted table.</p>
 <h4>Algorithm:</h4>
@@ -373,7 +418,7 @@ of their attributes and behaviors.</p>
 <span class="p">}</span>
 </code></pre></div>
 
-<h3>Extra Self Practice Material</h3>
+<h4>Self Practice Program 3</h4>
 <h4>Code:</h4>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
