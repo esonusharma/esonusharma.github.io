@@ -240,52 +240,46 @@
         </header>
 
         <div class="w3-container w3-card w3-white w3-round w3-margin">
-          <section id="page-main" role="main">
-<article class="post">
-  <a href="posts/stokes-theorem/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>Stokes theorem</h3>
-      <hr>
-      <p><p>stokes theorem relates an integral over an open surface to an integral over the curve bounding that surface.</p></p>
-    </div>
-  </a>
-</article>
-<article class="post">
-  <a href="posts/solved-nomenclature-not-generated-in-pdf-created-by-visual-studio-code-latex-workshop-extension/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>Solved Nomenclature Not Generated in PDF Created by Visual Studio Code LaTeX Workshop Extension</h3>
-      <hr>
-      <p><p>Execute commands below to solve this problem.</p></p>
-    </div>
-  </a>
-</article>
-<article class="post">
-  <a href="posts/openfoam-installation/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>OpenFOAM Installation</h3>
-      <hr>
-      <p><p>If you are unable to install OpenFOAM in Ubuntu, then you are at the right place.</p></p>
-    </div>
-  </a>
-</article>
-<article class="post">
-  <a href="posts/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed/">
-    <div class="w3-container w3-card w3-white w3-round w3-margin">
-      <h3>Solved errors were encountered while processing grub efi amd64 signed</h3>
-      <hr>
-      <p><p>Execute commands below to solve this problem.</p></p>
-    </div>
-  </a>
-</article>
-  
-  <br>
-  <div class="w3-bar w3-border w3-round">
-      <a href="https://esonusharma.github.io/index7.html" class="w3-bar-item w3-button">&lang;</a>
-      <a href="https://esonusharma.github.io/index.html"  class="w3-bar-item w3-button">1</a>      <a href="https://esonusharma.github.io/index2.html"  class="w3-bar-item w3-button">2</a>      <a href="https://esonusharma.github.io/index3.html"  class="w3-bar-item w3-button">3</a>      <a href="https://esonusharma.github.io/index4.html"  class="w3-bar-item w3-button">4</a>      <a href="https://esonusharma.github.io/index5.html"  class="w3-bar-item w3-button">5</a>      <a href="https://esonusharma.github.io/index6.html"  class="w3-bar-item w3-button">6</a>      <a href="https://esonusharma.github.io/index7.html"  class="w3-bar-item w3-button">7</a>      <a href="https://esonusharma.github.io/index8.html"  aria-current="page"  class="w3-bar-item w3-button">8</a>      <a href="https://esonusharma.github.io/index9.html"  class="w3-bar-item w3-button">9</a>    
-      <a href="https://esonusharma.github.io/index9.html" class="w3-bar-item w3-button">&rang;</a>
-  </div>
-  <br>
-          </section> <!-- /#page-main -->
+          <article class="post" id="page-main" role="main">
+<h1 class="w3-container w3-round w3-theme w3-card">cpp Template</h1>
+<p class="w3-round w3-padding-large w3-border">Published on: 04 February 2025</p>
+<h2>12. Aim: Create a program to showcase the use of Templates.</h2>
+<h3>Practice Exercise 18: Write a C++ program to demonstrate the use of Function Templates for calculating stress.</h3>
+<h4>Code:</h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+
+<span class="n">template</span><span class="w"> </span><span class="o">&lt;</span><span class="n">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="n">T</span><span class="w"> </span><span class="n">calculateStress</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">force</span><span class="p">,</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">area</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">area</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kr">int</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kr">int</span><span class="w"> </span><span class="n">intForce</span><span class="p">,</span><span class="w"> </span><span class="n">intArea</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter force (integer, N): &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">intForce</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter area (integer, m^2): &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">intArea</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">int</span><span class="w"> </span><span class="n">intStress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateStress</span><span class="p">(</span><span class="n">intForce</span><span class="p">,</span><span class="w"> </span><span class="n">intArea</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Integer Stress: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">intStress</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; N/m^2&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">floatForce</span><span class="p">,</span><span class="w"> </span><span class="n">floatArea</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter force (float, N): &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">floatForce</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Enter area (float, m^2): &quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">floatArea</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">floatStress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateStress</span><span class="p">(</span><span class="n">floatForce</span><span class="p">,</span><span class="w"> </span><span class="n">floatArea</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Float Stress: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">floatStress</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; N/m^2&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2>References</h2>
+<p>There may be some AI Generated content in this article used for demonstration purposes.</p>
+          </article> <!-- /#page-main -->
         </div>
 
         <!-- End Middle Column -->

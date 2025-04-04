@@ -243,196 +243,75 @@
           <article class="post" id="page-main" role="main">
 <h1 class="w3-container w3-round w3-theme w3-card">cpp Friend Class Function</h1>
 <p class="w3-round w3-padding-large w3-border">Published on: 05 February 2025</p>
-<h2>Resources</h2>
-<ol>
-<li><a href="">Video Lecture</a></li>
-</ol>
-<h2>Aim: Create a program to showcase the use of friend function.</h2>
-<h3>Self Assessment</h3>
-<ol>
-<li>Declare an Engine Class with one private variable "engineCC" and a public function "setEngine" to declare the value of Engine Class. Then Declare a Car Class as friend of Engine Class having a public function "Show" to show the value of Engine Class variables.</li>
-</ol>
-<h3>Practice Exercise 3: Write a program to calculate the position of a particle showcasing the use of friend class.</h3>
-<h4>Theory:</h4>
-<p>A friend class (Show) accesses the private position data of a Particle class. Show class can display the particle's position, which is initially set to (0, 0) and later updated.</p>
-<h4>Algorithm:</h4>
-<ol>
-<li>Create a Particle object.</li>
-<li>Set the initial position of the Particle using setPosition(0, 0).</li>
-<li>Create a Show class object.</li>
-<li>Display the initial position using Show class's showPosition method.</li>
-<li>Move the Particle by calling move(2.0, 3.0).</li>
-<li>Display the updated position using Show class's showPosition method.</li>
-</ol>
+<h2>2. Aim: Create a program to showcase the use of friend function.</h2>
+<h3>Practice Exercise 2: Write a C++ program to calculate the density showcasing friend class.</h3>
 <h4>Code:</h4>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
 <span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 
-<span class="kr">class</span><span class="w"> </span><span class="nc">Particle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="kr">class</span><span class="w"> </span><span class="nc">Density</span><span class="p">;</span>
 
-<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">dy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
-<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-
-<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setPosition</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">newX</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">newY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newX</span><span class="p">;</span>
-<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newY</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-
-<span class="w">        </span><span class="c1">// Friend class declaration (It doesn&#39;t matter if you declare this under private or public)</span>
-<span class="w">        </span><span class="kr">friend</span><span class="w"> </span><span class="kr">class</span><span class="w"> </span><span class="nc">Show</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="c1">// Friend class definition</span>
-<span class="kr">class</span><span class="w"> </span><span class="nc">Show</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">showPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Particle Position: (&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;)&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="p">};</span>
-
-<span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
-<span class="w">    </span><span class="n">Show</span><span class="w"> </span><span class="n">show</span><span class="p">;</span>
-
-<span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">setPosition</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Print initial position using the friend class</span>
-<span class="w">    </span><span class="n">show</span><span class="p">.</span><span class="n">showPosition</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Move the particle</span>
-<span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="nf">move</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.0</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Print final position using the friend class</span>
-<span class="w">    </span><span class="n">show</span><span class="p">.</span><span class="n">showPosition</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<h3>Practice Exercise 4: Write a program to calculate the position of a particle showcasing the use of friend function.</h3>
-<h4>Theory:</h4>
-<p>The program models a simple 2D Particle object that can be moved along the x and y axes. It defines a move method to change the particle's position by adding specified displacements to its current coordinates. The printPosition friend function is used to access the Particle's internal data and print its current position. A friend function is a special function in C++ that can access private and protected members of the class, even though it is not a member of the class.</p>
-<h4>Algorithm:</h4>
-<ol>
-<li>Create a Particle object with initial position (0.0, 0.0).</li>
-<li>Define a move method to adjust the x and y coordinates by specified amounts.</li>
-<li>Define a friend function printPosition to print the particle's position.</li>
-<li>Call printPosition to display the initial position of the particle.</li>
-<li>Move the particle by calling move(2.0, 3.0).</li>
-<li>Call printPosition again to display the updated position.</li>
-</ol>
-<h4>Code:</h4>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-
-<span class="kr">class</span><span class="w"> </span><span class="nc">Particle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
-
-<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="nf">move</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">dx</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">dy</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dx</span><span class="p">;</span>
-<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">dy</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-
-<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setPosition</span><span class="p">(</span><span class="kr">float</span><span class="w"> </span><span class="n">newX</span><span class="p">,</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">newY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newX</span><span class="p">;</span>
-<span class="w">            </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newY</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-
-<span class="w">        </span><span class="c1">// Friend function declaration</span>
-<span class="w">        </span><span class="kr">friend</span><span class="w"> </span><span class="kr">void</span><span class="w"> </span><span class="n">printPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">);</span>
-<span class="p">};</span>
-
-<span class="c1">// Friend function definition</span>
-<span class="kr">void</span><span class="w"> </span><span class="nf">printPosition</span><span class="p">(</span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Particle Position: (&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;, &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">Particle</span><span class="w"> </span><span class="n">p</span><span class="p">;</span>
-
-<span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="n">setPosition</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Print initial position using the friend function</span>
-<span class="w">    </span><span class="n">printPosition</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Move the particle</span>
-<span class="w">    </span><span class="n">p</span><span class="p">.</span><span class="nf">move</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span><span class="w"> </span><span class="mf">3.0</span><span class="p">);</span>
-
-<span class="w">    </span><span class="c1">// Print final position using the friend function</span>
-<span class="w">    </span><span class="n">printPosition</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<h3>Extra Self Practice Material</h3>
-<h4>Code:</h4>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
-
-<span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-
-<span class="kr">class</span><span class="w"> </span><span class="nc">Material</span>
+<span class="kr">class</span><span class="w"> </span><span class="nc">DensityCalculator</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="kr">private</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
-<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">modulus_of_elasticity</span><span class="p">;</span>
-<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">modulus_of_rigidity</span><span class="p">;</span>
-<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">poisson_ratio</span><span class="p">;</span>
-<span class="w">        </span><span class="kr">double</span><span class="w"> </span><span class="n">unit_weight</span><span class="p">;</span>
-
-<span class="w">        </span><span class="c1">// Friend function declaration in private</span>
-<span class="w">        </span><span class="kr">friend</span><span class="w"> </span><span class="kr">void</span><span class="w"> </span><span class="nf">displayMaterialProperties</span><span class="p">(</span><span class="n">Material</span><span class="w"> </span><span class="n">mat</span><span class="p">);</span>
-
-<span class="w">    </span><span class="kr">public</span><span class="o">:</span>
-<span class="w">        </span><span class="kr">void</span><span class="w"> </span><span class="n">setValues</span><span class="p">(</span><span class="kr">string</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">E</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">G</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kr">double</span><span class="w"> </span><span class="n">w</span><span class="p">)</span>
-<span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">;</span>
-<span class="w">            </span><span class="n">modulus_of_elasticity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">E</span><span class="p">;</span>
-<span class="w">            </span><span class="n">modulus_of_rigidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">G</span><span class="p">;</span>
-<span class="w">            </span><span class="n">poisson_ratio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
-<span class="w">            </span><span class="n">unit_weight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
+<span class="kr">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kr">void</span><span class="w"> </span><span class="n">displayDensity</span><span class="p">(</span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
 <span class="p">};</span>
 
-<span class="c1">// Friend function definition</span>
-<span class="kr">void</span><span class="w"> </span><span class="nf">displayMaterialProperties</span><span class="p">(</span><span class="n">Material</span><span class="w"> </span><span class="n">mat</span><span class="p">)</span>
+<span class="kr">class</span><span class="w"> </span><span class="nc">Density</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">mat</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\t\t\t\t</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">mat</span><span class="p">.</span><span class="n">modulus_of_elasticity</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\t\t\t\t\t</span><span class="s">&quot;</span>
-<span class="w">         </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">mat</span><span class="p">.</span><span class="n">modulus_of_rigidity</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\t\t\t\t</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">mat</span><span class="p">.</span><span class="n">poisson_ratio</span>
-<span class="w">         </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\t\t\t\t</span><span class="s">&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">mat</span><span class="p">.</span><span class="n">unit_weight</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="kr">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">mass</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">volume</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">friend</span><span class="w"> </span><span class="kr">class</span><span class="w"> </span><span class="nc">DensityCalculator</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kr">void</span><span class="w"> </span><span class="nf">DensityCalculator::displayDensity</span><span class="p">(</span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">density</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">mass</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">volume</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Density of Fluid: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">density</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; N/m³&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
-<span class="w">    </span><span class="n">Material</span><span class="w"> </span><span class="n">brass</span><span class="p">,</span><span class="w"> </span><span class="n">cast_iron</span><span class="p">,</span><span class="w"> </span><span class="n">copper</span><span class="p">,</span><span class="w"> </span><span class="n">glass</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="n">d</span><span class="p">.</span><span class="n">mass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="w">    </span><span class="n">d</span><span class="p">.</span><span class="n">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
 
-<span class="w">    </span><span class="c1">// Using setter function to set values</span>
-<span class="w">    </span><span class="n">brass</span><span class="p">.</span><span class="n">setValues</span><span class="p">(</span><span class="s">&quot;Brass&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">106.0</span><span class="p">,</span><span class="w"> </span><span class="mf">40.1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.324</span><span class="p">,</span><span class="w"> </span><span class="mf">83.8</span><span class="p">);</span>
-<span class="w">    </span><span class="n">cast_iron</span><span class="p">.</span><span class="n">setValues</span><span class="p">(</span><span class="s">&quot;Cast Iron&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">100.0</span><span class="p">,</span><span class="w"> </span><span class="mf">41.4</span><span class="p">,</span><span class="w"> </span><span class="mf">0.211</span><span class="p">,</span><span class="w"> </span><span class="mf">70.6</span><span class="p">);</span>
-<span class="w">    </span><span class="n">copper</span><span class="p">.</span><span class="n">setValues</span><span class="p">(</span><span class="s">&quot;Copper&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">119.0</span><span class="p">,</span><span class="w"> </span><span class="mf">44.7</span><span class="p">,</span><span class="w"> </span><span class="mf">0.326</span><span class="p">,</span><span class="w"> </span><span class="mf">87.3</span><span class="p">);</span>
-<span class="w">    </span><span class="n">glass</span><span class="p">.</span><span class="n">setValues</span><span class="p">(</span><span class="s">&quot;Glass&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">46.2</span><span class="p">,</span><span class="w"> </span><span class="mf">18.6</span><span class="p">,</span><span class="w"> </span><span class="mf">0.245</span><span class="p">,</span><span class="w"> </span><span class="mf">25.4</span><span class="p">);</span>
+<span class="w">    </span><span class="n">DensityCalculator</span><span class="w"> </span><span class="n">calc</span><span class="p">;</span>
+<span class="w">    </span><span class="n">calc</span><span class="p">.</span><span class="n">displayDensity</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
 
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n\t\t\t\t\t\t</span><span class="s">-------------------------------&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n\t\t\t\t\t\t</span><span class="s">    Material Property Table&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n\t\t\t\t\t\t</span><span class="s">-------------------------------</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
 
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">-----------------------------------------------------------------------------------------------------------------------------------------------&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Material</span><span class="se">\t\t\t</span><span class="s">Modulus of Elasticity(E)</span><span class="se">\t\t</span><span class="s">Modulus of Rigidity(G)</span><span class="se">\t\t</span><span class="s">Poisson&#39;s Ratio(v)</span><span class="se">\t</span><span class="s">Unit Weight(w)</span><span class="se">\n\t\t\t\t</span><span class="s">GPa</span><span class="se">\t\t\t\t\t</span><span class="s">GPa</span><span class="se">\t\t\t\t\t\t\t</span><span class="s">  kN/m^3&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">-----------------------------------------------------------------------------------------------------------------------------------------------</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<h3>Practice Exercise 3: Write a C++ program to calculate the density showcasing friend function.</h3>
+<h4>Code:</h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="n">using</span><span class="w"> </span><span class="n">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 
-<span class="w">    </span><span class="c1">// Using friend function to display material properties</span>
-<span class="w">    </span><span class="n">displayMaterialProperties</span><span class="p">(</span><span class="n">brass</span><span class="p">);</span>
-<span class="w">    </span><span class="n">displayMaterialProperties</span><span class="p">(</span><span class="n">cast_iron</span><span class="p">);</span>
-<span class="w">    </span><span class="n">displayMaterialProperties</span><span class="p">(</span><span class="n">copper</span><span class="p">);</span>
-<span class="w">    </span><span class="n">displayMaterialProperties</span><span class="p">(</span><span class="n">glass</span><span class="p">);</span>
+<span class="kr">class</span><span class="w"> </span><span class="nc">Density</span>
+<span class="p">{</span>
+<span class="kr">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">mass</span><span class="p">;</span>
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">volume</span><span class="p">;</span>
+
+<span class="kr">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kr">friend</span><span class="w"> </span><span class="kr">float</span><span class="w"> </span><span class="n">calculateDensity</span><span class="p">(</span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kr">float</span><span class="w"> </span><span class="nf">calculateDensity</span><span class="p">(</span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">mass</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">volume</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kr">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">Density</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+<span class="w">    </span><span class="n">d</span><span class="p">.</span><span class="n">mass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="w">    </span><span class="n">d</span><span class="p">.</span><span class="n">volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kr">float</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateDensity</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Density of Fluid: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; N/m³&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
