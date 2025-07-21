@@ -17,7 +17,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-lime.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto Serif' type='text/css'>
   <script src="https://kit.fontawesome.com/d86587f6b0.js" crossorigin="anonymous"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -38,10 +38,38 @@
   <link rel="icon" href="/theme/images/brand/es-logo.png" type="image/png" />
   <meta name="author" content="esonusharma.github.io">
   <meta name="description" content="description">
-  <style>
+
+  <link rel="alternate" type="application/atom+xml" title="esonusharma.github.io — Flux Atom"
+    href="https://esonusharma.github.io/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs.css">
+ <style>
     html * {
       font-family: 'Noto Serif', sans-serif;
     }
+
+    .w3-theme-l5 {color:#000 !important; background-color:#f0f5fa !important}
+    .w3-theme-l4 {color:#000 !important; background-color:#cbdeee !important}
+    .w3-theme-l3 {color:#000 !important; background-color:#98bdde !important}
+    .w3-theme-l2 {color:#fff !important; background-color:#649ccd !important}
+    .w3-theme-l1 {color:#fff !important; background-color:#3a7ab3 !important}
+    .w3-theme-d1 {color:#fff !important; background-color:#254e72 !important}
+    .w3-theme-d2 {color:#fff !important; background-color:#214666 !important}
+    .w3-theme-d3 {color:#fff !important; background-color:#1d3d59 !important}
+    .w3-theme-d4 {color:#fff !important; background-color:#19344c !important}
+    .w3-theme-d5 {color:#fff !important; background-color:#152c40 !important}
+
+    .w3-theme-light {color:#000 !important; background-color:#f0f5fa !important}
+    .w3-theme-dark {color:#fff !important; background-color:#152c40 !important}
+    .w3-theme-action {color:#fff !important; background-color:#152c40 !important}
+
+    .w3-theme {color:#fff !important; background-color:#29577e !important}
+    .w3-text-theme {color:#29577e !important}
+    .w3-border-theme {border-color:#29577e !important}
+
+    .w3-hover-theme:hover {color:#fff !important; background-color:#29577e !important}
+    .w3-hover-text-theme:hover {color:#29577e !important}
+    .w3-hover-border-theme:hover {border-color:#29577e !important}
+
 
     h1 {
       font-weight: 600;
@@ -88,12 +116,12 @@
     h3,
     h4 {
       font-weight: 600;
-      color: #000000;
-      background-color: #CDDC39;
+      color: #ffffff;
+      background-color: #008080;
       border-radius: 4px;
       border-style: solid;
-      border-width: 0px 0px 0px 10px;
-      border-color: #96A41D;
+      border-width: 0px 0px 0px 20px;
+      border-color: #ffc107;
       padding: 10px;
     }
 
@@ -106,9 +134,6 @@
       font-weight: 300;
     }
   </style>
-  <link rel="alternate" type="application/atom+xml" title="esonusharma.github.io — Flux Atom"
-    href="https://esonusharma.github.io/" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs.css">
 </head>
 
 <body>
@@ -198,19 +223,19 @@
             <button onclick="myFunction('Categories')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
                 class="fa-solid fa-tags"></i>&ensp;Categories</button>
             <div id="Categories" class="w3-hide w3-container">
-              <a href="/categories" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+              <a href="/categories" class="w3-bar-item w3-button w3-padding-large w3-hover-white"
                 title="Categories"><i class="fa-solid fa-tags"></i>&ensp;Categories</a>
             </div>
             <button onclick="myFunction('Tags')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
                 class="fa-solid fa-file-zipper"></i>&ensp;Tags</button>
             <div id="Tags" class="w3-hide w3-container">
-              <a href="/tags" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+              <a href="/tags" class="w3-bar-item w3-button w3-padding-large w3-hover-white"
                 title="Tags"><i class="fa-solid fa-file-zipper"></i>&ensp;Tags</a>
             </div>
             <button onclick="myFunction('Archives')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i
                 class="fa-solid fa-file-zipper"></i>&ensp;Archives</button>
             <div id="Archives" class="w3-hide w3-container">
-              <a href="/archives" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+              <a href="/archives" class="w3-bar-item w3-button w3-padding-large w3-hover-white"
                 title="Archives"><i class="fa-solid fa-file-zipper"></i>&ensp;Archives</a>
             </div>
           </div>
@@ -266,7 +291,7 @@
           <div class="w3-container">
             <p>Upcoming Courses:</p>
             <p><strong>OpenFOAM Basic</strong></p>
-            <a href="#"><button class="w3-button w3-block w3-amber">Coming Soon</button></a><br>
+            <a href="#"><button class="w3-button w3-block w3-theme-l4">Coming Soon</button></a><br>
           </div>
         </div>
         <br>
@@ -276,7 +301,7 @@
             <p>Upcoming Topics</p>
             <i class="fa-solid fa-table-cells fa-4x"></i><br>
             <p><strong>SnappyHexMesh</strong></p>
-            <a href="#"><button class="w3-button w3-block w3-amber">Coming Soon</button></a><br>
+            <a href="#"><button class="w3-button w3-block w3-theme-l4">Coming Soon</button></a><br>
           </div>
         </div>
         <br>
@@ -285,7 +310,7 @@
           <div class="w3-container">
             <br>
             <p><i class="fa-solid fa-rectangle-ad fa-4x"></i></p><br>
-            <a href="/pages/contact" target="_blank"><button class="w3-button w3-block w3-amber">SEE YOUR AD
+            <a href="/pages/contact" target="_blank"><button class="w3-button w3-block w3-theme-l4">SEE YOUR AD
                 HERE</button></a><br>
           </div>
         </div>
