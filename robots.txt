@@ -1,4 +1,0 @@
-Sitemap: https://esonusharma.github.io/sitemap.xml
-
-User-agent: *
-Disallow:
