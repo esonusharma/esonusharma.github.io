@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>esonusharma.github.io - howto</title><link href="https://esonusharma.github.io/" rel="alternate"/><link href="https://esonusharma.github.io/feeds/howto.atom.xml" rel="self"/><id>https://esonusharma.github.io/</id><updated>2023-07-14T00:00:00+05:30</updated><entry><title>Solved Nomenclature Not Generated in PDF Created by Visual Studio Code LaTeX Workshop Extension</title><link href="https://esonusharma.github.io/posts/solved-nomenclature-not-generated-in-pdf-created-by-visual-studio-code-latex-workshop-extension/" rel="alternate"/><published>2023-07-14T00:00:00+05:30</published><updated>2023-07-14T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2023-07-14:/posts/solved-nomenclature-not-generated-in-pdf-created-by-visual-studio-code-latex-workshop-extension/</id><summary type="html">&lt;p&gt;Execute commands below to solve this problem.&lt;/p&gt;</summary><content type="html">&lt;p&gt;The problem regarding not generation of nomenclature in pdf documents created by Visual Studio Code is finally solved.&lt;/p&gt;
+&lt;p&gt;You may have gone through search engines following the advice to display nomenclature but nothing worked like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/James-Yu/LaTeX-Workshop/issues/384"&gt;Solution 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://latex.org/forum/viewtopic.php?t=34350"&gt;Solution 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://latex.org/forum/viewtopic.php?t=27292"&gt;Solution 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tex.stackexchange.com/questions/62061/problem-with-the-nomenclature"&gt;Solution 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/58895384/how-to-modify-makeindex-script-in-vs-code-for-latex"&gt;Solution 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://tex.stackexchange.com/questions/577405/printnomenclature-doesnt-work"&gt;Solution 6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Popular searches regarding the same:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Problem&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;nomenclature&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;nomencl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;latex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;won&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;t show output&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1. In Visual Studio Code, Open File -&amp;gt; Preferences -&amp;gt; Settings and search for "latex-workshop.latex.tools" in that.&lt;/li&gt;
+&lt;li&gt;Step 2. Add the following code inside the "latex-workshop.latex.tools"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+   &amp;quot;name&amp;quot;: &amp;quot;makeindex&amp;quot;,
+   &amp;quot;command&amp;quot;: &amp;quot;makeindex&amp;quot;,
+   &amp;quot;args&amp;quot;: [
+    &amp;quot;%DOCFILE%.nlo&amp;quot;,
+    &amp;quot;-s&amp;quot;,
+    &amp;quot;nomencl.ist&amp;quot;,
+    &amp;quot;-o&amp;quot;,
+    &amp;quot;%DOCFILE%.nls&amp;quot;
+   ],
+   &amp;quot;env&amp;quot;: {}
+},
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Step 3. Again Open File -&amp;gt; Preferences -&amp;gt; Settings and search for "latex-workshop.latex.recipes" in that. Modify the following command:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex -&amp;gt; bibtex -&amp;gt; pdflatex * 2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tools&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;bibtex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;like the below command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex -&amp;gt; bibtex -&amp;gt; makeindex -&amp;gt; pdflatex * 2&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tools&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;bibtex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;makeindex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pdflatex&amp;quot;&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Step 4. Save the file.&lt;/li&gt;
+&lt;li&gt;Step 5. Open the "LaTeX Workshop" Extension Menu in Visual Studio Code and run the command with "pdflatex -&amp;gt; bibtex -&amp;gt; makeindex -&amp;gt; pdflatex * 2" name.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="howto"/><category term="latex"/></entry><entry><title>Solved errors were encountered while processing grub efi amd64 signed</title><link href="https://esonusharma.github.io/posts/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed/" rel="alternate"/><published>2020-06-24T00:00:00+05:30</published><updated>2020-06-24T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2020-06-24:/posts/solved-errors-were-encountered-while-processing-grub-efi-amd64-signed/</id><summary type="html">&lt;p&gt;Execute commands below to solve this problem.&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Execute commands below to solve this problem&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get purge grub\*
+sudo apt-get install grub-efi
+sudo apt-get autoremove
+sudo update-grub
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="howto"/><category term="ubuntu"/></entry><entry><title>Fix the Error "debconf DbDriver "config" /var/cache/debconf/config.dat is locked by another process Resource temporarily unavailable</title><link href="https://esonusharma.github.io/posts/fix-the-error-debconf-dbdriver-config-varcachedebconfconfigdat-is-locked-by-another-process-resource-temporarily-unavailable/" rel="alternate"/><published>2020-06-02T00:00:00+05:30</published><updated>2020-06-02T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2020-06-02:/posts/fix-the-error-debconf-dbdriver-config-varcachedebconfconfigdat-is-locked-by-another-process-resource-temporarily-unavailable/</id><summary type="html">&lt;p&gt;You have encountered the above error in Debian or Debian based GNU/Linux Distribution.&lt;/p&gt;</summary><content type="html">&lt;p&gt;You have encountered the above error in Debian or Debian based GNU/Linux Distribution.&lt;/p&gt;
+&lt;p&gt;This may cause problems like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;errors&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;update&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;upgrade&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;install&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;and&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;other&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;processes&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;dpkg&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;processing&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kn"&gt;package&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;post&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;installation&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;subprocess&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;returned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;exit&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;status&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Errors&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;were&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;encountered&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;processing&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;E&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Sub&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;process&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nx"&gt;dpkg&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;returned&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;an&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Solution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Step 1. Execute command in terminal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fuser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cache&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;debconf&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dat&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Step 2. You will get result in following format. Copy the PID from it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  USER        PID ACCESS COMMAND
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Step 3. Execute command. Replace PID with your actual PID. If the first command works, then second command will give output “No such process”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;  sudo kill PID
+  or
+  sudo kill -9 PID
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Step 4. Now you will not get the error.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="howto"/><category term="ubuntu"/></entry><entry><title>How to Install Latest Julia Version on Linux?</title><link href="https://esonusharma.github.io/posts/how-to-install-latest-julia-version-on-linux/" rel="alternate"/><published>2019-05-29T00:00:00+05:30</published><updated>2019-05-29T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2019-05-29:/posts/how-to-install-latest-julia-version-on-linux/</id><summary type="html">&lt;p&gt;Step-by-Step easy to follow procedure to install Julia programming language on Ubuntu and other Linux based operating systems.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Step-by-Step easy to follow procedure to install Julia programming language on Ubuntu and other Linux based operating systems.&lt;/p&gt;
+&lt;p&gt;I know how frustrated you are trying to successfully install the latest version of the Julia programming language on Linux.&lt;/p&gt;
+&lt;p&gt;Installation of Julia is straight-forward in Windows, as you just have to double-click the downloaded exe file and follow the instructions.&lt;/p&gt;
+&lt;p&gt;These are instructions for installation of Julia on Ubuntu but can be adapted on different Linux distributions such as Fedora etc.&lt;/p&gt;
+&lt;p&gt;When we want to install the latest version of Julia on Linux distributions, there are no specific instructions.&lt;/p&gt;
+&lt;p&gt;There is an easy way listed on some sites through a PPA available at &lt;a href="https://launchpad.net/~staticfloat/+archive/ubuntu/juliareleases"&gt;https://launchpad.net/~staticfloat/+archive/ubuntu/juliareleases&lt;/a&gt;, which has some direct commands to be executed for installing Julia, but the version of the Julia you will get may not be the latest and also this is unsupported and untrusted as mentioned on the above link.&lt;/p&gt;
+&lt;p&gt;If you try to install Julia from the “Ubuntu Software Centre” or “Synaptic Package Manager” or directly using the command “sudo apt-get install julia”, you are probably going to get a very old version of Julia.&lt;/p&gt;
+&lt;p&gt;I also faced all these problems as I wanted to install an official, pure, untouched fresh copy of the latest version of Julia to learn and use it.&lt;/p&gt;
+&lt;p&gt;So finally I embarked upon the hard way of getting the latest Julia stable release version installed on my Ubuntu laptop.&lt;/p&gt;
+&lt;p&gt;Firstly, we have to download the latest released Julia version from the location “&lt;a href="https://julialang.org/downloads/"&gt;https://julialang.org/downloads/&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;I used the “Generic Linux Binaries for x86” version. The choice between x86 and ARM depends on the processor of your machine. Also, choose between 32 bit and 64-bit versions based on the Operating system and processor you have on your machine.&lt;/p&gt;
+&lt;p&gt;After download, you will get a compressed tar.gz archive having a name similar to “julia-0.6.2-linux-x86_64.tar.gz”. As the “julia-0.6.2-linux-x86_64.tar.gz” name suggests that I downloaded the Julia version 0.6.2 which is latest at the time of writing this article, generic Linux binaries i.e. this can be used for any Linux system including Ubuntu, Fedora, Centos and more, x86 system and 64-bit operating system.&lt;/p&gt;
+&lt;p&gt;The names may differ. Adapt the names accordingly.&lt;/p&gt;
+&lt;p&gt;Remember these are binaries, these don’t need to be installed as they can be directly used from the directory they are extracted.&lt;/p&gt;
+&lt;p&gt;These instructions can be followed for getting Julia working on most of the Linux operating systems with little or no modifications, but I cannot guarantee the perfect result. Try it at your own risk.&lt;/p&gt;
+&lt;p&gt;I am assuming that the downloaded file is in your Downloads directory of Ubuntu.&lt;/p&gt;
+&lt;p&gt;Open the terminal and navigate to the directory where the downloaded tar.gz file resides, in the present case the Downloads directory.&lt;/p&gt;
+&lt;p&gt;The terminal when just opened will show&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;where x should be replaced by your username and xpc should be replaced by your computer name&lt;/p&gt;
+&lt;p&gt;Navigate to the Downloads directory using “cd Downloads” command on the terminal written as&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and then press enter to get following terminal&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Extract the tar.gz file using the command “tar -zxvf julia-0.6.2-linux-x86_64.tar.gz” as shown below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;zxvf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.6&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;linux&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;x86_64&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gz&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now a directory with extracted contents will be generated in the same parent directory as of the compressed archive with a name similar to “julia-xxxxxxxxxx” where xxxxxxxxxx may be a combination of alphabets and numerals.&lt;/p&gt;
+&lt;p&gt;This is the final directory you need to run the latest Julia version, no installation is needed.&lt;/p&gt;
+&lt;p&gt;To run Julia, you can directly run using the Julia file in location “julia-xxxxxxxxxx/bin/julia” as discussed below&lt;/p&gt;
+&lt;p&gt;Navigate to the bin directory in the extracted directory using the command “cd /Downloads/julia-xxxxxxxxxx/bin” as expressed below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;xxxxxxxxxx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The terminal will now be like&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;xxxxxxxxxx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now run the command “./julia” to run Julia on the terminal as shown below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;xxxxxxxxxx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;./&lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The terminal will now change to Julia as presented below.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; julia&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;But the problem is that I have to navigate to the directory every-time to run Julia.&lt;/p&gt;
+&lt;p&gt;Many people have discussed on the internet about defining the path and alias through very complex procedures and as I am not a hardcore computer geek, it was really difficult for me to understand.&lt;/p&gt;
+&lt;p&gt;I came to know about making a soft-link.&lt;/p&gt;
+&lt;p&gt;So I decided to make a soft-link to the Julia to run it directly from anywhere with a short command without navigating to the directory containing it.&lt;/p&gt;
+&lt;p&gt;I always try to do things neatly, so I decided to keep the extracted directory named “julia-xxxxxxxxxx” in the “/opt” directory of my system as most of my important programs reside in that.&lt;/p&gt;
+&lt;p&gt;You need superuser terminal to copy a file into the “/opt” directory.&lt;/p&gt;
+&lt;p&gt;So I used the command “sudo su” and then provided the password to get the superuser privileges as expressed below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;su&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;password&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now navigate to the directory presently containing the extracted directory as expressed below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="c1"&gt;# cd /Downloads/&lt;/span&gt;
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Copy the directory using the command “cp -r julia-xxxxxxxxxx /opt” as shown below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;xpc&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Downloads&lt;/span&gt;&lt;span class="c1"&gt;# cp -r julia-xxxxxxxxxx /opt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;After the directory is copied to the destination, now we will make the soft-link in a directory which is in the system path so that the soft-link can be called from any location to run Julia.&lt;/p&gt;
+&lt;p&gt;To find out the directories in the system PATH use command “echo $PATH”, you will get a list of paths of directories separated by a colon(:) such as “/usr/local/bin”. You can use any of them. I used “/usr/local/bin” for the soft-link.&lt;/p&gt;
+&lt;p&gt;Navigate to the chosen folder&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The terminal will become&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Create the soft-link using the command “sudo ln -s /opt/julia-xxxxxxxxxx/bin/julia julia” as shown below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;home&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;ln&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;xxxxxxxxxx&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now return to the normal user terminal using command “ctrl+D” at the empty terminal “root@xpc:/home/x/usr/local/bin#”.&lt;/p&gt;
+&lt;p&gt;The terminal will become&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Type the newly made soft-link i.e. “julia” on the terminal as shown below&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="nv"&gt;@xpc&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;julia&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is where the magic happens and you get this&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; julia&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="howto"/><category term="julia"/></entry><entry><title>How to Transfer Email from One Account to Another?</title><link href="https://esonusharma.github.io/posts/how-to-transfer-email-from-one-account-to-another/" rel="alternate"/><published>2019-05-29T00:00:00+05:30</published><updated>2019-05-29T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2019-05-29:/posts/how-to-transfer-email-from-one-account-to-another/</id><summary type="html">&lt;p&gt;A step by step procedure to transfer specific emails from one email account to another.&lt;/p&gt;</summary><content type="html">&lt;p&gt;A step by step procedure to transfer specific emails from one email account to another.&lt;/p&gt;
+&lt;p&gt;This method is free and easy to implement.&lt;/p&gt;
+&lt;p&gt;It is easier to move all old and new emails from one account to another.&lt;/p&gt;
+&lt;p&gt;But sometimes one needs to transfer only a specific set of emails from one account to another.&lt;/p&gt;
+&lt;p&gt;The best and easy way to do this is by using an email client over IMAP.&lt;/p&gt;
+&lt;p&gt;The one I have personally used is Mozilla’s &lt;a href="https://www.mozilla.org/en-US/thunderbird"&gt;Thunderbird&lt;/a&gt; email client.&lt;/p&gt;
+&lt;p&gt;Yes, it is not very fancy looking, but it works.&lt;/p&gt;
+&lt;h3&gt;You can use this method:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;If changing the name of a business.&lt;/li&gt;
+&lt;li&gt;To copy your emails from office email account to personal email account.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download Thunderbird and install it on your Laptop or PC.&lt;/p&gt;
+&lt;p&gt;Now you have to add the email accounts in Thunderbird between which you want to transfer emails.&lt;/p&gt;
+&lt;h3&gt;Stepwise Procedure to transfer emails&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch Thunderbird Client.&lt;/li&gt;
+&lt;li&gt;Click on Accounts&amp;gt;Create a new account&amp;gt;Email, a pop-up will emerge.&lt;/li&gt;
+&lt;li&gt;At the bottom of pop-up click the button with the text “Skip this and use my existing email”.&lt;/li&gt;
+&lt;li&gt;In the next pop-up, specify your name, email, and password and click on continue.&lt;/li&gt;
+&lt;li&gt;Choose IMAP option now and click on “Done”.&lt;/li&gt;
+&lt;li&gt;Now, in the next screen log in to your email account with username and password as asked.&lt;/li&gt;
+&lt;li&gt;Allow the permission to connect with Thunderbird client then.&lt;/li&gt;
+&lt;li&gt;Now, the email account will be visible in your Thunderbird client on the left side.&lt;/li&gt;
+&lt;li&gt;You will now notice no or few folders listed under the account name in the client.&lt;/li&gt;
+&lt;li&gt;To add all the folders and labels in your email account, Click on Advanced Features&amp;gt;Manage Folder Subscriptions or right-click on the email on the left side and click on Subscribe.&lt;/li&gt;
+&lt;li&gt;A pop-up will emerge, check the boxes in front of all those folders you want to add, click on subscribe and then OK.&lt;/li&gt;
+&lt;li&gt;Wait a minute, collapse and expand the email link on the left side, now you will see all the specified labels.&lt;/li&gt;
+&lt;li&gt;Repeat this procedure to add all the email accounts to the Thunderbird client.&lt;/li&gt;
+&lt;li&gt;Now, select the emails which you want to move or copy from one Gmail account to another, either one by one or ctr+select multiple emails from your email account and right-click, select the move or copy option, then select the target email account and the target label or folder to move or copy selected emails to that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can use this procedure for various email service providers Thunderbird can connect to.&lt;/p&gt;</content><category term="howto"/><category term="email"/></entry><entry><title>How to 301 Permanent Redirect Blogger-Blogspot Blog to Domain?</title><link href="https://esonusharma.github.io/posts/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain/" rel="alternate"/><published>2019-05-28T00:00:00+05:30</published><updated>2019-05-28T00:00:00+05:30</updated><author><name>esonusharma.github.io</name></author><id>tag:esonusharma.github.io,2019-05-28:/posts/how-to-301-permanent-redirect-blogger-blogspot-blog-to-domain/</id><summary type="html">&lt;p&gt;I know its difficult to migrate blogger/blogspot blog hosted at bare blogspot domain “&lt;a href="https://your-blog-name.blogspot.com"&gt;https://your-blog-name.blogspot.com&lt;/a&gt;” to newly bought branded domain name something like “&lt;a href="https://yoursite.com"&gt;https://yoursite.com&lt;/a&gt;”.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I know its difficult to migrate blogger/blogspot blog hosted at bare blogspot domain “&lt;a href="https://your-blog-name.blogspot.com"&gt;https://your-blog-name.blogspot.com&lt;/a&gt;” to newly bought branded domain name something like “&lt;a href="https://yoursite.com"&gt;https://yoursite.com&lt;/a&gt;”.&lt;/p&gt;
+&lt;h3&gt;So what exactly is SEO Redirection or 301 Redirection?&lt;/h3&gt;
+&lt;p&gt;When you want that a blog post or blog page of your blog should transfer its traffic and google search ranking authority to a new URL where this content is shifted, then you need SEO Redirection.&lt;/p&gt;
+&lt;p&gt;As you are &lt;strong&gt;permanently&lt;/strong&gt; moving your blog content under a &lt;strong&gt;new domain name&lt;/strong&gt;, you need to tell Google about it, so that Google acknowledges the change and transfers the authority of your content to a new address and does not treat the same content at a new URL as plagiarised content and deny &lt;strong&gt;rankings&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You can inform this to Google by providing a &lt;strong&gt;301 Redirect&lt;/strong&gt; at the old address of the content.&lt;/p&gt;
+&lt;p&gt;301 Redirect tells Google that the content present at that location is &lt;strong&gt;permanently shifted&lt;/strong&gt; to a new address.&lt;/p&gt;
+&lt;p&gt;The traffic is shifted permanently by Google instantly when it finds this redirect.&lt;/p&gt;
+&lt;p&gt;But the rankings transfer takes some time.&lt;/p&gt;
+&lt;p&gt;Normally you can easily create a 301 Redirect for a personal domain name you own.&lt;/p&gt;
+&lt;h3&gt;301 Redirect can be created by&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Defining it in the &lt;strong&gt;.htaccess&lt;/strong&gt; file available in the hosting if you have hosting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forwarding&lt;/strong&gt; the domain name in your domain control panel provided by the domain name provider choosing the &lt;strong&gt;permanent redirect&lt;/strong&gt;/forward option if you don’t have hosting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But it seems next to impossible to do the same in the case when you don’t own the domain name as the case in &lt;strong&gt;blogger/blogspot&lt;/strong&gt; naked domain.&lt;/p&gt;
+&lt;p&gt;Now I am going to share a method in which you can achieve this.&lt;/p&gt;
+&lt;p&gt;I have tried this method when I was shifting from blogger to my own domain name and I was successful in &lt;strong&gt;transferring&lt;/strong&gt; the ranking of my popular blog posts to a &lt;strong&gt;new web address&lt;/strong&gt; but I cannot guarantee you the same as this is dependent on google and varies on case basis.&lt;/p&gt;
+&lt;p&gt;Insert the code shown below just after the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag in the &lt;strong&gt;blogger template&lt;/strong&gt; after replacing the generalized content to your own in the code below.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;b:if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;cond=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’data:blog.url&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/YEAR/MONTH/BLOG-POST-SLUG.html&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;”‘&amp;quot;&amp;gt;&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’0;url=http://yoursite.com/NEW-BLOG-POST-SLUG.html’&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’refresh’/&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/b:if&amp;gt;&lt;/span&gt;
+
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;b:if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;cond=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’data:blog.url&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com/p/BLOG-PAGE-SLUG.html&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;”‘&amp;quot;&amp;gt;&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’0;url=http://yoursite.com/NEW-BLOG-PAGE-SLUG.html’&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’refresh’/&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/b:if&amp;gt;&lt;/span&gt;
+
+&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;b:if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;cond=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’data:blog.url&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;==&amp;quot;“&amp;lt;http://your-blog-name.blogspot.com&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;”‘&amp;quot;&amp;gt;&lt;span class="nt"&gt;&amp;lt;meta&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;content=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’0;url=http://yoursite.com/’&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="na"&gt;http-equiv=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;’refresh’/&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/b:if&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you are fortunate enough, after a few days of doing this you can see your new URL in place of the old URL in google search.&lt;/p&gt;</content><category term="howto"/><category term="blogging"/></entry></feed>
