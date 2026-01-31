@@ -1,8 +1,0 @@
-{%- if article.lang %}{% set DEFAULT_LANG = article.lang %}{% endif -%}
-{% extends "base.html" %}
-
-{%- block content %}
-<h1 class="w3-container w3-round w3-card">{{ article.title }}</h1>
-<p class="w3-round w3-padding-large w3-border">Published on: {{ article.date|strftime('%d %B %Y') }}</p>
-{{ article.content}}
-{% endblock content -%}
